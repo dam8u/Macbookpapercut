@@ -1,0 +1,601 @@
+==============================================================================
+MOO-170 -- SERIAL CHAINING OF EDIT 3's RETENTION: BOUNDED ADDENDUM TO MOO-163
+Fiscal & Impact Modeler. Pre-decisional and internal. Not a DLS bill.
+Not reviewed by counsel. Nothing here is a VRS actuarial result.
+==============================================================================
+==============================================================================
+SECTION 1 -- IS THE $204,000 BOUND STILL ANALYTIC UNDER CHAINING?
+==============================================================================
+
+ANSWER: YES, AND THE DERIVATION IS UNTOUCHED. The bound never mentioned the retention
+period. It is a statement about the cap-fill arithmetic, and it is UNIFORM OVER ALL
+ORDERINGS. Chaining produces a different ordering. That is all it produces.
+
+MOO-163 §3's derivation, restated in the form that makes the invariance visible:
+
+    Let `o` be ANY vector of effective ordering dates over the cohort, and fill the
+    queue in `o`-order against the $3.00M pool. The fill stops when the next
+    application does not fit, so the unreserved residual R(o) satisfies
+
+        0 <= R(o) < max certified subsidy x 1.2 <= $170k x 1.2 = $204k
+
+    using D 2's own per-election ceiling. Total reserved = (cap - R(o)) / 1.2. Hence for
+    ANY two ordering vectors o1, o2 drawn from any process whatsoever,
+
+        |reserved(o1) - reserved(o2)| = |R(o1) - R(o2)| / 1.2 < $204k
+
+The quantifier is "any". There is no k in it.
+
+LEMMA 1 -- CHAINING IS AN ORDERING OPERATION AND NOTHING ELSE.
+  A chain of k requests changes one quantity in the model: the date on which the
+  applicant's retained filing date lapses, end = F + 30 + (k-1) x link. That date enters
+  the arithmetic only through `o` (she is relegated to it) or through the live set (she
+  drops out at it). Both are orderings over the same cohort. Under the quantifier above,
+  k is therefore invisible to the bound. THE DERIVATION DOES NOT BREAK.
+
+LEMMA 2 -- CHAINING CANNOT ADD A DOLLAR OF DEMAND.
+  This is the lemma that answers question 4, and it is the stronger of the two.
+  A chain is the SAME MEMBER filing successive requests about the SAME election. The
+  cohort is fixed upstream by MOO-71's authorised counts; no chain creates a member, and
+  no member has two elections to certify. So the total charge the cohort can press
+  against the cap, sum(subsidy) x 1.2, is IDENTICAL at every k. Chaining redistributes
+  who fills the pool. It cannot deepen the pool or the demand on it.
+  Corollary: where total demand does not exceed $3.00M, every application fits in every
+  order, so the delta is EXACTLY zero AT EVERY CHAIN LENGTH INCLUDING THE UNBOUNDED ONE.
+  Order can only matter where the cap binds. Verified numerically in Section 3.
+
+LEMMA 3 -- IT IS STILL LAPSE, NOT COST.
+  Unchanged from MOO-163 §3 and for the same reason. D 2's $3.00M is a self-executing
+  ceiling on reservations, not an appropriation. Reordering changes WHICH reservations
+  fill the ceiling, never the ceiling. A chain that reserves more lapses less; a chain
+  that reserves less lapses more. No chain length can cause a dollar to be spent that
+  D 2 does not already authorise. The sign stays indeterminate, so the bound stays
+  symmetric and it is the same bound whichever reading a fiscal note would have assumed.
+  One new timing point, since the chain can run long: a chain that pushes a member's
+  acceptance past the pilot end REDUCES draw. That is the lapse direction too.
+
+WHAT CHAINING CAN AND CANNOT MOVE, STATED BEFORE THE NUMBERS:
+  CANNOT move -- the appropriation line, total demand, the $204k bound, the
+      lapse-not-cost character, or the central-estimate $0.
+  CAN move -- the DISTRIBUTION: which member holds which rank when the pool exhausts.
+      That is question 3, it is a count of members and not a dollar figure, and it is
+      the one quantity in this addendum that is not settled by Section 1. Sections 4
+      and 7 price it.
+
+Sections 2-7 are therefore CONFIRMATION, not derivation. If a single cell in the sweep
+had exceeded $204k the lemmas above would be wrong and I would have to say so.
+
+==============================================================================
+SELF-TEST -- IS THE NOISE FLOOR INERT?
+==============================================================================
+
+  Cells the floor reclassifies: 18 of 54
+  Of those, cells with a NON-ZERO flip count (would be a real effect suppressed): 0
+
+    k = 1      strict_stop  back_of_queue_gated  raw delta +0.000e+00  se 7.0e-13  flips 0.00/0
+    k = 1      skip_ahead   back_of_queue_gated  raw delta +0.000e+00  se 7.0e-13  flips 0.00/0
+    k = 2      strict_stop  back_of_queue_gated  raw delta +0.000e+00  se 9.7e-13  flips 0.00/0
+    k = 2      skip_ahead   back_of_queue_gated  raw delta +0.000e+00  se 9.7e-13  flips 0.00/0
+    k = 3      strict_stop  back_of_queue_gated  raw delta +0.000e+00  se 1.1e-12  flips 0.00/0
+    k = 3      skip_ahead   back_of_queue_gated  raw delta -4.657e-10  se 1.1e-12  flips 0.00/0
+    k = 4      strict_stop  back_of_queue_gated  raw delta +0.000e+00  se 1.2e-12  flips 0.00/0
+    k = 4      skip_ahead   back_of_queue_gated  raw delta -4.657e-10  se 1.2e-12  flips 0.00/0
+    k = 6      strict_stop  back_of_queue_gated  raw delta +0.000e+00  se 1.4e-12  flips 0.00/0
+    k = 6      skip_ahead   back_of_queue_gated  raw delta -4.657e-10  se 1.4e-12  flips 0.00/0
+    k = 12     strict_stop  back_of_queue_gated  raw delta +0.000e+00  se 1.5e-12  flips 0.00/0
+    k = 12     skip_ahead   back_of_queue_gated  raw delta -4.657e-10  se 1.5e-12  flips 0.00/0
+    k = 24     strict_stop  back_of_queue_gated  raw delta +0.000e+00  se 9.2e-13  flips 0.00/0
+    k = 24     skip_ahead   back_of_queue_gated  raw delta +0.000e+00  se 9.3e-13  flips 0.00/0
+    k = 44     strict_stop  back_of_queue_gated  raw delta +0.000e+00  se 4.9e-13  flips 0.00/0
+    k = 44     skip_ahead   back_of_queue_gated  raw delta +0.000e+00  se 4.9e-13  flips 0.00/0
+    k = inf    strict_stop  back_of_queue_gated  raw delta +0.000e+00  se 4.9e-13  flips 0.00/0
+    k = inf    skip_ahead   back_of_queue_gated  raw delta +0.000e+00  se 4.9e-13  flips 0.00/0
+
+  VERDICT: PASS -- the floor suppresses only exact-allocation float residue.
+  Every reclassified cell above shows flips 0.00/0: the same members are funded in the
+  same order, and the delta is the residue of summing an identical allocation. The
+  largest residue suppressed is under a billionth of a dollar; the smallest substantive
+  figure reported anywhere in this addendum is $4.
+
+==============================================================================
+SECTION 2 -- BRIDGE CHECK ONTO MOO-163's k = 1 HIGH CELL
+==============================================================================
+
+  k = 1 IS the card (k-ii) endpoint MOO-163 priced. If this addendum's k = 1 column did
+  not land on MOO-163's reported high-cell deltas, the addendum would be measuring
+  something else and nothing below it would be usable. Cohort: 30 admitted + 5
+  refused = 35 in the queue, matching MOO-163 §4's high row.
+
+  Reported MOO-163 (k-ii) delta  v  this model's k = 1 delta, same convention
+  (both measured against the first-action reading, 20,000 draws):
+
+    strict_stop  back_of_queue    MOO-163     $-83   here      $67   (+/- $122 95% MC)
+                                  flips   mean 0.11 / worst 4      here mean 0.11 / worst 4
+    strict_stop  removed          MOO-163     $103   here      $11   (+/- $114 95% MC)
+                                  flips   mean 0.12 / worst 5      here mean 0.12 / worst 5
+    skip_ahead   back_of_queue    MOO-163      $-7   here     $-32   (+/- $64 95% MC)
+                                  flips   mean 0.14 / worst 5      here mean 0.13 / worst 5
+    skip_ahead   removed          MOO-163      $45   here      $-4   (+/- $65 95% MC)
+                                  flips   mean 0.14 / worst 6      here mean 0.14 / worst 5
+
+  READ THIS HONESTLY. The draw stream is not identical to MOO-163's -- that model drew
+  all three readings inside one loop and this one draws eleven keys inside one loop, so
+  the RNG consumption order differs. The k = 1 deltas therefore reproduce MOO-163's to
+  within Monte Carlo error, NOT to the dollar, and the flip counts are the stable
+  comparison because they are counts rather than differences of near-equal sums. What
+  the check establishes is that k = 1 here sits in the same low-hundreds-of-dollars,
+  not-distinguishable-from-zero regime MOO-163 reported, on the same cohort, with the
+  same flip magnitude. It does not re-ratify MOO-163's exact cell values and is not
+  offered as doing so.
+
+  THE asis / gated SPLIT, QUANTIFIED AT k = 1 (register section G disclosure):
+
+    strict_stop   asis delta      $67   gated delta       $0   gap     $-67
+    skip_ahead    asis delta     $-32   gated delta       $0   gap      $32
+
+  At k = 1 the two implementations are within Monte Carlo error of each other, which is
+  what makes the generalisation safe to introduce: it changes nothing where MOO-163
+  operated, and it matters only at the long chain lengths MOO-163 never evaluated.
+
+==============================================================================
+SECTION 3 -- THE CENTRAL CELL: IS THERE A CHAIN LENGTH THAT MOVES $0?
+==============================================================================
+
+  ANSWER: NO. NOT AT ANY CHAIN LENGTH, INCLUDING THE UNBOUNDED ONE -- AND THE ONLY
+  THING THAT WOULD CHANGE THAT IS THE CAP BINDING.
+
+  Fraction of draws in which total cohort demand fits inside the $3.00M cap at the
+  central estimate: 100.0%. Where demand fits, every application is accepted in
+  every order, so by Lemma 2 the ordering operation is a no-op and the delta is
+  identically zero -- not small, zero, with no Monte Carlo error to report.
+
+  The full sweep at the central estimate, all 6 construction cells:
+
+    k = 1       max |delta| over all 6 cells       $0   max flips mean 0.00 / worst 0
+    k = 2       max |delta| over all 6 cells       $0   max flips mean 0.00 / worst 0
+    k = 3       max |delta| over all 6 cells       $0   max flips mean 0.00 / worst 0
+    k = 4       max |delta| over all 6 cells       $0   max flips mean 0.00 / worst 0
+    k = 6       max |delta| over all 6 cells       $0   max flips mean 0.00 / worst 0
+    k = 12      max |delta| over all 6 cells       $0   max flips mean 0.00 / worst 0
+    k = 24      max |delta| over all 6 cells       $0   max flips mean 0.00 / worst 0
+    k = 44      max |delta| over all 6 cells       $0   max flips mean 0.00 / worst 0
+    k = inf     max |delta| over all 6 cells       $0   max flips mean 1.05 / worst 3
+
+  Largest absolute delta anywhere in the central sweep: $0.
+
+  SO THE ANSWER TO QUESTION 4 IS THE ONE THAT CLOSES IT, AND I WILL SAY IT PLAINLY:
+  THERE IS NO CHAIN LENGTH AT WHICH THE CENTRAL ESTIMATE STOPS BEING $0. ONLY IF THE CAP
+  BINDS. Chain length is not a second route to the cap binding, because by Lemma 2 a
+  chain cannot add demand -- it can only reorder the demand that is already there. The
+  cap binds if and only if the cohort is large enough, and cohort size is decided
+  upstream at MOO-49's clause (vi) reading, not here. If clause (vi) goes broad (~130
+  members), the cap binds in every scenario and MOO-163 needs repricing WITH OR WITHOUT
+  the chain; the chain is not the trigger and never was.
+
+==============================================================================
+SECTION 4 -- THE HIGH CELL (112.3% UTILISATION): THE CHAIN-LENGTH SWEEP
+==============================================================================
+
+  20,000 draws, seed 20261012, chain link 40 days (central). Cohort 30 + 5 = 35.
+  Demand fits inside the cap in 0.0% of draws, so this is the cell where order
+  decides something. Deltas are against the first-action reading, paired draw by draw.
+  The hard analytic bound from Section 1 is $204k.
+
+------------------------------------------------------------------------------
+  displacement = back_of_queue_asis   D 5 discipline = strict_stop
+------------------------------------------------------------------------------
+    first action  $2.45M   (baseline)
+    decision      delta       $32   +/-    $147 (95% MC)  [MOO-163's third reading]
+    k = 1         delta       $67   +/-    $122 (95% MC)  NOT distinguishable from 0   flips mean 0.11 / worst 4  [0.03% of bound]
+    k = 2         delta      $141   +/-    $182 (95% MC)  NOT distinguishable from 0   flips mean 0.16 / worst 5  [0.07% of bound]
+    k = 3         delta      $137   +/-    $225 (95% MC)  NOT distinguishable from 0   flips mean 0.25 / worst 5  [0.07% of bound]
+    k = 4         delta       $72   +/-    $260 (95% MC)  NOT distinguishable from 0   flips mean 0.35 / worst 6  [0.04% of bound]
+    k = 6         delta       $98   +/-    $315 (95% MC)  NOT distinguishable from 0   flips mean 0.53 / worst 7  [0.05% of bound]
+    k = 12        delta      $-51   +/-    $420 (95% MC)  NOT distinguishable from 0   flips mean 1.08 / worst 8  [0.02% of bound]
+    k = 24        delta      $236   +/-    $530 (95% MC)  NOT distinguishable from 0   flips mean 2.19 / worst 10  [0.12% of bound]
+    k = 44        delta      $287   +/-    $550 (95% MC)  NOT distinguishable from 0   flips mean 2.57 / worst 12  [0.14% of bound]
+    k = inf       delta      $287   +/-    $550 (95% MC)  NOT distinguishable from 0   flips mean 2.57 / worst 12  [0.14% of bound]
+
+------------------------------------------------------------------------------
+  displacement = back_of_queue_asis   D 5 discipline = skip_ahead
+------------------------------------------------------------------------------
+    first action  $2.47M   (baseline)
+    decision      delta      $-36   +/-     $81 (95% MC)  [MOO-163's third reading]
+    k = 1         delta      $-32   +/-     $64 (95% MC)  NOT distinguishable from 0   flips mean 0.13 / worst 5  [0.02% of bound]
+    k = 2         delta      $-56   +/-     $99 (95% MC)  NOT distinguishable from 0   flips mean 0.19 / worst 5  [0.03% of bound]
+    k = 3         delta      $-41   +/-    $122 (95% MC)  NOT distinguishable from 0   flips mean 0.29 / worst 6  [0.02% of bound]
+    k = 4         delta      $-97   +/-    $142 (95% MC)  NOT distinguishable from 0   flips mean 0.40 / worst 6  [0.05% of bound]
+    k = 6         delta      $-10   +/-    $174 (95% MC)  NOT distinguishable from 0   flips mean 0.61 / worst 7  [0.00% of bound]
+    k = 12        delta       $76   +/-    $238 (95% MC)  NOT distinguishable from 0   flips mean 1.24 / worst 8  [0.04% of bound]
+    k = 24        delta       $84   +/-    $307 (95% MC)  NOT distinguishable from 0   flips mean 2.40 / worst 10  [0.04% of bound]
+    k = 44        delta      $163   +/-    $321 (95% MC)  NOT distinguishable from 0   flips mean 2.79 / worst 11  [0.08% of bound]
+    k = inf       delta      $164   +/-    $321 (95% MC)  NOT distinguishable from 0   flips mean 2.79 / worst 11  [0.08% of bound]
+
+------------------------------------------------------------------------------
+  displacement = back_of_queue_gated  D 5 discipline = strict_stop
+------------------------------------------------------------------------------
+    first action  $2.45M   (baseline)
+    decision      delta        $0   +/-      $0 (95% MC)  [MOO-163's third reading]
+    k = 1         delta        $0   +/-      $0 (95% MC)  EXACTLY ZERO                 flips mean 0.00 / worst 0  [0.00% of bound]
+    k = 2         delta        $0   +/-      $0 (95% MC)  EXACTLY ZERO                 flips mean 0.00 / worst 0  [0.00% of bound]
+    k = 3         delta        $0   +/-      $0 (95% MC)  EXACTLY ZERO                 flips mean 0.00 / worst 0  [0.00% of bound]
+    k = 4         delta        $0   +/-      $0 (95% MC)  EXACTLY ZERO                 flips mean 0.00 / worst 0  [0.00% of bound]
+    k = 6         delta        $0   +/-      $0 (95% MC)  EXACTLY ZERO                 flips mean 0.00 / worst 0  [0.00% of bound]
+    k = 12        delta        $0   +/-      $0 (95% MC)  EXACTLY ZERO                 flips mean 0.00 / worst 0  [0.00% of bound]
+    k = 24        delta        $0   +/-      $0 (95% MC)  EXACTLY ZERO                 flips mean 0.00 / worst 0  [0.00% of bound]
+    k = 44        delta        $0   +/-      $0 (95% MC)  EXACTLY ZERO                 flips mean 0.00 / worst 0  [0.00% of bound]
+    k = inf       delta        $0   +/-      $0 (95% MC)  EXACTLY ZERO                 flips mean 0.00 / worst 0  [0.00% of bound]
+
+------------------------------------------------------------------------------
+  displacement = back_of_queue_gated  D 5 discipline = skip_ahead
+------------------------------------------------------------------------------
+    first action  $2.47M   (baseline)
+    decision      delta        $0   +/-      $0 (95% MC)  [MOO-163's third reading]
+    k = 1         delta        $0   +/-      $0 (95% MC)  EXACTLY ZERO                 flips mean 0.00 / worst 0  [0.00% of bound]
+    k = 2         delta        $0   +/-      $0 (95% MC)  EXACTLY ZERO                 flips mean 0.00 / worst 0  [0.00% of bound]
+    k = 3         delta        $0   +/-      $0 (95% MC)  EXACTLY ZERO                 flips mean 0.00 / worst 0  [0.00% of bound]
+    k = 4         delta        $0   +/-      $0 (95% MC)  EXACTLY ZERO                 flips mean 0.00 / worst 0  [0.00% of bound]
+    k = 6         delta        $0   +/-      $0 (95% MC)  EXACTLY ZERO                 flips mean 0.00 / worst 0  [0.00% of bound]
+    k = 12        delta        $0   +/-      $0 (95% MC)  EXACTLY ZERO                 flips mean 0.00 / worst 0  [0.00% of bound]
+    k = 24        delta        $0   +/-      $0 (95% MC)  EXACTLY ZERO                 flips mean 0.00 / worst 0  [0.00% of bound]
+    k = 44        delta        $0   +/-      $0 (95% MC)  EXACTLY ZERO                 flips mean 0.00 / worst 0  [0.00% of bound]
+    k = inf       delta        $0   +/-      $0 (95% MC)  EXACTLY ZERO                 flips mean 0.00 / worst 0  [0.00% of bound]
+
+------------------------------------------------------------------------------
+  displacement = removed              D 5 discipline = strict_stop
+------------------------------------------------------------------------------
+    first action  $2.45M   (baseline)
+    decision      delta      $-28   +/-    $138 (95% MC)  [MOO-163's third reading]
+    k = 1         delta       $11   +/-    $114 (95% MC)  NOT distinguishable from 0   flips mean 0.12 / worst 5  [0.01% of bound]
+    k = 2         delta       $13   +/-    $174 (95% MC)  NOT distinguishable from 0   flips mean 0.17 / worst 5  [0.01% of bound]
+    k = 3         delta       $40   +/-    $220 (95% MC)  NOT distinguishable from 0   flips mean 0.26 / worst 6  [0.02% of bound]
+    k = 4         delta      $102   +/-    $257 (95% MC)  NOT distinguishable from 0   flips mean 0.36 / worst 7  [0.05% of bound]
+    k = 6         delta      $-53   +/-    $314 (95% MC)  NOT distinguishable from 0   flips mean 0.55 / worst 8  [0.03% of bound]
+    k = 12        delta      $332   +/-    $420 (95% MC)  NOT distinguishable from 0   flips mean 1.12 / worst 9  [0.16% of bound]
+    k = 24        delta     $-228   +/-    $526 (95% MC)  NOT distinguishable from 0   flips mean 2.27 / worst 12  [0.11% of bound]
+    k = 44        delta      $-30   +/-    $547 (95% MC)  NOT distinguishable from 0   flips mean 2.57 / worst 12  [0.01% of bound]
+    k = inf       delta      $-30   +/-    $547 (95% MC)  NOT distinguishable from 0   flips mean 2.57 / worst 12  [0.01% of bound]
+
+------------------------------------------------------------------------------
+  displacement = removed              D 5 discipline = skip_ahead
+------------------------------------------------------------------------------
+    first action  $2.47M   (baseline)
+    decision      delta      $-32   +/-     $82 (95% MC)  [MOO-163's third reading]
+    k = 1         delta       $-4   +/-     $65 (95% MC)  NOT distinguishable from 0   flips mean 0.14 / worst 5  [0.00% of bound]
+    k = 2         delta      $-44   +/-    $100 (95% MC)  NOT distinguishable from 0   flips mean 0.20 / worst 6  [0.02% of bound]
+    k = 3         delta     $-133   +/-    $124 (95% MC)  distinguishable from 0       flips mean 0.31 / worst 6  [0.07% of bound]
+    k = 4         delta     $-122   +/-    $144 (95% MC)  NOT distinguishable from 0   flips mean 0.42 / worst 8  [0.06% of bound]
+    k = 6         delta     $-309   +/-    $176 (95% MC)  distinguishable from 0       flips mean 0.64 / worst 8  [0.15% of bound]
+    k = 12        delta     $-216   +/-    $237 (95% MC)  NOT distinguishable from 0   flips mean 1.28 / worst 9  [0.11% of bound]
+    k = 24        delta     $-211   +/-    $306 (95% MC)  NOT distinguishable from 0   flips mean 2.50 / worst 11  [0.10% of bound]
+    k = 44        delta     $-154   +/-    $320 (95% MC)  NOT distinguishable from 0   flips mean 2.80 / worst 11  [0.08% of bound]
+    k = inf       delta     $-154   +/-    $320 (95% MC)  NOT distinguishable from 0   flips mean 2.80 / worst 11  [0.08% of bound]
+
+------------------------------------------------------------------------------
+  THE SWEEP'S OWN VERDICT ON THE BOUND.
+
+  Largest |delta| anywhere in the high-cell sweep: $332
+      in cell k = 12 / strict_stop / removed
+  As a fraction of the $204k analytic bound: 0.163%
+  BOUND RESPECTED: YES
+
+  The sweep does not approach the bound; it stays three orders of magnitude inside it.
+  That is expected and it is not an argument that the bound is loose. The bound is the
+  guarantee -- the thing that holds in the worst cohort the model never drew -- and the
+  sweep is the central tendency. Both are reported because the Policy Director asked for
+  a bound and a bound is not a mean.
+
+  THE CELLS THAT READ "distinguishable from 0", REPORTED RATHER THAN SWEPT UP.
+  2 of the 54 swept cells cross the 1.96 x se line:
+      k = 3     skip_ahead   removed                 $-133
+      k = 6     skip_ahead   removed                 $-309
+  At a 95% threshold, 54 independent tests produce 2.7 such cells BY CHANCE, so
+  2 is what an all-zero truth looks like, not evidence against it. The cells are also
+  not independent -- they share a draw stream -- and Section 6 shows cells of exactly
+  this size move by hundreds of dollars on a change of seed alone. I am naming them
+  rather than omitting them: if the Policy Director wants them treated as real, the
+  largest is $309, which is 0.15% of the bound and does not change any answer
+  below. None of the four answers rests on the sweep in any case; they rest on
+  Lemmas 1-2, which do not use the draws.
+
+==============================================================================
+SECTION 4b -- QUESTION 3: DOES THE DISPLACEMENT FIGURE MOVE?
+==============================================================================
+
+  MOO-163 reported 0.11-0.14 members mean, 4-6 in the worst draw, on a single 30-day
+  retention. This is a COUNT OF MEMBERS, not a dollar figure, and it is the only
+  quantity Section 1 did not settle in advance. Here it is across the chain:
+
+  mean / worst-draw members whose funded-or-wait-listed outcome flips, high cell
+
+    chain      asis/strict    asis/skip      gated/strict   gated/skip     removed/strict removed/skip   
+               (displ./D 5)   (displ./D 5)   (displ./D 5)   (displ./D 5)   (displ./D 5)   (displ./D 5)   
+    k = 1      0.11/4         0.13/5         0.00/0         0.00/0         0.12/5         0.14/5
+    k = 2      0.16/5         0.19/5         0.00/0         0.00/0         0.17/5         0.20/6
+    k = 3      0.25/5         0.29/6         0.00/0         0.00/0         0.26/6         0.31/6
+    k = 4      0.35/6         0.40/6         0.00/0         0.00/0         0.36/7         0.42/8
+    k = 6      0.53/7         0.61/7         0.00/0         0.00/0         0.55/8         0.64/8
+    k = 12     1.08/8         1.24/8         0.00/0         0.00/0         1.12/9         1.28/9
+    k = 24     2.19/10        2.40/10        0.00/0         0.00/0         2.27/12        2.50/11
+    k = 44     2.57/12        2.79/11        0.00/0         0.00/0         2.57/12        2.80/11
+    k = inf    2.57/12        2.79/11        0.00/0         0.00/0         2.57/12        2.80/11
+
+  k = 1   spans 0.00 to 0.14 members mean  -- MOO-163's 0.11-0.14, reproduced in range
+  k = inf spans 0.00 to 2.80 members mean
+
+  SO THE DISPLACEMENT FIGURE DOES MOVE, AND ON TWO OF THE THREE BRANCHES IT RISES WITH
+  THE CHAIN. That is the one substantive thing chaining changes and it deserves to be
+  said clearly rather than buried.
+
+  FIRST, WHAT THE COUNT COUNTS, because the direction is unreadable without it. A flip
+  is a member whose funded-or-wait-listed outcome DIFFERS from the comparison reading's
+  -- in EITHER direction. It is a count of members who move, not a count of members who
+  lose. The three branches move different people:
+
+    `back_of_queue_asis` -- MOO-163's unmodified code path. A longer chain pushes the
+      reconsideration applicant's nominal ordering date further out, so the chain
+      DISPLACES HER. The count rises 0.13 -> 2.79 and saturates when her date
+      leaves the pilot. ON THIS BRANCH THE RISING COUNT IS HER LOSS.
+    `removed` -- MOO-163's second code path, unchanged. She drops out only if retention
+      ended before the pool exhausted, and a long chain means it did not, so the chain
+      PROTECTS HER: she is funded where the baseline dropped her. The count rises
+      0.14 -> 2.80 for the OPPOSITE reason to asis. ON THIS BRANCH THE RISING COUNT IS
+      HER GAIN, and the members who move against her are the ones behind her in a queue
+      that was already going to exhaust.
+    `back_of_queue_gated` -- the faithful generalisation. Flat at 0.00 at every chain
+      length including unbounded: relegation is conditioned on retention having ended
+      before exhaustion, and on this cohort that condition never changes an outcome.
+
+  SO THE TWO RISING BRANCHES RISE FOR OPPOSITE REASONS, AND ONLY ONE OF THEM IS A COST
+  TO THE D 5 WAITING-LIST APPLICANT MOO-125 IDENTIFIES. Read as displacement OF a third
+  party, the relevant branch is `removed`, where the chain funds the reconsideration
+  applicant and someone behind her waits. Read as displacement of the applicant herself,
+  it is `asis`, which is the artefact branch -- it relegates a member who, on a long
+  chain, never actually lost the retained date. The count is the same size either way,
+  which is why I report it in members and name the branch rather than collapsing it.
+
+  Under a single 30-day retention MOO-163's two branches were indistinguishable, within
+  $200 and 0.03 members of each other. CHAINING SEPARATES THEM -- not in magnitude,
+  where asis and removed stay within 0.01 members of each other all the way to the
+  unbounded limit, but in WHO MOVES. The third branch, gated, is separated from both at
+  every k including k = 1, and that separation is this addendum's disclosed change to
+  the MOO-163 code path, quantified in Section 2.
+
+  AND THE MAGNITUDE IS THE POINT, BUT STATE IT PROPERLY. The worst mean across the
+  entire sweep, every chain length and every construction branch, is 2.80 members over
+  48 MONTHS -- a roughly 21x rise on MOO-163's 0.14. THAT IS A REAL MULTIPLE AND I AM NOT
+  GOING TO HIDE IT BEHIND THE WORD "FRACTION". MOO-163's test was whether the figure
+  stays below the resolution of an estimate, and the honest version of that test is a
+  comparison against the resolution of the count it sits inside, not against 1.0:
+
+    the underlying participant count is "18, range 9 to 30" -- a band 21 members wide,
+      so the count itself is not resolved to better than roughly 9 members either side;
+    the high cell's cohort is 35, and 2.80 is 8.0% of it;
+    the high cell is itself an upper bound -- MOO-71 §3 marks both utilisation figures
+      as upper bounds -- so this is the worst branch of the worst cell.
+
+  2.80 members is therefore still inside the resolution of the inputs, and the
+  answer to question 3 is STILL BELOW -- but by a narrower margin than at MOO-163, and
+  on the artefact branch rather than the faithful ones. If the Policy Director wants a
+  single number for the chain's displacement cost, it is 2.8 members over the pilot
+  on the upper-bound cell, against a count known to roughly +/-9.
+
+==============================================================================
+SECTION 5 -- SENSITIVITY: DOES THE CHAIN-LINK LENGTH DRIVE ANYTHING?
+==============================================================================
+
+  CHAIN_LINK_DAYS is analyst judgment (register section F) and the result must not
+  depend on it. Test: re-run the high cell at the low (33-day), central
+  (40-day) and high (120-day) link, and compare the SATURATED cell -- the
+  horizon-filling chain and the unbounded limit -- across the three.
+  5,000 draws here, a quarter of the headline, which is enough to separate link
+  lengths if they separate at all.
+
+    link =  33 days (low)
+        k = 44    back_of_queue_asis   delta    $-451   flips mean 2.57
+        k = 44    back_of_queue_gated  delta       $0   flips mean 0.00
+        k = 44    removed              delta     $582   flips mean 2.56
+        k = inf   back_of_queue_asis   delta    $-451   flips mean 2.57
+        k = inf   back_of_queue_gated  delta       $0   flips mean 0.00
+        k = inf   removed              delta     $582   flips mean 2.56
+
+    link =  40 days (central)
+        k = 44    back_of_queue_asis   delta    $-451   flips mean 2.57
+        k = 44    back_of_queue_gated  delta       $0   flips mean 0.00
+        k = 44    removed              delta     $582   flips mean 2.56
+        k = inf   back_of_queue_asis   delta    $-451   flips mean 2.57
+        k = inf   back_of_queue_gated  delta       $0   flips mean 0.00
+        k = inf   removed              delta     $582   flips mean 2.56
+
+    link = 120 days (high)
+        k = 44    back_of_queue_asis   delta    $-451   flips mean 2.57
+        k = 44    back_of_queue_gated  delta       $0   flips mean 0.00
+        k = 44    removed              delta     $582   flips mean 2.56
+        k = inf   back_of_queue_asis   delta    $-451   flips mean 2.57
+        k = inf   back_of_queue_gated  delta       $0   flips mean 0.00
+        k = inf   removed              delta     $582   flips mean 2.56
+
+  The k = inf row is IDENTICAL across all three link lengths by construction -- the
+  sentinel does not use the link at all -- and the k = 44 rows land on it, because 44
+  links fill the 1,440-day pilot at every link length tested. THE LINK LENGTH DECIDES
+  ONLY HOW FAST THE CHAIN SATURATES, NOT WHAT IT SATURATES AT. No conclusion in this
+  addendum rests on CHAIN_LINK_DAYS, which is why an analyst-judgment input was
+  acceptable there.
+
+  The same disposal applies to CHAIN_CONTINUATION_RATE (10-70%, analyst judgment): the
+  deterministic sweep evaluates k = 1 through k = inf, which brackets every continuation
+  rate including 1.00, so no reported figure depends on it either.
+
+  WHAT DOES THE ANSWER DEPEND ON? The same two things it depended on at MOO-163, both
+  upstream of this issue:
+    1. WHETHER THE CAP BINDS AT ALL -- i.e. MOO-49's clause (vi) reading. Narrow gives
+       the counts used here and the cap does not bind at the central estimate (67.4%);
+       broad gives ~130 members and it binds everywhere. A 10% move in the cohort count
+       moves the high-cell answer far more than a 10x move in chain length does.
+    2. WHICH DISPLACEMENT CONSTRUCTION D 4 / D 5 REQUIRES -- Statutory Researcher's, not
+       mine. It was worth under $200 at MOO-163 and chaining raises its stake, in members
+       rather than dollars. That is a reportable consequence of the chain and it is in
+       Section 4b.
+
+==============================================================================
+SECTION 6 -- SEED-SIGN TEST AT THE LONG CHAIN
+==============================================================================
+
+  MOO-163 §5's most informative check: a high-cell quantity recomputed on a fresh draw
+  sequence came back with the OPPOSITE SIGN, and a quantity whose sign is a property of
+  the seed is zero. Repeat it at the long chain, where the chain's effect is largest.
+  Seeds 20261012 and 20261013, 5,000 draws each, high cell, k = 44 and k = inf.
+
+    k = 44    back_of_queue_asis   strict_stop  seed A    $-451   seed B    $-228  +/-    $1k  not distinguishable
+    k = 44    back_of_queue_asis   skip_ahead   seed A     $387   seed B     $292  +/-   $649  not distinguishable
+    k = 44    back_of_queue_gated  strict_stop  seed A       $0   seed B       $0  +/-     $0  exactly zero, both seeds
+    k = 44    back_of_queue_gated  skip_ahead   seed A       $0   seed B       $0  +/-     $0  exactly zero, both seeds
+    k = 44    removed              strict_stop  seed A     $582   seed B     $161  +/-    $1k  not distinguishable
+    k = 44    removed              skip_ahead   seed A    $-308   seed B    $-325  +/-   $648  not distinguishable
+    k = inf   back_of_queue_asis   strict_stop  seed A    $-451   seed B    $-228  +/-    $1k  not distinguishable
+    k = inf   back_of_queue_asis   skip_ahead   seed A     $389   seed B     $282  +/-   $649  not distinguishable
+    k = inf   back_of_queue_gated  strict_stop  seed A       $0   seed B       $0  +/-     $0  exactly zero, both seeds
+    k = inf   back_of_queue_gated  skip_ahead   seed A       $0   seed B       $0  +/-     $0  exactly zero, both seeds
+    k = inf   removed              strict_stop  seed A     $582   seed B     $161  +/-    $1k  not distinguishable
+    k = inf   removed              skip_ahead   seed A    $-308   seed B    $-325  +/-   $648  not distinguishable
+
+  0 of 12 long-chain cells change sign on a change of seed alone, and
+  12 of 12 are not distinguishable from zero once the Monte Carlo interval
+  is carried. Largest seed-to-seed swing in a single cell: $421.
+
+  SAY THIS ACCURATELY RATHER THAN CONVENIENTLY. MOO-163's version of this check produced
+  an actual sign flip and that was the cleanest possible demonstration. THIS RUN DID NOT
+  REPRODUCE A SIGN FLIP -- every cell kept its sign across the two seeds. That is a
+  WEAKER result than MOO-163's and I am not going to present it as the same thing. What
+  it does show is the next-strongest form: every cell's delta sits inside its own 95%
+  Monte Carlo interval, and the seed-to-seed swing reaches $421 -- larger than
+  half of the printed deltas themselves -- so the seed is still carrying a material
+  share of every figure in the table. The right reading is that the
+  long-chain dollar deltas are no better resolved than MOO-163's were, NOT that they
+  have been shown to be exactly zero -- and that is precisely why question 2 is answered
+  with the analytic $204k bound, which does not depend on any of these draws, rather
+  than with a simulated point estimate that does.
+
+  The flip COUNTS are not seed artefacts -- they are one-sided by construction, a count
+  cannot be negative -- which is again why question 3 is answered in members.
+
+==============================================================================
+SECTION 7 -- THE ADMINISTRATIVE CHANNEL (NOT ONE OF THE FOUR QUESTIONS)
+==============================================================================
+
+  MOO-163 priced one request per applicant and found $0 administrative cost. A chain is
+  by definition MORE REQUESTS, so administrative cost is a channel the earlier price did
+  not cover. It is mine to report whether or not it was asked for, so here it is.
+
+  Requests the Board must process over the whole 48-month pilot, high cell:
+    refused applicants in the cohort                 5
+    x reconsideration-seek rate (15%-60%, judgment)   0.8 to 3.0
+    x chain length k                                 x k
+
+    k = 1    0.8 to 3.0 requests over 48 months   = 0.2 to 0.8 per year
+    k = 4    3.0 to 12.0 requests over 48 months   = 0.8 to 3.0 per year
+    k = 12   9.0 to 36.0 requests over 48 months   = 2.2 to 9.0 per year
+    k = 44   33.0 to 132.0 requests over 48 months   = 8.2 to 33.0 per year
+
+  Even at the horizon-filling chain and the high end of the seek rate, this is a
+  single-digit-per-year volume on top of a Board that already runs a 90-day M 2
+  decision process. It will not support a position, a system change, or a line of
+  administrative cost, and MOO-163's $0 administrative finding survives chaining.
+  REPORTED AS A FINDING AND NOT AS A COST: no range I would defend on this channel
+  reaches the threshold at which a Virginia fiscal note reports a figure rather than
+  "can be absorbed with existing resources".
+
+  Two caveats on this channel, both honest limits rather than hedges:
+    - clause (i) of the TOLLING sentence bars a second request on the same determination
+      from tolling, but on the reading handed to me it does not reach retention. Whether
+      successive requests about SUCCESSIVE waiting-list placements are even "the same
+      determination" is STATUTORY RESEARCHER'S question and I have not assumed an answer
+      -- the sweep covers k = 1 (no chaining possible) through k = inf regardless.
+    - this counts Board requests, not litigation. Legal exposure from an uncapped
+      chainable entitlement is RED TEAM / COUNSEL REVIEWER'S and I am not pricing it.
+
+==============================================================================
+SECTION 8 -- EXTERNAL SANITY CHECK, AND THE FOUR ANSWERS
+==============================================================================
+
+  SANITY CHECK, AND ITS LIMIT, STATED AS MOO-163 STATED IT. No external quantitative
+  anchor exists: MOO-71 §3 establishes that no published count of § 51.1-142.2 military
+  purchases exists, so there is nothing to scale from another state or from a prior
+  Virginia fiscal impact statement. The check available is a CONVENTION check against
+  Virginia fiscal-note practice on capped, self-executing programmes, and the convention
+  is that a provision which cannot move an appropriation and cannot move a statutory
+  ceiling is reported at $0 with the ceiling cited. That convention is satisfied here and
+  it validates the $0 line.
+  IT CANNOT VALIDATE THE LAPSE DELTAS OR THE FLIP COUNTS. Those are internal to this
+  model and have no external referent. Said plainly, as at MOO-163.
+
+  A second check IS available to this addendum and MOO-163 could not run it: the
+  INTERNAL CONSISTENCY check between Section 1's analytic bound and Section 4's
+  simulation. The lemmas predict every swept cell lands strictly inside $204k. The
+  largest observed is $332, at 0.163% of the bound. AGREEMENT. Had any cell
+  exceeded the bound, the analytic claim would be falsified and that is the result I
+  would have had to report.
+
+------------------------------------------------------------------------------
+  THE FOUR ANSWERS, IN THE ORDER ASKED
+------------------------------------------------------------------------------
+
+  1. IS THE $204,000 BOUND STILL ANALYTIC UNDER CHAINING, OR DOES THE CHAIN BREAK THE
+     DERIVATION?
+     STILL ANALYTIC. The derivation is untouched. It quantifies over ALL orderings of a
+     FIXED cohort against a FIXED $3.00M pool, and a chain of any length -- including an
+     unbounded one -- is just another ordering of the same cohort. The bound is symmetric
+     by construction and chaining does not touch it. The chain cannot add demand either,
+     because it is the same member filing again about the same election.
+
+  2. IF IT IS NOT, WHAT IS THE BOUND, AND IS IT STILL LAPSE RATHER THAN COST?
+     The bound is unchanged at |delta| < $204k over 48 months, still from D 2's own
+     $170k per-election ceiling x 1.2, and still LAPSE rather than cost: D 2's
+     $3.00M is a self-executing ceiling, not an appropriation, so reordering changes which
+     reservations fill it and never how much is authorised. No chain length can cause a
+     dollar to be spent that D 2 does not already authorise. Largest value actually
+     observed anywhere in the sweep: $332, 0.163% of the bound.
+
+  3. DOES THE DISPLACEMENT FIGURE MOVE, AND DOES IT STAY BELOW THE RESOLUTION OF AN
+     ESTIMATE?
+     IT MOVES, IT RISES, AND IT STILL STAYS BELOW. On two of the three displacement
+     branches the count of members who move rises roughly 21x with the chain; on
+     the third (gated) it is flat at zero. The two rising branches rise for OPPOSITE
+     reasons and Section 4b separates them: under `removed` the chain FUNDS the
+     reconsideration applicant and the members behind her in an exhausting queue are
+     the ones who move -- that is the D 5 waiting-list applicant MOO-125 identifies;
+     under `asis`, MOO-163's unmodified code path, the chain displaces HER, which is
+     the artefact reading. Naming which party moves is the substantive thing chaining
+     changes. ON MAGNITUDE, THE HONEST ANSWER IS "STILL BELOW, BUT BY LESS":
+     the worst mean anywhere in the sweep rises from MOO-163's 0.14 members to
+     2.80 members over 48 months -- a real multiple, not a rounding wobble -- but it
+     is still inside the resolution of the inputs, because the participant count it
+     sits inside is itself only known as "18, range 9 to 30", and the cell is a
+     high-take-up scenario MOO-71 §3 marks as an upper bound. Section 4b states the
+     comparison rather than asserting the conclusion.
+
+  4. IS THERE A CHAIN LENGTH AT WHICH THE CENTRAL ESTIMATE STOPS BEING $0?
+     NO. ONLY IF THE CAP BINDS -- and that is the plain answer, so I am giving it plainly.
+     At the central estimate demand fits inside the cap in 100.0% of draws, so every
+     application is accepted in every order and the ordering operation is a no-op at
+     every k including unbounded. Chain length is NOT a second route to the cap binding,
+     because a chain cannot add demand. The cap binds on cohort size, and cohort size is
+     decided at MOO-49's clause (vi) reading, upstream of this issue. Broad clause (vi)
+     (~130 members) makes the cap bind in every scenario and requires repricing WITH OR
+     WITHOUT the chain. THE CHAIN IS NOT A TRIGGER. MOO-49 still is.
+
+------------------------------------------------------------------------------
+  THE ONE SENTENCE FOR THE EDITOR
+------------------------------------------------------------------------------
+
+  Serial chaining of Edit 3's uncapped 30-day filing-date retention does not move the
+  MOO-163 price: the bound stays at |delta| < $204k over the 48-month pilot and stays
+  lapse rather than cost, because the bound quantifies over all queue orderings of a
+  fixed cohort and a chain of any length is only another ordering, so the central
+  estimate remains $0 at every chain length including an unbounded one -- the central
+  estimate stops being $0 only if the cap binds, which turns on MOO-49's clause (vi)
+  reading and not on the chain.
+
+  RELEASE GATE: STILL CLEARS. The MOO-163 $0 line is unchanged.
+
+==============================================================================
