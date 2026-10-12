@@ -15,12 +15,20 @@ nothing here states or implies that counsel has cleared the proposal. Pre-decisi
 - `check187_r63.py` — reproduces every count the addendum relies on. Counts over **enacted §1 only**,
   which is the convention the cut's §13.1 adopts and the right one; finding **F21** is about the fact
   that the committed `verify_r6.py` does not follow it and fails on the current base.
+- `check187_r65.py` — **the current check.** The addendum's **§7**: the re-verification at **store
+  revision 65**, the twelfth base move and the first since revision 62 to land inside a provision this
+  cut amends (MOO-191's 137-character advisory in **subdivision D 1**). 48 checks, **0 failures**. It
+  isolates the change by proof rather than assertion, re-runs every invariant of the cut on the new
+  base, re-tests the textual predicate of every live finding, and carries the one new finding, **F27**.
 
-**Running total: 26 findings — 0 fatal, 11 serious, 8 moderate, 7 minor — and 19 null results.** The
+**Running total: 27 findings — 0 fatal, 11 serious, 9 moderate, 7 minor — and 19 null results.** The
 single most serious is **F1** (Edit 164-1's 48-day cap is itself act-keyed, so M 2's tolling endpoint is
 not closed and §0.1's headline claim is false). The most serious of the second pass is **F19** (candidate
 164-7 carries one of MOO-141 Edit 1's two trigger limbs, so it ends the member's tolling without
-reaching the sentence that gives her a retirement date when tolling ends).
+reaching the sentence that gives her a retirement date when tolling ends). **F27** is §7's and is
+against the base rather than the cut: MOO-191's advisory sits in D 1's *"shall also state"* series, so
+omitting a sentence of exhortation is a reviewable failure that tolls under M 2 and, after option (d),
+reaches circuit court.
 
 ## To reproduce
 
@@ -29,6 +37,7 @@ Fetch the `bill-text-s8` document body from [MOO-42](/MOO/issues/MOO-42) to `bil
 ```
 python3 check187.py bill.md        # first pass, whole-document counts
 python3 check187_r63.py bill.md    # addendum, counts over enacted §1 only
+python3 check187_r65.py           # §7, reads head65.md (live) + head64.md (previous base)
 ```
 
 It asserts the review's definite results and prints the rest: the 19 occurrences enumerated, the
@@ -39,9 +48,15 @@ of them (finding F1), the five `shall act upon` duties and their commencements (
 `period allowed` phrases (finding F13), the eight `pending` uses, the four apostrophes, and the
 `no later than` count.
 
-**The base this review ran against is store revision 62**, not the revision 61 the cut was built on.
-That matters for finding F7 and for nothing else: the six anchors still resolve exactly once and the
-delta is still +490 on revision 62, on revision 62 with the MOO-141 patch at revision 5, and with it at
-revision 6. The team's own `verify_r6.py` was run unmodified against the live base with 0 failures.
+**The base has moved under this review three times.** The first pass ran against **store revision 62**,
+not the revision 61 the cut was built on — that matters for finding F7 and for nothing else. The
+addendum ran against **store revision 64**, where F7 is discharged. §7 re-verifies at **store
+revision 65**. On every one of those bases the six anchors resolve exactly once, the five held
+candidates resolve exactly once, the delta is **+490**, the classification is **21** and the
+apostrophes are **four, all in G 4** — bare, with the MOO-141 patch at revision 5, and with it at
+revision 6. **No base move has required a re-cut.** The team's own `verify_r6.py` was run unmodified
+against store revision 62 with 0 failures and against store revision 63 with an `AssertionError`,
+which is finding **F21** — it counts whole-document, and the §0 narrative now quotes four of these
+strings.
 
 **No team file was modified and nothing was written to the store.**

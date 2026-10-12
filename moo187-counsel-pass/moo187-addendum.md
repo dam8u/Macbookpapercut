@@ -530,3 +530,151 @@ that phrase. The withdrawn argument stays withdrawn.
 
 **Internal risk analysis. Not legal advice, not a legal opinion the organization can rely on, and
 nothing in it states or implies that counsel has cleared the proposal. Pre-decisional and internal.**
+
+---
+
+## 7. Re-verification at store revision 65 — the twelfth base move, and the first since revision 62 to land inside a provision this cut amends
+
+**Reproduced by `check187_r65.py` in this directory: 48 checks, 0 failures.** Run it against the live
+`bill-text-s8` body as `head65.md` with the addendum's `head64.md` beside it.
+
+### 7.1 What moved
+
+Store revision 65 ([MOO-191](/MOO/issues/MOO-191), the designation-review advisory) makes **one
+insertion in subdivision D 1** and nothing else in enacted §1:
+
+> …or the person designated has predeceased the member and no other designation has been made; **that
+> the member is advised to review the member's designation of beneficiary under subsection A of
+> § 51.1-162 before completing payment;** that subsection C of § 51.1-162 provides a retirement
+> allowance…
+
+**137 characters, one line, and the line is D 1.** The script proves the isolation rather than asserting
+it: enacted §1 has the same 193 lines, exactly one differs, that line is D 1, and **that line with the
+137 characters deleted is byte-identical to store revision 64.** So no other word of §1 moved. The
+whole document grew by 21,497 characters; all of that is §0 and §6 record.
+
+**D 1 is not an incidental subdivision for this cut.** It is the site of **Edit 164-5**, of **candidate
+164-8**, and of the ordinal cross-reference *"the second sentence of subdivision M 2"* that §13.9 warns
+about. The move is therefore material and was verified, not waved through.
+
+### 7.2 Every invariant of the cut, re-run on the new base — all hold
+
+| Invariant | Result at store revision 65 |
+|---|---|
+| Six edit anchors, three bases (bare, + MOO-141 patch rev 5, + rev 6) | **1 each, 18 of 18** |
+| Five held candidates (c-1, c-2, card (i), 164-7, 164-8), three bases | **1 each, 15 of 15** |
+| Amendment delta | **+490 on all three bases** |
+| Occurrence classification | `acts upon` 8, `act upon` 9, `acting upon` 2, `action upon` 2 — **21**, and §13.3's split row for row |
+| Apostrophe normalisation | **4 U+2019, all four inside subdivision G 4, 0 elsewhere** |
+| Edit 164-5's FIND (in the moved subdivision) | **1** |
+| Candidate 164-8's FIND (in the moved subdivision) | **1** |
+
+**MOO-191 used ASCII apostrophes** — its insertion contains two possessives and adds **no** U+2019, so
+the normalisation record survives a move into the subdivision that could most easily have broken it.
+MOO-191's insertion also contains **no** occurrence of the `act/acts/acting/action upon` family, which
+is why the 21-count is unchanged.
+
+### 7.3 Every live finding, re-tested on the new base
+
+Nothing is discharged and nothing is escalated. **F1 remains the most serious finding in the review and
+remains unanswered**: after both patches `acts upon` still occurs **nine** times in §1, **two** of them
+inside Edit 164-1's own READ, and the READ still carries `in no case later than 48 days after the Board
+acts upon the request`. F3, F6, F12, F19, F22, F23, F24, F25 and F26 all re-test on their words. F21 is
+unchanged and still the cheapest to fix: the four anchors that differ whole-document from §1 differ by
+the same amounts they did at store revision 64 (2, 2, 2 and 4 against 1, 1, 1 and 1).
+
+The three D 1 null results were the ones at risk and all three hold: §13.4's *"first required"* still
+occurs **once** in §1 and still in the filing-duty sentence; §13.5's vehicle gap is still total
+(`amend`, `withdraw`, `replace`, `replacing`, `substitute`, `revoke`, `rescind` all **zero** in D 1's
+now 7,351 characters); and §13.9's ordinal reference still resolves, because **MOO-191 inserted nothing
+into M 2** — M 2 is byte-identical to store revision 64 — so the referent of *"the second sentence of
+subdivision M 2"* is unmoved. MOO-191's insertion sits at offset 2,985 in D 1 and the ordinal reference
+at 4,278, i.e. **before** it, which is harmless: the fragility §13.9 records is about insertions into
+**M 2**, not into the referring subdivision.
+
+### 7.4 Correction to my own F12 row
+
+The addendum's **F12** row says the remaining *"the 90 days allowed by this subsection"* stands against
+*"**three** instances of `the period allowed by this section for acting upon the request`."* **Three is
+the count of the formula, not of that string.** After the cut the formula
+`the period allowed by this section for acting upon …` occurs three times in §1, but only **two** read
+*"the request"*; the third is **Edit 164-4's site and reads *"it"***, and it is in the subsection A
+definition, not in M 2.
+
+**The finding is unaffected and is arguably cleaner stated correctly.** What F12 asserts is two formulas
+for one concept *inside M 2*, and inside M 2 after the cut it is **one of each**: one
+*"the 90 days allowed by this subsection"* (option (d)'s expiry-notice sentence) against one
+*"the period allowed by this section for acting upon the request"* (clause (ii), from Edit 164-3).
+That is exactly the defect, with no reliance on the two sites outside M 2.
+
+### 7.5 F27 — one new finding, and it is against the base, not against this cut
+
+| | |
+|---|---|
+| **Severity** | **Moderate** |
+| **Category** | Litigation surface / unintended effect |
+| **Target** | Store revision 65's insertion in D 1, read against D 1's own failure-to-state sentence and M 2 |
+| **Owner** | **Not MOO-164.** This is MOO-191's text and the Policy Director's to route — a §7 card, not an edit to this cut |
+
+**What is wrong.** The advisory was inserted into the series governed by *"The Board's certification
+shall also state that …"*, so it is a **matter this subdivision requires to be stated**. D 1's own next
+sentence then provides, with no carve-out and no exception:
+
+> **A failure to state in the Board's certification every matter this subdivision requires to be stated
+> in it is a failure of the Board to state in a certification a matter this section requires to be
+> stated in it for the purposes of subsection M**; a person adversely affected by it may seek review
+> under subsection M…
+
+So omitting one sentence of **exhortation** is now a reviewable failure on the same footing as omitting
+the certified subsidy or the completion date. M 2 confirms the route: it gives reconsideration for *"a
+failure of the Board to state in a certification or notice a matter this section requires to be stated
+in it"*.
+
+**The concrete failure scenario, with a plaintiff, a claim and a venue.** The Board issues a
+certification that is complete in every substantive respect — subsidy, valuation date, completion date,
+both qualifying retirement dates, the G 5 cancellation right, the whole death-benefit recital — and
+omits only the new advisory. The member retires, and dies four years later without having updated a
+designation made in 1998. The person who would have been designated is, in M 2's own words, a *"person
+who has claimed any benefit payable on the death of a member"* and so may file for reconsideration;
+D 1 expressly contemplates review by *"a person adversely affected by it"* and *"where that person is
+not the member."* They plead that the omission of the advisory caused the member not to review the
+designation. Under **option (d)** as enacted at store revision 63, if the Board does not act the request
+is **deemed denied** and that denial is a **case decision**, which carries a right of judicial review
+in circuit court under **Article 5 (§ 2.2-4025 et seq.) of the Administrative Process Act**. And the
+filing tolls the member's or applicant's periods under M 2 — the clock **this cut exists to bound**.
+
+**Why it is a finding and not a quibble.** Two reasons. First, the advisory adds **exhortation, not
+information**: D 1 already stated the § 51.1-162 subsection A machinery before MOO-191 — *"subsection A
+of that section provides for the payment of the member's accumulated contributions to the person the
+member has designated"* — so the omission can cause no informational loss, yet it carries the same
+remedy as a substantive omission. Second, it **enlarges the population** the six edits govern. Edit
+164-1's cap, clause (ii) as amended by Edit 164-3 and the D 4 / D 5 retention now run for a class of
+requests whose merits are a missing pleasantry. That makes the cut's repairs more useful, not less —
+but it also means **F1's unbounded cases and the F19/F22 gaps are reachable on facts where nobody lost
+anything**, which is the worst place to be litigating them.
+
+**Suggested direction, one clause, with a model in the same sentence.** D 1 already knows how to switch
+one consequence off for one failure: *"the second sentence of subdivision M 2 does not apply to such a
+failure."* The same technique will do here — name the advisory expressly as a matter whose omission is
+not a failure for the purposes of subsection M, or move it out of the *"shall also state"* series into a
+provision that imposes no stating duty. **I am not recommending the words**; this is MOO-191's text, the
+drafting is the Drafting Specialist's, and whether an advisory should be enforceable at all is the
+Policy Director's call.
+
+### 7.6 Running total and routing for this section
+
+**27 findings — 0 fatal, 11 serious, 9 moderate, 7 minor — and 19 null results** (F27 added at moderate;
+no finding discharged and none escalated by this base move). The six edits' verdict is **unchanged**:
+cleared subject to **F1**, **F3** and **F6**; candidate **164-7** recommended **with F19's missing
+clause**; **F21** to be fixed before anything is applied.
+
+- **Drafting Specialist** — nothing new for you in §7. §7.4 is a correction to my own F12 row, not to
+  your text, and it leaves F12 standing.
+- **Policy Director** — **F27** is yours to route and it is **not** a MOO-164 item. The cut's anchors,
+  delta, classification and apostrophes all survive the twelfth base move with 0 failures, so no
+  re-cut is needed on account of store revision 65.
+- **Editor** — the risk section needs **no** change from §7 except that the base is now store
+  revision 65. **F27** belongs in a MOO-191 note, not in this cut's risk section.
+
+**Internal risk analysis. Not legal advice, not a legal opinion the organization can rely on, and
+nothing in it states or implies that counsel has cleared the proposal. Pre-decisional and internal.**
