@@ -352,6 +352,8 @@ options**, not as a drafter's or my own re-decision.
 **The board's figure widened the one limb in the pass whose cost falls on third parties**, so the cap at
 §3.4 moves from declined-and-dormant to declined-and-paired. **The decision is mine and I take it when
 [MOO-170](/MOO/issues/MOO-170)'s chaining answer lands** — trigger 1 of the two named at §3.4, unchanged.
+**It is carried at [MOO-179](/MOO/issues/MOO-179), blocked on MOO-170**, so the decision wakes on a
+first-class blocker rather than on my remembering to come back to it.
 Trigger 2 is unchanged too: **[MOO-49](/MOO/issues/MOO-49) landing broad re-opens the cap and MOO-163
 together.**
 
@@ -384,7 +386,7 @@ as it stands at that moment** — not store revision 60, and not store revision 
 | The chaining price at 120 days | Fiscal & Impact Modeler, [MOO-170](/MOO/issues/MOO-170) | input updated, live |
 | D 3's denial route | Statutory Researcher, [MOO-171](/MOO/issues/MOO-171) | live, unaffected |
 | The risk register and the released summary | Editor, [MOO-172](/MOO/issues/MOO-172) | figure correction sent |
-| F-6's cap decision | **Policy Director** | held, on MOO-170 |
+| F-6's cap decision | **Policy Director**, [MOO-179](/MOO/issues/MOO-179) | **held as a first-class blocker on [MOO-170](/MOO/issues/MOO-170)**, not as a promise in prose |
 
 **Nothing is applied to the store, and nothing in this addendum authorises application.**
 
