@@ -33,9 +33,11 @@ circulate outside the Lab.**
 >    (§7, home [MOO-141](/MOO/issues/MOO-141)). Each is carry-through, not new finding, and each exists
 >    to stop a reader drawing a conclusion the register does not support. **F1 is now decided and the
 >    bullet carries the outcome.** The additions were offered to me as a block and they stay as a block.
-> 4. **The 63-day counterfactual stays struck** and is commissioned to the Drafting Specialist at
->    [MOO-194](/MOO/issues/MOO-194) — re-derive at 120 days or retire for good, one of the two. **It is
->    not restated in any artifact meanwhile** (§4, C22 precision 2).
+> 4. ~~**The 63-day counterfactual stays struck**~~ — **STRUCK, AND NOW CLOSED.** The Drafting
+>    Specialist retired it for good at [MOO-194](/MOO/issues/MOO-194) on 12 October 2026: at 120 days
+>    the gap it measured does not exist on any facts M 2 permits, the figure is **not** replaced, and
+>    the reason Edit 1's deletion was kept stands without a number. **The ban on restating it is
+>    permanent** (§4; C22 precision 2, closed).
 
 This is the editorial carry-through record for the **four** things the MOO-141 patch requires in the
 memo's risk section, the **one argument that is withdrawn**, the **one phrase that is now banned**, and
@@ -124,7 +126,7 @@ The ordinary facts are the drafter's and pass 18's, not mine: **first act F = da
 | ~~**net −48**~~ | ~~78 − 30~~ | **RETIRED.** Superseded by net +42 at every site. It may not be stated as the patch's effect in any artifact |
 | ~~**48 days before**~~ | ~~85 − 37~~ | **RETIRED** with it. The retention is no longer gone before the decision |
 | ~~**day 37** as the retention's end~~ | ~~F + 30~~ | **RETIRED as the retention's end.** Day 37 survives in this register as the **tolling** endpoint only, and must be labelled as such |
-| ~~**63 days**~~ | ~~100 − 37, on the undeleted reading~~ | **RETIRED as a figure.** It was revision 5's counterfactual on a retention ending day 37 and it has **not** been re-derived at 120 days by its author. See C22 precision 2 — **the reason the deletion was kept survives; the number does not** |
+| ~~**63 days**~~ | ~~100 − 37, on the undeleted reading~~ | **RETIRED PERMANENTLY — closed by its author at [MOO-194](/MOO/issues/MOO-194), 12 October 2026. Not re-derived, and it will not be:** at 120 days the quantity it measured does not exist on any facts M 2 permits. See C22 precision 2, **now closed** — **the reason the deletion was kept survives, and it is not a number** |
 | **day 106** | the 91st-day deemed denial + 15 | C21 (what item 124 buys), Drafting Specialist's figure — **unmoved** |
 | **day 105** | 90-day decision limb + 15 | C21 (what pass 18's card C buys), Drafting Specialist's figure — **unmoved** |
 
@@ -475,14 +477,19 @@ revisit the figure and not a defect in revision 6.
    the sign of the patch's effect here. **This is unchanged by the board's answer** — Edit 3 does not
    touch the tolling sentence, card (l) still closes at **129 against 128**, first-action worse by one
    day, and the Policy Director accepted that correction (revision 6 §5.3).
-2. **The 63-day counterfactual is retired as a figure and must not be restated.** It was 100 − 37 on a
-   retention ending day 37 and on the undeleted reading, and **its author has not re-derived it at 120
-   days.** What survives is the proposition it was evidence for — **that is why Edit 1's three-word
-   deletion was kept** (revision 5 §5.3, undisturbed by revision 6) — and that proposition is stated
-   without the number. **I did not recalculate it: a rejected alternative is re-priced by its author or
-   not at all.** Owner: Drafting Specialist. **Commissioned by the Policy Director at
-   [MOO-194](/MOO/issues/MOO-194), 12 October 2026** — re-derive at 120 days or retire for good, one of
-   the two. **Until that closes the figure stays struck and the proposition stands without a number.**
+2. **The 63-day counterfactual is retired for good and must never be restated. CLOSED by its author at
+   [MOO-194](/MOO/issues/MOO-194), 12 October 2026 — retired, not replaced.** It was 100 − 37: the
+   **size of the self-defeat gap** the **undeleted** reading of Edit 1's saving clause would have left,
+   the application duty at **D + 15** against a retention ending **F + 30** (revision 5 §5.3). **At 120
+   days that quantity does not exist.** The retention ends **F + 120**, the undeleted reading's duty
+   still falls at **D + 15**, and a gap would need **D − F > 105** — which no facts M 2 permits allow,
+   since M 2 gives the Board 90 days to act upon a request, so **D − F ≤ 90** on every admissible set
+   of facts. **There is no gap to measure on any facts M 2 permits, so there is no figure to re-derive**,
+   and a margin is a quantity of the opposite sign that could not carry the proposition this figure was
+   offered for. **The author does not replace it.** What survives is the reason the
+   deletion was kept, and that reason is not a quantity: **one sentence cannot carry two meanings of one
+   phrase.** The approved form of words is [MOO-194](/MOO/issues/MOO-194) §4. **The §4 ban on 63 is
+   permanent from today, and this precision is closed rather than held.**
 3. **The figure is settled, and the precision inverts.** 120 days is the board's authenticated answer
    of 14:15 on 12 October 2026, revision 6 is cut to it, and the Policy Director accepted revision 6 as
    cut. **No artifact may describe Edit 3's figure as open, as recommended, or as the Lab's proposal
@@ -772,8 +779,9 @@ permanent and the re-cuts did not lift them.**
 - **New at the revision-6 amendment, from C22:** **no artifact may state the retired −48, the retired
   "48 days before", the retired 63-day counterfactual, or the superseded +697 patch size.** The
   current figures are **+42**, **day 127**, **42 days to spare** and **+698 characters**. **The 63-day
-  ban holds until [MOO-194](/MOO/issues/MOO-194) closes**, and it becomes permanent if that issue
-  retires the figure rather than replacing it. **The other three bans are permanent now.**
+  ban is permanent from 12 October 2026:** [MOO-194](/MOO/issues/MOO-194) closed with the figure
+  **retired for good and not replaced**, so there is no successor figure and none is coming. **All four
+  bans are now permanent.**
 - **New at the revision-6 amendment, from C22 precision 4:** ***"one event with two endpoints"* is
   itself superseded** and may not be used. Three periods now run from the one event. Use §4's
   corrected replacement sentence, which is the only approved form.
