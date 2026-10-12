@@ -15,12 +15,17 @@ revision 5, document revision `38d9caf0`, by the Drafting Specialist, after pass
 *"or an application"*, and accept that M 2's duty to act upon the application falls at first act + 15 —
 day 22 on the ordinary facts. Edit 3 goes in working as decided.**
 
+> **ADDENDUM, 12 October 2026, 14:15 — the board answered §5's question and the patch moves to revision 6.**
+> **Edit 3's retention becomes 120 days, not 30.** The answer, what it buys, what it breaks, and the
+> fourth application gate it creates are at **§8**, which governs over §5's question and §6's count of
+> three gates. **§0.3, Edit 1, Edit 2 and all six cards are unaffected.**
+
 | | Decision | Owner of the next step |
 |---|---|---|
 | **§0.3** — F-1's three-word deletion | **Keep it.** Day 22 accepted and disclosed | closed here |
 | **Edit 1**, as revised on F-1, F-7 and F-8 | **Accepted as drafted** | closed here |
 | **Edit 2** — card (g) | **Accepted, unchanged** | closed here |
-| **Edit 3** — card (k-ii) | **Accepted, unchanged.** Priced at $0 on [MOO-163](/MOO/issues/MOO-163) | one question to the board, §5 |
+| **Edit 3** — card (k-ii) | **Accepted, unchanged.** Priced at $0 on [MOO-163](/MOO/issues/MOO-163). **Figure since changed to 120 days — §8** | re-cut at [MOO-176](/MOO/issues/MOO-176) |
 | **Card 1** — the no-decision residual | **Take [MOO-42](/MOO/issues/MOO-42) §7 item 124.** Card C only if item 124 is declined. **Application gate** | [MOO-42](/MOO/issues/MOO-42) |
 | **Card 2** — F-9, D 1's descriptor | **Take it**, in [MOO-164](/MOO/issues/MOO-164)'s cut, not in a seventh cut of this patch. **Application gate** | [MOO-164](/MOO/issues/MOO-164) |
 | **Card 3** — F-5, R-5's period | **Take it**, in [MOO-164](/MOO/issues/MOO-164), decided together with card 1 | [MOO-164](/MOO/issues/MOO-164) |
@@ -252,12 +257,18 @@ rather than add to it.** Keeping 30 days needs no re-cut; lengthening needs one 
 bounded re-review, and the 120-day option puts card 4's declined cap back on the table as a paired item.
 **Nothing else in the patch waits on this answer.**
 
+> **ANSWERED at 14:15 on 12 October 2026: 120 days. See §8.** Risk item 3 below is cured and restated
+> there, risk item 4 gets heavier, and a fifth item is added that is mine.
+
 ---
 
 ## 6. Three gates between revision 5 and application
 
 **Nothing in this disposition authorises application.** Application has been a separate step at every
 revision and stays one.
+
+> **There are now four. §8.4 adds the fourth** — revision 6 cut and one bounded re-review — and the three
+> below are unchanged.
 
 1. **[MOO-164](/MOO/issues/MOO-164)'s cut carries F-9** (card 2), so Edit 2 does not ship with the looser
    D 1 descriptor.
@@ -294,6 +305,88 @@ basis. **It re-opens if [MOO-49](/MOO/issues/MOO-49) lands broad.**
 - **Six bases, one anchor discipline, and the drafter's own warning fired four times.** §8.4's warning —
   *"an anchor that still resolves is not evidence the reproductions are current"* — is now the operating
   rule for this patch and it is gate 3.
+
+---
+
+## 8. Addendum — the board answered §5's question: **120 days**
+
+**Authenticated answer, 12 October 2026 at 14:15, on the question card bound to revision 5: option
+*"lengthen to 120 days after the Board acts upon the request."*** That was my recommendation of the three
+costed options, and it is now the decision. **It governs over §5's question and over §6's count of three
+gates. Nothing else in this disposition moves:** §0.3 stands, Edit 1 stands as revised on F-1, F-7 and
+F-8, Edit 2 stands unchanged, and all six cards stay as disposed at §3.
+
+### 8.1 The change, and what it buys
+
+Edit 3's READ text becomes *"retains its filing date for the purposes of subdivisions D 4 and D 5 until
+**120 days** after the Board acts upon the request."* **One character more than revision 5's Edit 3 —
++15, not +14 — and the patch becomes +698.** The drafter re-verifies both figures; neither is taken from
+me.
+
+**On the ordinary facts the retention now ends day 127 against a reconsideration decided day 85.** It
+covers the decision with **42 days to spare**, where 30 days expired **48 days short**. The purpose of
+the retention is delivered, and [MOO-163](/MOO/issues/MOO-163) prices that at **$0 at the central
+estimate**, because D 2's $3,000,000 cap does not bind at 67.4% utilisation.
+
+### 8.2 What it breaks, and this is mine to disclose
+
+**At 30 days, Edit 3's retention was word-identical to M 2's tolling endpoint.** Revision 5 §1.3 records
+that *"30 days after the Board acts upon the request"* then appeared twice in M 2 and nowhere else in the
+bill, and that pass 18 tested the identity and endorsed it: *"under Forst the identity is what secures the
+same meaning for both."*
+
+**At 120 days the identity is gone.** The retention outlives the tolling by 90 days, and there is a new
+**day 37 to day 127 window** in which the application keeps its D 4 / D 5 filing date while the clock is
+no longer tolled.
+
+**My recommendation's *"uses a figure already in the subsection"* pointed at the cap clause's 120-day
+aggregate, not at the 30-day endpoint, and I did not put the broken identity in front of the board.** It
+is disclosed here and it is the first item in the drafter's note at [MOO-176](/MOO/issues/MOO-176) §2,
+which asks for the divergence to be stated as deliberate, for the day 37 to day 127 window to be priced,
+and for what carries Edit 3 now that the *Forst* identity does not. **It does not reopen the figure.** If
+the divergence proves to be a defect rather than a choice, it returns to the board **as a card with
+options**, not as a drafter's or my own re-decision.
+
+### 8.3 Card 4 — F-6's cap is now a paired item, and still declined
+
+**The board's figure widened the one limb in the pass whose cost falls on third parties**, so the cap at
+§3.4 moves from declined-and-dormant to declined-and-paired. **The decision is mine and I take it when
+[MOO-170](/MOO/issues/MOO-170)'s chaining answer lands** — trigger 1 of the two named at §3.4, unchanged.
+Trigger 2 is unchanged too: **[MOO-49](/MOO/issues/MOO-49) landing broad re-opens the cap and MOO-163
+together.**
+
+**One new drafting fact the cap now has to answer.** Pass 18's clause (ii) is a **120-day aggregate**. At
+30 days per request, four requests exhausted it. **At 120 days per request the first request exhausts it
+alone**, so on its face clause (ii) does everything clause (i) does and clause (i) becomes surplusage — or
+the aggregate is measured over a period that includes pendency, in which case clause (ii) cuts into the
+120 days the board has just granted. **The drafter answers that on the text and holds the cap as candidate
+text in §9. It is not drafted into the operative text.** MOO-170 has been asked to say whether any chain
+is material in the *number of requests* or in the *days per request*, because those point at different
+cap text.
+
+### 8.4 The fourth gate, and the sequencing
+
+**Gate 4: revision 6 is cut and verified, and it passes one bounded re-review** covering Edit 3's figure,
+the broken identity at §8.2, and F-6's cap if I take it. **One pass, not one per change** — the re-review
+is not commissioned until the cap decision is made, so the reviewer sees the final shape once.
+
+**Gates 1 to 3 at §6 are unchanged.** [MOO-164](/MOO/issues/MOO-164)'s cut carries F-9, and its blocker
+edge on this issue is now cleared directly as §7 said it should be; the no-decision residual is cured by
+[MOO-42](/MOO/issues/MOO-42) §7 item 124 or by card C; and **whoever applies re-verifies against the base
+as it stands at that moment** — not store revision 60, and not store revision 61.
+
+### 8.5 Who holds what
+
+| Item | Owner | State |
+|---|---|---|
+| Revision 6 — Edit 3 at 120 days, §8.2's three items, the cap as held candidate | Drafting Specialist, [MOO-176](/MOO/issues/MOO-176) | commissioned, live |
+| The six residual cards plus F-9 and F-5 | Drafting Specialist, [MOO-164](/MOO/issues/MOO-164) | **unblocked, live, runs in parallel** |
+| The chaining price at 120 days | Fiscal & Impact Modeler, [MOO-170](/MOO/issues/MOO-170) | input updated, live |
+| D 3's denial route | Statutory Researcher, [MOO-171](/MOO/issues/MOO-171) | live, unaffected |
+| The risk register and the released summary | Editor, [MOO-172](/MOO/issues/MOO-172) | figure correction sent |
+| F-6's cap decision | **Policy Director** | held, on MOO-170 |
+
+**Nothing is applied to the store, and nothing in this addendum authorises application.**
 
 ---
 
