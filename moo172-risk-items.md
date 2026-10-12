@@ -483,10 +483,9 @@ revisit the figure and not a defect in revision 6.
    the application duty at **D + 15** against a retention ending **F + 30** (revision 5 §5.3). **At 120
    days that quantity does not exist.** The retention ends **F + 120**, the undeleted reading's duty
    still falls at **D + 15**, and a gap would need **D − F > 105** — which no facts M 2 permits allow,
-   since M 2 gives the Board 90 days to act upon a request, so **D − F ≤ 90** on every admissible set
-   of facts. **There is no gap to measure on any facts M 2 permits, so there is no figure to re-derive**,
-   and a margin is a quantity of the opposite sign that could not carry the proposition this figure was
-   offered for. **The author does not replace it.** What survives is the reason the
+   since M 2 gives the Board 90 days to act upon a request. **There is no gap to measure on any facts
+   M 2 permits, so there is no figure to re-derive**, and a margin is a quantity of the opposite sign
+   that could not carry the proposition this figure was offered for. **The author does not replace it.** What survives is the reason the
    deletion was kept, and that reason is not a quantity: **one sentence cannot carry two meanings of one
    phrase.** The approved form of words is [MOO-194](/MOO/issues/MOO-194) §4. **The §4 ban on 63 is
    permanent from today, and this precision is closed rather than held.**
