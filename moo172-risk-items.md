@@ -15,9 +15,26 @@ circulate outside the Lab.**
 > [`moo177-amendment-record`](/MOO/issues/MOO-177#document-moo177-amendment-record).
 >
 > **This file is the register of record.** The issue-document copy at
-> [`moo172-risk-items`](/MOO/issues/MOO-172#document-moo172-risk-items), document revision `4dd09de6`,
-> is two amendments stale and is not writable by the Editor (MOO-172 is closed). **Where the two
-> differ, this file governs.**
+> [`moo172-risk-items`](/MOO/issues/MOO-172#document-moo172-risk-items) is a **read-only mirror**
+> re-pushed from this file; it was two amendments stale at document revision `4dd09de6` and was
+> re-pointed by the Policy Director on 12 October 2026. **Where the two differ, this file governs.**
+>
+> **POLICY DIRECTOR DISPOSITION of the amendment, 12 October 2026 — [MOO-177](/MOO/issues/MOO-177).**
+> The pass is accepted as run. I changed no figure and reversed no call in it. Four things I settled
+> that the Editor could not:
+>
+> 1. **The stale mirror is re-pointed, not retired** — §7, last bullet but one. One live register, in
+>    this file; the issue document mirrors it so the board can read it where it reads everything else.
+> 2. **The two displacement figures are two quantities. Confirmed; the labels stay** — C23 precision 6.
+>    **0.11–0.14** is one retention endpoint; **2.80 mean / 11 worst draw** is a chain on the
+>    upper-bound cohort. Neither supersedes the other.
+> 3. **All three out-of-scope additions stay** — the unpriced 90-day post-tolling window (C23
+>    precision 8), counsel's **F1** recorded as outside the patch (§7), and the **member-clock residue**
+>    (§7, home [MOO-141](/MOO/issues/MOO-141)). Each is carry-through, not new finding, and each exists
+>    to stop a reader drawing a conclusion the register does not support. **F1 is now decided and the
+>    bullet carries the outcome.** The additions were offered to me as a block and they stay as a block.
+> 4. **The 63-day counterfactual stays struck** and is commissioned to the Drafting Specialist to
+>    re-derive or retire for good. **It is not restated in any artifact meanwhile** (§4).
 
 This is the editorial carry-through record for the **four** things the MOO-141 patch requires in the
 memo's risk section, the **one argument that is withdrawn**, the **one phrase that is now banned**, and
@@ -620,7 +637,13 @@ decision-maker chose; and it named the one event that would reverse that.
    ([MOO-170](/MOO/issues/MOO-170), through
    [`moo179-cap-decision`](/MOO/issues/MOO-179#document-moo179-cap-decision) §2.2). **Unlabelled, 2.80
    reads as superseding 0.14, and it does not.** This is a labelling rule, not a reconciliation — I did
-   not choose between them and there is nothing here to choose.
+   not choose between them and there is nothing here to choose. **CONFIRMED by the Policy Director,
+   12 October 2026.** The reading is right and the labels stay. They are two quantities measured on two
+   different things — one retention endpoint against a chain of them, and the chained figure is on the
+   upper-bound cohort besides — so there is no figure conflict to resolve and **nothing here is routed
+   to me.** The one thing I add: **2.80 does not supersede 0.14 and 0.14 is not a floor on 2.80.** An
+   artifact that needs a single displacement number has not yet said which scenario it is describing,
+   and that is the question to answer, not the figures.
 7. **Never report the cap decline without the rise it was taken against.** The displacement count rises
    roughly twenty-one-fold with the chain, MOO-179 calls it *"the strongest fact against the decision
    I am taking"*, and **the decline rests on *why* it rises, not on its not rising** — on the
@@ -1017,20 +1040,30 @@ one-site finding, revision 5 §5.4.
   Source: [`moo176-disposition`](/MOO/issues/MOO-176#document-moo176-disposition) §8.
 - **A fatal counsel finding sits outside this register and is not in §8.** **F1**, on subsection E1 and
   the § 51.1-153 notification window, draws none of this patch's three FIND strings and does not touch
-  Edit 1, Edit 2 or Edit 3. The proceed/don't-proceed call is the Policy Director's on
-  [MOO-188](/MOO/issues/MOO-188). **Recorded so nobody imports it into the patch's risk entries, and so
-  nobody assumes the patch's clean bill extends to the subdivision it sits in.**
+  Edit 1, Edit 2 or Edit 3. ~~The proceed/don't-proceed call is the Policy Director's on
+  [MOO-188](/MOO/issues/MOO-188).~~ **DECIDED, 12 October 2026, and the bullet stays with the outcome in
+  it** ([`moo188-f1-decision`](/MOO/issues/MOO-188#document-moo188-f1-decision)). Counsel's view was
+  adopted in full: **E1 in the form counsel reviewed does not travel to DLS.** It is cured in the live
+  text on **store revision 62's** words, and E1 travels **conditionally** — gated on one bounded counsel
+  pass on revision 62 and one anchored F10 edit. **Nothing in that decision touches this patch**, which
+  is the reason the bullet is here. **Recorded so nobody imports it into the patch's risk entries, and so
+  nobody assumes the patch's clean bill extends to the subdivision it sits in** — and now also so nobody
+  reports F1 as open.
 - **Card (l) is closed and is not a risk entry.** The corrected figure is **129 against 128** —
   first-action is worse by one day, not better by seven, pass 17's F-6 having been an arithmetic slip —
   and the disposition's own frame is that this was a precision question, not a risk question. **It is
   recorded so that nobody promotes it into §8, and the correction stands unsoftened.**
 - **I verified revision 5 and revision 6, not the store.** See §1. No claim here is a check of the
   live bill text, and **the Policy Director's own re-derivation from the store is cited as theirs.**
-- **The issue-document copy of this register is stale and is not mine to write.**
-  [`moo172-risk-items`](/MOO/issues/MOO-172#document-moo172-risk-items), document revision `4dd09de6`,
-  predates both the MOO-178 correction and this amendment, and MOO-172 is closed to me. **This file
-  governs.** Re-pointing or retiring that copy is the Policy Director's call, and it is the one thing
-  in this amendment I could not finish myself.
+- ~~**The issue-document copy of this register is stale and is not mine to write.**~~ **DECIDED by the
+  Policy Director, 12 October 2026 — re-pointed, not retired.**
+  [`moo172-risk-items`](/MOO/issues/MOO-172#document-moo172-risk-items) is overwritten with the text of
+  this file as at commit `bd4ba38` and carries a governance banner naming this file as the register of
+  record. **It is a read-only mirror for the board, not a second live register**, and the stale `4dd09de6`
+  figures are gone. I did not reduce it to a pointer stub: the board reads the register in the issue
+  thread, and a stub would have cured the stale figures by making the register unreadable where it is
+  most often read. **Amend this file; the mirror is re-pushed from it.** Where the two differ, this file
+  governs — that rule is in the mirror's own banner.
 - **Nothing here authorises drafting of the memo to begin**, and nothing here changes the fiscal
   statement, which is unchanged at **$0** and carried by [MOO-163](/MOO/issues/MOO-163) — **unchanged
   by the board's answer, by the chaining price and by the cap decline.** This register is what §8 is
