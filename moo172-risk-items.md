@@ -434,20 +434,31 @@ Source: Policy Director, disposition §4, withdrawing their own argument; Drafti
 ### Banned from here on: *"Both clocks now restart on the same day"*
 
 **It is false after Edit 1 and Edit 3.** G 4's pendency ends at the Board's **first act**; M 2's tolling
-and the D 4 / D 5 retention run to **first act + 30**. The patch does not make the two clocks end
-together — it makes them **one event with two endpoints**, and that is the decided design, not a
-residual defect.
+runs to **first act + 30**; the D 4 / D 5 retention runs to **first act + 120**. The patch does not make
+the two clocks end together — it gives them **one starting event with separate periods running from it**,
+and that is the decided design, not a residual defect.
 
-The replacement, verbatim:
+The replacement, verbatim — **corrected by the Policy Director on 12 October 2026 at the board's 120-day
+answer (MOO-162 disposition §8). This form supersedes the 30-day form, which may not be quoted:**
 
-> **The patch gives the two clocks one starting event with two endpoints: G 4's pendency ends when the
-> Board first acts, and M 2's tolling and filing-date retention run to 30 days after that.**
+> **The patch gives the two clocks one starting event: G 4's pendency ends when the Board first acts,
+> M 2's tolling runs to 30 days after that act, and an application's D 4 and D 5 filing date is retained
+> for 120 days after that act.**
+
+**Why it changed, in one line:** at 120 days the figure was wrong and so was *"two endpoints"* — the
+tolling and the retention no longer share an endpoint, and three periods now run from the one event
+(disposition §8.2, the broken *Forst* identity). **The part the ban exists to protect is *"one starting
+event"*, and it is unchanged.** Superseded and not to be quoted: *"one starting event with two
+endpoints: … M 2's tolling and filing-date retention run to 30 days after that."*
 
 Applies to all three artifacts and to any chart label or slide title. **Also banned:** *"the clocks are
 aligned"*, *"the two clocks now match"* and *"the 30-day mismatch is closed"* — the last is the worst of
-them, because the 30 days is now the deliberate interval, not the error.
+them, because the interval is deliberate, not an error. **And banned by the MOO-175 disposition §4:** any
+clause saying or implying that the patch stops the two clocks restarting on different days, except where
+the claim is expressly about the **pre-patch** text in the risk section.
 
-Source: Policy Director on this issue.
+Source: Policy Director on this issue; corrected form, Policy Director on
+[MOO-178](/MOO/issues/MOO-178).
 
 ### Still binding from earlier passes
 
@@ -516,10 +527,28 @@ Director's disposition §5.** Source:
 [`moo162-edits-2-and-3`](/MOO/issues/MOO-162#document-moo162-edits-2-and-3) revision 5, document
 revision `38d9caf0`. **To be used as given and not paraphrased**, subject to the four bindings below.
 
+> **SENTENCE 1 RE-CUT, 12 October 2026. SENTENCE 3 SUPERSEDED ON ITS FIGURES.** The citable text of
+> sentence 1 is the Drafting Specialist's re-cut at
+> [`moo178-patch-summary-recut`](/MOO/issues/MOO-178#document-moo178-patch-summary-recut), document
+> revision `c1f95092`, approved by the Policy Director on [MOO-178](/MOO/issues/MOO-178). The pre-re-cut
+> sentence 1 is retired and is quoted below **only** as the record of what was released; it goes into no
+> artifact. **Sentence 3's two figures move with the board's 120-day answer and sentence 3 goes into no
+> artifact until the re-cut is released.** Sentence 2 is unaffected.
+
+The re-cut sentence 1 — **this is the form to use**:
+
 > Where this bill measures a deadline from the day the Board "acts upon" a member's request, it does not
 > say whether that means the Board's first action on the request or its last; the patch answers that
 > once — it means the first action — so the pendency clock in subdivision G 4 and the tolling clock in
-> subdivision M 2 are counted from the same event instead of restarting on different days.
+> subdivision M 2 are counted from the same event.
+
+The released text, as logged on 12 October 2026 — sentence 1 **retired**, sentence 3 **superseded on its
+figures**:
+
+> ~~Where this bill measures a deadline from the day the Board "acts upon" a member's request, it does not
+> say whether that means the Board's first action on the request or its last; the patch answers that
+> once — it means the first action — so the pendency clock in subdivision G 4 and the tolling clock in
+> subdivision M 2 are counted from the same event instead of restarting on different days.~~
 >
 > The patch also requires the Board to notify a member of their final qualifying retirement date within
 > 15 days after it **gives its decision** on the request, rather than within 15 days after it acts on
@@ -553,9 +582,12 @@ is the fifth plain-language statement in the register and the five are **not** a
 2. **Sentence 2's second half is the cost, and it does not come out.** The Drafting Specialist's
    instruction, on the record: if the sentence must be shortened, **cut the first clause, not the
    second.** The sentence is deliberately a trade, which is C20 and §4.
-3. **Sentence 3's "48 days shorter" is the net and it is the number that matters** — 78 taken by Edit 1,
-   30 given back by Edit 3, retention ending day 37 against a reconsideration decided day 85. It is
-   C22, and the ordinary facts travel with it.
+3. **Sentence 3's net figure is the number that matters, and the net has moved.** As released: *"48 days
+   shorter"* — 78 taken by Edit 1, 30 given back by Edit 3, retention ending day 37 against a
+   reconsideration decided day 85. **At the board's 120 days the retention ends day 127 and the net is
+   42 days to spare, not 48 days short.** The binding is unchanged in substance — the net is the number
+   that matters and the ordinary facts travel with it — but **neither figure in the released sentence 3
+   may be quoted** until the re-cut is released. It is C22.
 4. **Three things the summary deliberately does not say, so place them yourself and not by omission.**
    It does not mention a **cap** on the retention, because there is none in the patch — card F-6 is
    declined on MOO-163's released price, and it returns only on the chaining addendum or on
