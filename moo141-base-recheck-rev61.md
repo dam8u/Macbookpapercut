@@ -146,20 +146,21 @@ two answers to one question.
 
 ---
 
-## 6. Finding 3 — MOO-170's chaining price is in the repository and is priced on the superseded figure
+## 6. Gate 4's cap limb closed while I was writing this
 
-MOO-170's bounded addendum is committed (`f2f8458`) and answers the chaining question: **the $204,000
-bound is analytic, survives chaining unchanged, stays lapse rather than cost, and the central estimate
-is $0 at every chain length including an unbounded one.** Displacement rises about 21× — 0.14 to 2.80
-members over 48 months — and stays inside the resolution of the inputs by a narrower margin.
+MOO-170's bounded addendum answers the chaining question: **the $204,000 bound is analytic, survives
+chaining unchanged, stays lapse rather than cost, and the central estimate is $0 at every chain length
+including an unbounded one.** Displacement rises about 21× — 0.14 to 2.80 members over 48 months — and
+stays inside the resolution of the inputs by a narrower margin than at MOO-163. **MOO-170 is `done`.**
 
-**Two things about it.** It is priced on the **30-day** retention, which **the board superseded at
-120 days at 17:14**, three hours after the model was built. The stated ground for the bound is that it
-*"quantifies over any vector of ordering dates"* and that *"there is no `k` in the derivation"* — which,
-if it holds, makes the bound **figure-independent as well as length-independent**. That is exactly the
-question MOO-179 turns on and **I am not deciding it in this document.** Second, **MOO-170 is still
-`in_progress` and its last event is a terminal limit failure**, so the answer is in the repository and
-not on the issue. Named unblock action posted there.
+**On that input F-6's cap stays declined** — `moo179-cap-decision.md`, committed at `789eb89`. The one
+thing I would have asked of it is already answered there: the bound's ground is that it quantifies over
+any vector of ordering dates, so **it is figure-independent as well as length-independent**, and the
+board's move from 30 days to 120 does not revive the cap. **Trigger 2 is untouched — if MOO-49's clause
+(vi) lands broad, the cap and MOO-163 re-open together.**
+
+**So gate 4 is now only the bounded re-review of revision 6**, and §4 above is the second named target
+for it, alongside Edit 3's figure and the broken 30-day identity.
 
 ---
 
@@ -172,7 +173,7 @@ Prose in a comment is not a wake signal. MOO-141 is `blocked` on all four:
 | **1** | **MOO-164** | The *"acts upon"* / act-versus-notice decision, carrying **F-9** — §5 above is evidence for it |
 | **2** | **MOO-42** | The no-decision residual: §7 item 124's deemed denial, or pass 18's card C if item 124 is declined |
 | **3** | **MOO-176** | Revision 6 at 120 days, re-cut against store revision 61 — §2 and §3 above are its base |
-| **4** | **MOO-179** | F-6's cap decision, held on MOO-170's chaining price, which §6 reports |
+| **4** | **MOO-176** | Revision 6 passes **one** bounded re-review — Edit 3's figure, the broken 30-day identity, and §4 above. **Its cap limb is closed**: §6 |
 
 **Gate 3's own instruction is unchanged and is now evidenced four times over: whoever applies this
 re-verifies all three anchors, re-splices every reproduction and re-runs every count against the base
@@ -184,6 +185,7 @@ is current — store revision 61 is the fourth proof of that.
 ## 8. What I did not do
 
 - **I did not draft anything.** §4 is a target for review and §5 belongs to MOO-164.
-- **I did not decide F-6's cap.** It is MOO-179's and it waits on MOO-170.
+- **I did not decide F-6's cap here.** It is MOO-179's, it is taken there on MOO-170's price, and §6
+  records it rather than re-deciding it.
 - **I did not reopen Edit 3's figure.** The board took 120 days at 14:15 and that answer governs.
 - **I did not touch the store.** Nothing in the patch is applied, and nothing here authorises applying it.
