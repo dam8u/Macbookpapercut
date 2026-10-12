@@ -8,15 +8,18 @@ The deliverable is the issue document
 
 ## Application order
 
-**Application of the MOO-141 patch ([MOO-162](/MOO/issues/MOO-162) revision 5) does not precede this
-cut carrying F-9.** This cut carries it, so that condition is satisfied. Beyond that the two patches
-are **order-independent and verified so**: every FIND resolves exactly once on store revision 61 and
-on store revision 61 with all three MOO-162 edits applied, and the delta is +490 on both.
+**Application of the MOO-141 patch does not precede this cut carrying F-9.** This cut carries it, so
+that condition is satisfied. Beyond that the two patches are **order-independent and verified so on
+three bases**: store revision 61 as it stands, store revision 61 with the MOO-141 patch at
+**revision 5** (Edit 3 at 30 days), and with it at **revision 6** (Edit 3 at 120 days, from
+[MOO-176](/MOO/issues/MOO-176), which landed mid-cut). Eighteen counts, all 1; delta **+490** on all
+three. Run `verify_r6.py` to reproduce.
 
 ## Files
 
-- `verify.py` — counts the three MOO-162 revision 5 FINDs on the live base (all still 1 at store
-  revision 61), builds the post-MOO-162 base, and counts every MOO-164 anchor on both bases.
+- `verify_r6.py` — **the current check.** Builds both MOO-141-patch bases (revision 5 and revision 6),
+  counts every MOO-164 anchor and every held candidate on all three bases, and asserts the +490 delta.
+- `verify.py` — the first two-base version, kept as the record of what was run before revision 6 landed.
 - `apply164.py` — applies the six edits to a **copy** of each base, asserts each FIND fires exactly
   once, performs the apostrophe normalisation, and prints the post-application invariants.
   Reads `bill.md` (store rev 61 §1 onwards) and `patched61.md`, both produced by `verify.py`.

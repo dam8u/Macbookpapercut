@@ -57,7 +57,7 @@ M2 = mark(M2, [
  ("excluding any period after the expiration of the 90 days allowed by this subsection and before the Board acts upon the request",
   "excluding any period after the expiration of ~~the 90 days allowed by this subsection~~ **the period allowed by this section for acting upon the request** and before the Board acts upon the request"),
  ("retains its filing date for the purposes of subdivisions D 4 and D 5 until the Board acts upon the request",
-  "retains its filing date for the purposes of subdivisions D 4 and D 5 until ***30 days after*** the Board acts upon the request"),
+  "retains its filing date for the purposes of subdivisions D 4 and D 5 until ***120 days after*** the Board acts upon the request"),
 ])
 
 out = {'A': A, 'DEF': DEF, 'D1': D1, 'G2': G2, 'G4': G4, 'M1': M1, 'M2': M2, 'M3': M3}

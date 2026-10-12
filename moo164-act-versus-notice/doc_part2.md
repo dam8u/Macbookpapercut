@@ -73,9 +73,10 @@ asymmetry runs in her favour and the cap makes the downside finite.**
 **Option (b-2), drafted and recommended against.** Make the endpoint simply notice-keyed — *"until 30
 days after the Board gives … written notice of its decision upon the request"* — with no cap and no
 retention of the act limb. **Price: it restores the full `D − F` difference, 78 days on MOO-141's facts,
-reverses the direction of effect the patch was priced on, re-opens MOO-140's C2 and MOO-163's $0, and
-breaks the *Forst* identity pass 18 relied on between M 2's two 30-day sites.** Rejected for the same
-reason as (f-2): a cure the size of the patch is not a cure.
+reverses the direction of effect the patch was priced on, re-opens MOO-140's C2 and the retention's
+price, and — the point that survives revision 6 — it removes the act limb altogether, so Edit 1's
+deeming would no longer reach the tolling endpoint at all.** Rejected for the same reason as (f-2): a
+cure the size of the patch is not a cure.
 
 ### 2.3 Card (h) — the clearest write-up: the member's protection survives only where the Board breaches
 

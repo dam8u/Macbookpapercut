@@ -13,18 +13,31 @@ normalisation as a recorded non-substantive item.**
 
 ## ⚠ APPLICATION ORDER — ON THE FACE OF THIS DOCUMENT
 
-**Application of the MOO-141 patch ([MOO-162](/MOO/issues/MOO-162) revision 5, three edits) does not
-precede this cut carrying F-9.** This cut carries it. That condition is satisfied by this document.
+**Application of the MOO-141 patch does not precede this cut carrying F-9.** This cut carries it. That
+condition is satisfied by this document.
 
-**Beyond that, the two patches are order-independent, and I verified it rather than assumed it.** Every
-one of the six FIND strings below resolves **exactly once** in each of two bases — store revision 61 as
-it stands, and store revision 61 with all three MOO-162 edits applied — and the character delta is
-**identical (+490) in both**. Either patch may be applied first. §11 carries the run.
+**The MOO-141 patch moved from revision 5 to revision 6 while I was cutting this, and I re-verified
+against the new base rather than finishing against the old one.** [MOO-176](/MOO/issues/MOO-176) re-cut
+Edit 3 to **120 days** on the board's answer to the figure question. Every one of the six FIND strings
+below resolves **exactly once** in each of **three** bases, with the **identical +490 delta** in all
+three:
 
-**One more fact the applier needs: all three MOO-162 revision 5 FIND strings still resolve exactly once
-at store revision 61.** Revision 5 was cut at store revision 60 and the base has since moved a seventh
-time, in G 4, D 1 and M 2 — the three provisions that patch reaches. I re-counted all three today on the
-live body: **E1 = 1, E2 = 1, E3 = 1, delta +697.** Revision 5 does **not** need a re-cut for this move.
+| Base | Six FINDs | Delta |
+|---|---|---|
+| `bill-text-s8` store revision 61 as it stands | all 1 | **+490** |
+| store revision 61 + MOO-141 patch **revision 5** (Edit 3 at 30 days) | all 1 | **+490** |
+| store revision 61 + MOO-141 patch **revision 6** (Edit 3 at 120 days) | all 1 | **+490** |
+
+**So this cut is order-independent of the MOO-141 patch and indifferent to the 30/120 answer.** Either
+patch may be applied first, and nothing here needs a re-cut if the figure moves again. §11 carries the
+run.
+
+**Two facts the applier needs.** All three MOO-141-patch FIND strings — unchanged between revision 5 and
+revision 6 — **still resolve exactly once at store revision 61**: `E1 = 1, E2 = 1, E3 = 1`, delta
+**+697** at revision 5's Edit 3 and **+698** at revision 6's. The patch does not need a re-cut for the
+seventh base move. And **this document was cut before revision 6 landed**; every statement in it that
+depended on Edit 3's figure has been re-checked and corrected against revision 6, and the four places
+where the figure mattered are named at §9.11.
 
 ---
 
@@ -48,9 +61,17 @@ trigger by drafting rather than by pricing**, which is the one thing the Directo
 says not to do.
 
 **After this cut, exactly one act-keyed endpoint remains where a token action can still cost anybody
-anything: Edit 3's D 4 / D 5 retention, priced at $0 at the central estimate, queue position only, with
-D 5 preserving every subsection B standard-cost right.** That is the whole cost of being wrong on
-Decision 1, and it is stated as a number because [MOO-163](/MOO/issues/MOO-163) released one.
+anything: Edit 3's D 4 / D 5 retention, queue position only, with D 5 preserving every subsection B
+standard-cost right.** That is the whole cost of being wrong on Decision 1.
+
+**The figure for that row is live and I am not going to quote a stale one.**
+[MOO-163](/MOO/issues/MOO-163) released **$0 at the central estimate** for the retention at **30 days**.
+The board has since answered **120 days** ([MOO-176](/MOO/issues/MOO-176)), and
+[MOO-177](/MOO/issues/MOO-177) and [MOO-180](/MOO/issues/MOO-180) own what that does to the register and
+to the price. **Nothing in Decision 1 turns on which figure it is**: the row is queue position in both
+cases, D 5 preserves the standard-cost right in both, and the recommendation would be the same at $0 or
+at MOO-163's high-take-up bound of `|Δ| < $204,000` of lapse. **What would change the recommendation is a
+finding that the retention costs a member her purchase, and D 5 is why it does not.**
 
 ### 0.2 Decision 2 — does a clock run from the act or from notice of it
 
@@ -157,22 +178,35 @@ action can move. After Edit 164-1 they stand as follows:
 | The definition's reset, *"the month in which the Board last acts"* (#2) | Yes | the member | **neutralised downstream** by the decision-keyed floor (the Director's own §2.3 finding), and in the no-decision case by R-5 as cured by Edit 164-4 — §2.4 |
 | G 4's pendency, *"first acts upon it"* (#12, #13) | Yes | **the Board** — its periods resume earlier | favourable; no repair wanted |
 | M 2's 15-day application-duty **trigger** (#19) | Yes | the applicant, favourably — day 37 rather than day 100 | decided at MOO-162 §0.3; not mine |
-| Edit 3's D 4 / D 5 retention (#17) | Yes | the applicant, in queue position | **$0** at the central estimate; D 5 preserves standard-cost rights |
+| Edit 3's D 4 / D 5 retention (#17) | Yes | the applicant, in queue position | **queue position only**; D 5 preserves standard-cost rights. Figure live at [MOO-177](/MOO/issues/MOO-177) / [MOO-180](/MOO/issues/MOO-180) after the 120-day answer |
 
-**So the cost of being wrong on Decision 1 is the last row, and [MOO-163](/MOO/issues/MOO-163) has
-released a number for it: zero at the central estimate, |Δ| < $204,000 of lapse over 48 months at 112.3%
-take-up, displacement 0.11–0.14 members mean.** If MOO-49 lands broad, that row re-opens — and it
-re-opens as card 4, which is already recorded, not as a new finding.
+**So the cost of being wrong on Decision 1 is the last row.**
+[MOO-163](/MOO/issues/MOO-163)'s released price for it, at Edit 3's **30-day** retention, was zero at the
+central estimate, `|Δ| < $204,000` of lapse over 48 months at 112.3% take-up, and displacement of
+0.11–0.14 members mean. **At 120 days the figure is being re-examined on
+[MOO-177](/MOO/issues/MOO-177) and [MOO-180](/MOO/issues/MOO-180) and I do not restate it as though it
+still applied.** If MOO-49 lands broad, that row re-opens as well — and it re-opens as card 4, which is
+already recorded, not as a new finding.
 
-**One cost of (f-4) I am not going to leave implicit.** Edit 164-1 breaks nothing, but it makes M 2's two
-*"30 days after the Board acts upon the request"* sites **non-identical in their endpoint logic** while
-keeping the phrase itself in both. Pass 18 relied on that identity: *"under Forst the identity is what
-secures the same meaning for both."* I checked: after both patches the phrase *"30 days after the Board
-acts upon the request"* still appears **twice**, once in Edit 164-1's clause (a) and once in Edit 3's
-retention, so **the identity pass 18 relied on survives word for word**, and the notice limb and the
-48-day cap are added around it. The principled distinction, if anyone asks for one: the retention protects
-a **queue position**, where every applicant needs the same certain date, and the tolling protects a person
-who **must act**, who needs to know. That is the distinction the bill already draws — see §0.2.
+**One point about (f-4) and the *Forst* identity, re-stated for revision 6.** Pass 18 relied on an
+identity between M 2's two endpoints: *"under Forst the identity is what secures the same meaning for
+both."* **That identity is already gone, and not by anything in this cut.** The board's 120-day answer
+makes Edit 3's retention read *"until 120 days after the Board acts upon the request"* against the
+tolling sentence's 30, and [MOO-176](/MOO/issues/MOO-176) records the identity as gone with **Edit 1's
+express deeming** named as what carries Edit 3 instead.
+
+**What Edit 164-1 does about that is preserve the limb the deeming attaches to.** Clause (a) keeps
+*"30 days after the Board acts upon the request"* word for word, so Edit 1's deeming still reaches the
+tolling endpoint exactly as it reaches the retention; the notice limb and the 48-day cap are added
+**around** it, not in place of it. **Verified on the revision-6 base**: the phrase
+*"120 days after the Board acts upon the request"* appears once and
+*"30 days after the Board acts upon the request"* appears once, each in its own sentence, and each still
+inside Edit 1's trigger.
+
+**The principled distinction, if anyone asks for one:** the retention protects a **queue position**,
+where every applicant needs the same certain date, and the tolling protects a person who **must act**,
+who needs to know. That is the distinction the bill already draws — see §0.2 — and it is the distinction
+the board's own 30/120 divergence now rests on.
 
 ### 1.2 Decision 1, recommended, with the cost of being wrong in one line
 

@@ -26,7 +26,7 @@ third enactment's clause (i) savings are insufficient, it comes back as a card.
 
 ## 6. The provisions, in full, as amended
 
-**Markup convention, the same one revision 5 used.** The whole of subsection A, subdivision D 1,
+**Markup convention, the same one the MOO-141 patch's own cuts use.** The whole of subsection A, subdivision D 1,
 subdivision G 2, subdivision G 4 and subsection M is **new language in the bill** — each is already
 wrapped in `<u>…</u>` in `bill-text-s8` — so **every word reproduced below is underlined new text in the
 bill as it stands**, and nesting a second `<u>` inside it would be ambiguous markup rather than clearer
@@ -34,7 +34,7 @@ markup. Inside that wrapper:
 
 - words **this patch adds** are **bolded**;
 - words this patch removes are ~~struck through~~;
-- words the **MOO-141 patch** ([MOO-162](/MOO/issues/MOO-162) revision 5) adds are ***bold italic***, and
+- words the **MOO-141 patch** adds are ***bold italic*** — at its current cut, [MOO-176](/MOO/issues/MOO-176)'s **revision 6**, with Edit 3 at **120 days** — and
   the words it removes are ~~struck~~ with its text shown next to them — so that a reader can see both
   patches at once at the two provisions where they overlap.
 
@@ -78,7 +78,8 @@ this patch touches, every sentence candidate (c-1) would touch, and the context 
 ### 6.6 Subsection M — subdivisions 1, 2 and 3 in full, as amended by **Edits 164-1 and 164-3** and by the MOO-141 patch's **Edit 3**
 
 The confirming sentence at §1.3, which I recommend against, would go after M 2's third sentence. Item
-124's sentence, if enacted, goes in the same place. **Neither is shown below.**
+124's sentence, if enacted, goes in the same place. **Neither is shown below.** Edit 3 is shown at
+**revision 6's 120 days**.
 
 @@M1@@
 
@@ -115,7 +116,7 @@ The count matches MOO-141 §4.1's 19. The classification is what Decision 1 rest
 | 14 | subsection M 2, the 90 days | **duty** | no | no — card (i), §1.3 |
 | 15 | subsection M 2, the tolling endpoint | **period** | yes — moved against the member | **Edit 164-1** |
 | 16 | subsection M 2, clause (ii) | **exclusion** | — | **Edit 164-3** |
-| 17 | subsection M 2, the D 4 / D 5 retention | **period** | **yes — the one residual.** $0 | no (the MOO-141 patch's Edit 3) |
+| 17 | subsection M 2, the D 4 / D 5 retention | **period** | **yes — the one residual.** Queue position only | no (the MOO-141 patch's Edit 3, now 120 days) |
 | 18 | subsection M 2, the application duty | **duty**, 15 days | no | no |
 | 19 | subsection M 2, that duty's trigger | **trigger** | yes — moves **in** the applicant's favour | no |
 
@@ -126,7 +127,7 @@ there is not (§2.4).
 
 ### 7.2 Counts, every one re-run today on the live base and on an applied copy
 
-**These are whole-document counts**, as revision 5's were, not counts in a slice. One phrase differs between the two framings and is flagged in the table.
+**These are whole-document counts**, as the MOO-141 patch's own cuts use, not counts in a slice. One phrase differs between the two framings and is flagged in the table.
 
 | Phrase | Store rev 61 | After both patches | Expected |
 |---|---|---|---|
@@ -136,8 +137,9 @@ there is not (§2.4).
 | `first acts upon` | 2 | 3 | **3** — Edit 1 adds one |
 | `acting upon` | 3 | 4 | **4** whole-document — **2 → 3 in enacted §1**; the third occurrence is in §6's commentary, not in the bill |
 | `action upon` | 2 | 2 | **2** — Edit 164-5 moves one word before it, not the phrase |
-| `30 days after the Board acts upon the request` | 1 | **2** | **2** — Edit 164-1 clause (a) and Edit 3's retention. **The *Forst* identity pass 18 relied on survives word for word** |
+| `30 days after the Board acts upon the request` | 1 | **1** at revision 6; **2** at revision 5 | Edit 164-1's clause (a), plus Edit 3's retention only while it read 30 days. **The identity pass 18 relied on is gone by the board's 120-day answer, not by this cut** — §1.1 |
 | `48 days after the Board acts upon the request` | 0 | 1 | **1** |
+| `120 days after the Board acts upon the request` | 0 | 1 | **1** — the MOO-141 patch's Edit 3 at revision 6; untouched by this cut |
 | `the period allowed by this section for acting upon` | 0 | **3** | **3** — one concept, one formula, three sites |
 | `the period allowed to it for acting upon` | 1 | **0** | **0** |
 | `the 90 days allowed by this subsection` | 1 | **0** | **0** — item 124 would restore it once, correctly |
@@ -238,18 +240,38 @@ Because the antecedent appears **after** the new limb. The section does not cros
 
 **9.7 What I resolved against myself.** I expected card (b)'s cure to be the simple notice-keyed endpoint,
 and I drafted it that way first. It is option (b-2) at §2.2 and I recommend against my own first draft:
-it restores 78 days, re-opens three closed decisions, and **breaks the *Forst* identity pass 18 relied on
-between M 2's two 30-day sites.** The capped form keeps the identity and delivers the carded 18 days.
+it restores 78 days, re-opens MOO-140's C2 and the retention's price, and **removes the act limb that
+Edit 1's deeming attaches to.** The capped form keeps the limb and delivers the carded 18 days.
 
 **9.8 What I did not resolve, and will not by drafting choice.** Card (c). Both candidates are drafted; the
 choice between them moves an enacted board answer; it is at §10.1 and it is not mine.
 
-**9.9 One thing I checked because the last six cuts have taught me to.** All three MOO-162 revision 5
-FIND strings still resolve exactly once at store revision 61, after a seventh base move that landed in all
-three of the provisions that patch reaches. **Revision 5 does not need a re-cut.** I would rather report
-that unasked than have it discovered at application.
+**9.9 One thing I checked because the last six cuts have taught me to.** All three MOO-141-patch FIND
+strings still resolve exactly once at store revision 61, after a seventh base move that landed in all
+three of the provisions that patch reaches. **The patch does not need a re-cut for that move**, at either
+revision 5 or revision 6. I would rather report that unasked than have it discovered at application.
 
-**9.10 The standing caveat, in terms.** This is an internal working draft. It is not a Division of
+**9.10 The patch moved under me mid-cut, and what I did about it.** This cut was built against the
+MOO-141 patch at **revision 5**. [MOO-176](/MOO/issues/MOO-176) landed revision 6 — Edit 3 at **120
+days** — while I was assembling it. **I re-ran every anchor and every count against the revision-6 base
+rather than shipping against a superseded one**, and corrected every statement in this document that
+depended on Edit 3's figure. There are four, and they are listed at §9.11 so a reviewer can check them
+rather than take my word.
+
+**9.11 The four places the 30/120 answer touched this cut, and what each now says.**
+
+1. **§1.1's *Forst* paragraph.** It said the identity survives. **It does not** — the board's answer
+   removed it. The point that survives is that Edit 164-1's clause (a) **keeps the act limb**, so Edit 1's
+   deeming still reaches the tolling endpoint.
+2. **§3.1's anchor note.** The short-form FIND was non-unique at revision 5 and is unique again at
+   revision 6. **The full clause is the anchor on all three bases**, so neither answer strands it.
+3. **§2.2's option (b-2) and §9.7.** The rejection no longer rests on the identity; it rests on the 78
+   days, on MOO-140's C2, and on (b-2) removing the limb the deeming attaches to.
+4. **Every price for the retention row.** MOO-163's $0 was for the 30-day retention.
+   **[MOO-177](/MOO/issues/MOO-177) and [MOO-180](/MOO/issues/MOO-180) own the 120-day figure and I do not
+   restate the old one as current.** Nothing in either decision turns on which figure it is.
+
+**9.12 The standing caveat, in terms.** This is an internal working draft. It is not a Division of
 Legislative Services bill, it has not been reviewed by counsel, and nothing in it states or implies that
 it has been or that it is legally sufficient for introduction.
 
@@ -274,10 +296,10 @@ periods, and it complicates item 124's trigger. **Not a blocker: card (i) is clo
 
 ### 10.3 Not a question — two things I am flagging so they are not rediscovered
 
-- **Edit 3's retention could be conformed to notice as well**, which would restore the *Forst* identity at
-  the endpoint level rather than at the phrase level. **I have not drafted it**: Edit 3 is a board decision
-  priced at $0 and *"unchanged"* is its disposition. If the Director wants it, it is 29 words at a FIND
-  this patch does not touch.
+- **Edit 3's retention could be conformed to notice as well**, which would put both of M 2's endpoints on
+  the same footing at the endpoint level rather than at the phrase level. **I have not drafted it**: Edit 3
+  is a board decision, now at 120 days on the board's own answer, and it is [MOO-176](/MOO/issues/MOO-176)'s
+  to re-cut and not mine. If the Director wants it, it is 29 words at a FIND this patch does not touch.
 - **F-5 removes the need for card C as the residual's fallback** (§2.4). Item 124 remains the Director's
   disposition; the fallback is now five words of already-existing text rather than a new sentence.
 
@@ -291,37 +313,42 @@ periods, and it complicates item 124's trigger. **Not a blocker: card (i) is clo
 revision number **3**, **271,611 characters**, fetched today. The §1 region I counted in — title line through the enactment clauses — spans **117,964 characters**.
 `bill-text-s8-item-list`, revision number **3**, **323,866 characters**, read for items 46 and 124.
 
-### 11.2 Anchors — twelve counts, all 1
+### 11.2 Anchors — eighteen counts, all 1
 
-Every one of the six FIND strings counted in the **whole document** on each of two bases:
+Every one of the six FIND strings counted in the **whole document** on each of three bases:
 
-| Edit | Store rev 61 | Store rev 61 + MOO-162 rev 5 | Delta |
-|---|---|---|---|
-| 164-1 | 1 | 1 | +209 |
-| 164-2 | 1 | 1 | +238 |
-| 164-3 | 1 | 1 | +24 |
-| 164-4 | 1 | 1 | +1 |
-| 164-5 | 1 | 1 | +8 |
-| 164-6 | 1 | 1 | +10 |
-| **total** | | | **+490** |
+| Edit | Store rev 61 | + MOO-141 patch **rev 5** | + MOO-141 patch **rev 6** | Delta |
+|---|---|---|---|---|
+| 164-1 | 1 | 1 | 1 | +209 |
+| 164-2 | 1 | 1 | 1 | +238 |
+| 164-3 | 1 | 1 | 1 | +24 |
+| 164-4 | 1 | 1 | 1 | +1 |
+| 164-5 | 1 | 1 | 1 | +8 |
+| 164-6 | 1 | 1 | 1 | +10 |
+| **total** | | | | **+490** |
 
-**The totals are identical on both bases, which is the test of order-independence** — had any edit
-overlapped a MOO-162 anchor, the count or the delta would have differed.
+**The totals are identical on all three bases, which is the test of order-independence** — had any edit
+overlapped an anchor of the MOO-141 patch at either revision, the count or the delta would have differed.
 
 **The two candidate texts at §4 and the confirming sentence at §1.3 were counted too**: (c-1)'s FIND = 1,
-(c-2)'s FIND = 1, and card (i)'s insertion point = 1, on both bases. **None is applied.**
+(c-2)'s FIND = 1, and card (i)'s insertion point = 1, on all three bases. **None is applied.**
 
 ### 11.3 Post-application invariants — applied to a **copy**, every one checked
 
-Applied to a copy of both bases: final length **272,101** characters on store revision 61 alone and
-**272,798** with the MOO-141 patch; every count in §7.2 confirmed; **no FIND re-resolved after its own
-edit**; both of G 4's express *"first"*s intact; `is pending` and `was pending` unchanged at 8 and 1.
+Applied to a copy of each base: final length **272,101** characters on store revision 61 alone,
+**272,798** with the MOO-141 patch at revision 5, and **272,799** with it at revision 6; every count in
+§7.2 confirmed; **no FIND re-resolved after its own edit**; both of G 4's express *"first"*s intact;
+`is pending` and `was pending` unchanged at 8 and 1.
 
 ### 11.4 What I did not verify, stated as a limit
 
-- **I did not verify that MOO-162 revision 5's three edits produce the document the Director approved** —
-  only that their FIND strings still resolve once at store revision 61 and that my six are independent of
-  them. Revision 5's own verification is its own.
+- **I did not verify that the MOO-141 patch's three edits produce the document the Director approved**, at
+  either revision 5 or revision 6 — only that their FIND strings still resolve once at store revision 61 and
+  that my six are independent of them on both. That patch's own verification is its own.
+- **I did not re-read [MOO-176](/MOO/issues/MOO-176)'s revision-6 document in full.** I took Edit 3's new
+  READ from its cut script and re-derived the base from it; I did not audit its reproductions, its
+  four-limb day-37-to-day-127 pricing, or its answer to the 120/120 collision. **If any of those moved an
+  anchor I rely on, the counts at §11.2 would have caught it, and they did not.**
 - **I did not re-price anything.** The 78 days, the $0, the $204,000 and the 67.4% are MOO-141's and
   MOO-163's figures, cited and not recomputed.
 - **I did not read § 51.1-156, § 51.1-162 or § 51.1-165 at source this heartbeat.** The claims at §7.3 that

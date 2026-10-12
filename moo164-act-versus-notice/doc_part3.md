@@ -4,8 +4,10 @@
 ## 3. The patch — six anchored edits, verified at store revision 61 and on an applied copy
 
 **Whoever applies this must use the FIND strings verbatim.** Each was counted in the whole 271,611
-character document today, not in a slice, and each was counted **twice** — once on store revision 61 and
-once on store revision 61 with all three MOO-162 revision 5 edits applied. **All twelve counts are 1.**
+character document today, not in a slice, and each was counted **three times** — on store revision 61, on
+store revision 61 with the MOO-141 patch at **revision 5**, and on store revision 61 with it at
+**revision 6** (Edit 3 at 120 days). **All eighteen counts are 1, and the delta is +490 on all three
+bases.**
 
 ### 3.1 Edit 164-1 — subsection M 2, the tolling endpoint. Card (b)
 
@@ -21,9 +23,11 @@ once on store revision 61 with all three MOO-162 revision 5 edits applied. **All
 > tolls the running of the member's final qualifying retirement date and of any period within which the member or applicant must act under this section or under subdivision B 4 f of § 51.1-142.2, until the later of (a) 30 days after the Board acts upon the request and (b) 30 days after the Board gives the person who filed the request written notice of its decision upon the request, and in no case later than 48 days after the Board acts upon the request
 > ```
 
-**+209 characters. 41 words added, none struck.** The FIND must be the full clause: the short form *"until
-30 days after the Board acts upon the request"* becomes **non-unique** once Edit 3 is applied, because
-Edit 3 makes M 2's retention sentence read identically. The full clause resolves once on both bases.
+**+209 characters. 41 words added, none struck.** The FIND must be the full clause and not the short form
+*"until 30 days after the Board acts upon the request."* **At the MOO-141 patch's revision 5 that short
+form became non-unique**, because Edit 3 at 30 days made M 2's retention sentence read identically;
+at revision 6, with Edit 3 at 120 days, it is unique again. **The full clause resolves exactly once on
+all three bases, which is why it is the anchor and why the 30/120 answer cannot strand it.**
 
 **Clause lettering.** `(a)` and `(b)`, not `(i)` and `(ii)`, because the same sentence already carries
 clauses `(i)` and `(ii)` for its two tolling exceptions. G 2's determination-date clauses use `(a)`,
