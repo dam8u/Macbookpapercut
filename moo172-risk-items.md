@@ -33,8 +33,9 @@ circulate outside the Lab.**
 >    (§7, home [MOO-141](/MOO/issues/MOO-141)). Each is carry-through, not new finding, and each exists
 >    to stop a reader drawing a conclusion the register does not support. **F1 is now decided and the
 >    bullet carries the outcome.** The additions were offered to me as a block and they stay as a block.
-> 4. **The 63-day counterfactual stays struck** and is commissioned to the Drafting Specialist to
->    re-derive or retire for good. **It is not restated in any artifact meanwhile** (§4).
+> 4. **The 63-day counterfactual stays struck** and is commissioned to the Drafting Specialist at
+>    [MOO-194](/MOO/issues/MOO-194) — re-derive at 120 days or retire for good, one of the two. **It is
+>    not restated in any artifact meanwhile** (§4, C22 precision 2).
 
 This is the editorial carry-through record for the **four** things the MOO-141 patch requires in the
 memo's risk section, the **one argument that is withdrawn**, the **one phrase that is now banned**, and
@@ -479,7 +480,9 @@ revisit the figure and not a defect in revision 6.
    days.** What survives is the proposition it was evidence for — **that is why Edit 1's three-word
    deletion was kept** (revision 5 §5.3, undisturbed by revision 6) — and that proposition is stated
    without the number. **I did not recalculate it: a rejected alternative is re-priced by its author or
-   not at all.** Owner: Drafting Specialist.
+   not at all.** Owner: Drafting Specialist. **Commissioned by the Policy Director at
+   [MOO-194](/MOO/issues/MOO-194), 12 October 2026** — re-derive at 120 days or retire for good, one of
+   the two. **Until that closes the figure stays struck and the proposition stands without a number.**
 3. **The figure is settled, and the precision inverts.** 120 days is the board's authenticated answer
    of 14:15 on 12 October 2026, revision 6 is cut to it, and the Policy Director accepted revision 6 as
    cut. **No artifact may describe Edit 3's figure as open, as recommended, or as the Lab's proposal
@@ -768,7 +771,9 @@ permanent and the re-cuts did not lift them.**
   *"30 days"* or a bare *"day 37"*.** Each names one of two quantities and each use says which.
 - **New at the revision-6 amendment, from C22:** **no artifact may state the retired −48, the retired
   "48 days before", the retired 63-day counterfactual, or the superseded +697 patch size.** The
-  current figures are **+42**, **day 127**, **42 days to spare** and **+698 characters**.
+  current figures are **+42**, **day 127**, **42 days to spare** and **+698 characters**. **The 63-day
+  ban holds until [MOO-194](/MOO/issues/MOO-194) closes**, and it becomes permanent if that issue
+  retires the figure rather than replacing it. **The other three bans are permanent now.**
 - **New at the revision-6 amendment, from C22 precision 4:** ***"one event with two endpoints"* is
   itself superseded** and may not be used. Three periods now run from the one event. Use §4's
   corrected replacement sentence, which is the only approved form.
