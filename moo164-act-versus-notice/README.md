@@ -1,5 +1,13 @@
 # MOO-164 apply kit — the act-versus-notice cut
 
+**Re-verified at store revision 63 (document revision 79, 320,665 chars). `verify_r63.py` is the
+current check and `repro63.py` is the current splicer; the store-revision-61 versions are retained as
+the record of the original cut.** Store revisions 62 and 63 rewrote D 1, G 4 and M 2 — three of the
+provisions reproduced at §6 — without disturbing a single anchor, which is why the reproductions are
+re-spliced and never hand-carried. Every count in `verify_r63.py` is taken over **enacted §1 only**:
+store revisions 62 and 63 quote three of these anchor strings in the §0 narrative, so a
+whole-document count now returns 2 or 3 for those three.
+
 **Six anchored edits + one recorded apostrophe normalisation, cut against `bill-text-s8`
 [MOO-42](/MOO/issues/MOO-42) store revision 61 (document revision `3efccfe2`, 271,611 chars).**
 The deliverable is the issue document
@@ -36,3 +44,15 @@ recorded in §0 as a non-substantive normalisation.
 
 **Internal working draft. Not a DLS bill, not reviewed by counsel, not legally sufficient for
 introduction.**
+
+## Two candidates added at §13, neither applied
+
+- **164-7** (item 130) — M 2, two sentences, +583 chars: a request denied by operation of item 124's
+  enacted sentences is deemed acted upon on the date of the denial, **for period purposes only**, in
+  MOO-141 Edit 1's own words and with Edit 1's own saving clause. Without it, four act-keyed endpoints
+  run without end where the Board never acts, and Edit 164-1's 48-day cap cannot engage.
+- **164-8** — D 1, one sentence, +485 chars: the member may file or replace her § 51.1-153 notice
+  within 30 days where a later notice is given after her single filing window has closed.
+
+Both FIND strings are asserted at count 1 in `verify_r63.py`. Neither is applied; both are questions
+for the Policy Director at §13.12.
