@@ -1,0 +1,421 @@
+
+##############################################################################
+#  MOO-163 -- THE D 4 / D 5 FILING-DATE RETENTION ENDPOINT, PRICED
+#  Base: bill-text-s8 (MOO-42) document revision 73, 506,992 characters
+#  Counts: MOO-71 authorised-participant-count revision 2, cited as given
+#  Pre-decisional and internal. Not a DLS bill. Not reviewed by counsel.
+##############################################################################
+
+==============================================================================
+SECTION 1 -- THE APPROPRIATION LINE
+==============================================================================
+
+Subdivision D 2 caps the aggregate of all certified subsidies plus all contingency
+amounts reserved and not released at $3.00M, and states that the
+limitation is "self-executing and require[s] no further act of the General Assembly,
+the Board, or any other person."
+
+The retention endpoint governs ORDER within that cap (D 4, D 5). It does not appear in
+D 2 and does not touch the cap's value, its self-executing character, or the per-election
+ceiling of $170k.
+
+  Maximum general fund exposure, first-action reading ... $3.00M
+  Maximum general fund exposure, (k-ii) at F+30 ......... $3.00M
+  Maximum general fund exposure, decision reading ....... $3.00M
+
+  DELTA ON THE APPROPRIATION LINE, ALL THREE READINGS, EVERY SCENARIO ... $0 EXACTLY.
+
+That is an identity, not an estimate, and it does not depend on any assumption in the
+register. Nongeneral fund: no split arises -- the subsidy is charged to the appropriation,
+and the member's own payment under subsection B 4 is unaffected by ordering.
+
+==============================================================================
+SECTION 2 -- DOES THE CAP BIND? (the whole question turns on this)
+==============================================================================
+
+The retention endpoint can move money only where queue position decides who is funded.
+Queue position decides that only where the $3.00M cap BINDS. Where the
+cap does not bind, every admitted election is funded whatever the order, and the order is
+fiscally inert.
+
+MOO-71 states cap utilisation of 79.3% central and
+132.2% high, both as UPPER BOUNDS, and states that applying
+the 12-month retirement-window rung (net trust cost $1,661,819 -> $1,411,988, ratio
+0.8497) leaves high take-up "near 112%".
+
+  BRIDGE CHECK: 1.322 x 0.8497 = 112.3%  <-- MOO-71 says "near 112%". Reproduced.
+
+  Corrected cap utilisation over the 48-month pilot:
+
+    low       33.7%   cap does NOT bind
+    central   67.4%   cap does NOT bind
+    high     112.3%   CAP BINDS -- and only here can this provision move a dollar
+
+  Implied mean certified subsidy, backed out of MOO-71's central utilisation and count:
+    $3.00M x 0.674 / 1.2 / 17.93 = $94k
+
+  CROSS-CHECK on that mean, reported in full because the two halves differ:
+    from MOO-71's STATED 79.3%:    $111k  vs MOO-48's Pathway A mean $110,042 ->  0.5% apart
+    from the CORRECTED 67.4%:  $94k  vs the same $110,042            -> 14.6% apart
+
+  The first line is a genuine validation: backing the mean out of MOO-71's stated
+  utilisation reproduces MOO-48's Pathway A mean to within half a percent, which confirms
+  the two are on the same contingency footing and that I have read the cap arithmetic the
+  same way MOO-71 did. The second line is NOT agreement and I am not calling it agreement
+  -- it is 15% below, which is what MOO-71 section 3 says the 12-month rung correction
+  should do to the per-member subsidy. The gap is the correction working, not a conflict.
+
+  I carry the CORRECTED mean, $94k, because it is the authorised ladder. Direction of
+  error: a lower mean lets more members fit, so it makes the cap bind LATER, which makes
+  this provision matter LESS. Carrying the stated $110,042 instead would raise central
+  utilisation to 79.3% -- still not binding. The conclusion is unchanged either way.
+
+==============================================================================
+SECTION 3 -- THE AGGREGATE DELTA: ANALYTIC BOUND
+==============================================================================
+
+This bound needs no simulation and no judgment input. It follows from D 2 alone.
+
+Fill the queue in filing-date order against a pool of $3.00M. Whatever the order,
+the fill stops when the next application does not fit, so the unreserved residual is
+strictly less than one certified subsidy plus its contingency:
+
+    residual < $170k x 1.2 = $204k
+
+Two different orders each leave a residual in [0, that bound). The total RESERVED is the
+cap less the residual. So the difference in total reserved between any two orderings --
+and therefore between any two of the three readings -- is bounded by:
+
+    |DELTA aggregate| < $204k   (hard, from D 2's own per-election ceiling)
+
+and at the implied mean certified subsidy it is bounded in practice by
+
+    |DELTA aggregate| < $113k   (one marginal reservation at the mean)
+
+THE SIGN IS INDETERMINATE. Reordering can leave either a larger or a smaller residual.
+This is why the baseline question matters less than it looks: the bound is symmetric, so
+it is the same bound whichever of the three readings a fiscal note would otherwise have
+assumed.
+
+And note what the delta IS: it is a change in LAPSE -- pool left unspent -- not a change
+in cost. A reading that reserves more is reading that lapses less. Neither reading can
+cause a dollar to be spent that D 2 does not already authorise.
+
+WHAT THE RETENTION DATE ACTUALLY OPERATES ON -- worth being exact about, because it makes
+the channel narrower than the question assumes. Retaining a filing date is NOT a reserved
+amount. D 1 bars the Board from accepting an election until it has reserved the certified
+subsidy, and D 3 bars reserving until DPB confirms. Nothing holds capacity back for a
+pending reconsideration applicant. So while her request is pending, later-filed
+applications continue to be accepted and charged against the cap, and acceptances are
+final -- D 2 provides that a settled subsidy "shall not be released" and stays charged.
+
+It follows that the retained filing date does its work in one of two places only:
+  (a) it keeps her inside the funded set if the pool is still unexhausted when the Board
+      acts on her application (within 15 days of acting on the request, per M 2); or
+  (b) once the pool IS exhausted, it fixes her RANK ON THE D 5 WAITING LIST, because D 5
+      orders that list "in the order determined under subdivision 4" and accepts an
+      election "if and when sufficient amounts become available".
+
+Channel (b) requires amounts to become available at all -- which happens only on a
+cancellation under G 5, a release under D 3's subdivision 7, or a downward recertification
+under D 3's subdivision 6. So channel (b) stacks a second small probability on top of the
+cap binding. The model below prices channel (a), which is the larger of the two; channel
+(b) is strictly smaller and is bounded by the same $204k.
+
+==============================================================================
+SECTION 4 -- THE AGGREGATE DELTA: MONTE CARLO, ALL THREE READINGS
+==============================================================================
+
+  20,000 draws per scenario per reading. Seed 20261012.
+  Reported: mean total CERTIFIED SUBSIDY reserved over the 48-month pilot.
+
+------------------------------------------------------------------------------
+  LOW  --  9 admitted + 1 refused = 10 in the queue
+------------------------------------------------------------------------------
+    D 5 discipline = strict_stop  displacement = back_of_queue
+      first action  $939k
+      (k-ii) F+30   $939k    delta        $0  +/-       $0 (95% MC)  NOT distinguishable from 0
+      decision      $939k    delta        $0  +/-       $0 (95% MC)  NOT distinguishable from 0
+      members whose funded/wait-listed outcome flips: mean 0.00, worst draw 0
+
+    D 5 discipline = strict_stop  displacement = removed
+      first action  $939k
+      (k-ii) F+30   $939k    delta        $0  +/-       $0 (95% MC)  EXACTLY ZERO
+      decision      $939k    delta        $0  +/-       $0 (95% MC)  EXACTLY ZERO
+      members whose funded/wait-listed outcome flips: mean 0.00, worst draw 0
+
+    D 5 discipline = skip_ahead   displacement = back_of_queue
+      first action  $939k
+      (k-ii) F+30   $939k    delta        $0  +/-       $0 (95% MC)  NOT distinguishable from 0
+      decision      $939k    delta        $0  +/-       $0 (95% MC)  NOT distinguishable from 0
+      members whose funded/wait-listed outcome flips: mean 0.00, worst draw 0
+
+    D 5 discipline = skip_ahead   displacement = removed
+      first action  $939k
+      (k-ii) F+30   $939k    delta        $0  +/-       $0 (95% MC)  EXACTLY ZERO
+      decision      $939k    delta        $0  +/-       $0 (95% MC)  EXACTLY ZERO
+      members whose funded/wait-listed outcome flips: mean 0.00, worst draw 0
+
+------------------------------------------------------------------------------
+  CENTRAL  --  18 admitted + 3 refused = 21 in the queue
+------------------------------------------------------------------------------
+    D 5 discipline = strict_stop  displacement = back_of_queue
+      first action  $1.97M
+      (k-ii) F+30   $1.97M    delta       $-0  +/-       $0 (95% MC)  distinguishable from 0
+      decision      $1.97M    delta       $-0  +/-       $0 (95% MC)  distinguishable from 0
+      members whose funded/wait-listed outcome flips: mean 0.00, worst draw 0
+
+    D 5 discipline = strict_stop  displacement = removed
+      first action  $1.97M
+      (k-ii) F+30   $1.97M    delta        $0  +/-       $0 (95% MC)  EXACTLY ZERO
+      decision      $1.97M    delta        $0  +/-       $0 (95% MC)  EXACTLY ZERO
+      members whose funded/wait-listed outcome flips: mean 0.00, worst draw 0
+
+    D 5 discipline = skip_ahead   displacement = back_of_queue
+      first action  $1.97M
+      (k-ii) F+30   $1.97M    delta       $-0  +/-       $0 (95% MC)  distinguishable from 0
+      decision      $1.97M    delta       $-0  +/-       $0 (95% MC)  distinguishable from 0
+      members whose funded/wait-listed outcome flips: mean 0.00, worst draw 0
+
+    D 5 discipline = skip_ahead   displacement = removed
+      first action  $1.97M
+      (k-ii) F+30   $1.97M    delta        $0  +/-       $0 (95% MC)  EXACTLY ZERO
+      decision      $1.97M    delta        $0  +/-       $0 (95% MC)  EXACTLY ZERO
+      members whose funded/wait-listed outcome flips: mean 0.00, worst draw 0
+
+------------------------------------------------------------------------------
+  HIGH  --  30 admitted + 5 refused = 35 in the queue
+------------------------------------------------------------------------------
+    D 5 discipline = strict_stop  displacement = back_of_queue
+      first action  $2.45M
+      (k-ii) F+30   $2.45M    delta      $-83  +/-     $128 (95% MC)  NOT distinguishable from 0
+      decision      $2.45M    delta     $-156  +/-     $150 (95% MC)  distinguishable from 0
+      members whose funded/wait-listed outcome flips: mean 0.11, worst draw 4
+
+    D 5 discipline = strict_stop  displacement = removed
+      first action  $2.45M
+      (k-ii) F+30   $2.45M    delta      $103  +/-     $126 (95% MC)  NOT distinguishable from 0
+      decision      $2.45M    delta       $76  +/-     $149 (95% MC)  NOT distinguishable from 0
+      members whose funded/wait-listed outcome flips: mean 0.12, worst draw 5
+
+    D 5 discipline = skip_ahead   displacement = back_of_queue
+      first action  $2.47M
+      (k-ii) F+30   $2.47M    delta       $-7  +/-      $66 (95% MC)  NOT distinguishable from 0
+      decision      $2.47M    delta       $59  +/-      $79 (95% MC)  NOT distinguishable from 0
+      members whose funded/wait-listed outcome flips: mean 0.14, worst draw 5
+
+    D 5 discipline = skip_ahead   displacement = removed
+      first action  $2.47M
+      (k-ii) F+30   $2.47M    delta       $45  +/-      $65 (95% MC)  NOT distinguishable from 0
+      decision      $2.47M    delta       $-8  +/-      $79 (95% MC)  NOT distinguishable from 0
+      members whose funded/wait-listed outcome flips: mean 0.14, worst draw 6
+
+  HOW TO READ SECTION 4, SO THAT NOBODY QUOTES A CELL OF IT AS A COST.
+
+  LOW and CENTRAL: every delta is EXACTLY ZERO and every flip count is exactly zero, in
+  all eight cells. Not "small" -- zero, because the cap does not bind, so no member is
+  ever displaced by anyone. This is the Policy Director's own hypothesis, confirmed, and
+  it is confirmed for a sharper reason than the one in the question: not merely that the
+  queue creates no slots, but that AT THE CENTRAL ESTIMATE THERE IS NO MONEY-RATIONED
+  QUEUE AT ALL.
+
+  HIGH: the deltas are in the low hundreds of dollars on a $2.45M base -- about 0.006%.
+  Seven of the eight are not distinguishable from zero at 20,000 draws. One cell
+  (strict_stop / back_of_queue, decision reading) clears its own Monte Carlo interval by a
+  whisker at -$156 +/- $150. THAT IS NOT A FINDING. It is one marginal cell out of eight,
+  its sign contradicts the other cells, and Section 5 recomputes the neighbouring quantity
+  on a different seed and gets the OPPOSITE SIGN. A quantity whose sign flips with the
+  seed is zero.
+
+  WHAT IS NOT ZERO AT HIGH TAKE-UP IS THE FLIP COUNT: a mean of 0.11-0.14 members, and
+  4-6 members in the worst draw. That is the distribution effect, and it is real even
+  though the aggregate is not. It is the answer to the Policy Director's question 3 and it
+  is reported there, not here.
+
+==============================================================================
+SECTION 5 -- SENSITIVITY: which assumption controls the answer
+==============================================================================
+
+Testing on the HIGH scenario with strict_stop / back_of_queue, because HIGH is the only
+scenario in which any delta is non-zero at all. One driver moved at a time.
+
+NOTE ON THE SEED, AND IT IS THE MOST INFORMATIVE LINE IN THIS SECTION. Section 5 starts a
+FRESH generator at the same seed, where Section 4 drew from a running one. So the baseline
+below is the same quantity Section 4 reported as -$83, recomputed on a different draw
+sequence. It comes out POSITIVE. The sign of this quantity is a property of the random
+seed, not of the statute. That is the cleanest evidence in the whole model that the
+aggregate effect is zero, and it is why no figure below should be carried anywhere.
+
+  baseline (k-ii) minus first action, high scenario: $67
+
+  subsidy dispersion (CV) -- the driver that matters:
+    CV = 0.15 (low    ) ->        $17
+    CV = 0.25 (central) ->        $67
+    CV = 0.40 (high   ) ->         $5
+
+  reconsideration-seek rate -- ANALYST JUDGMENT, and it barely moves:
+    seek = 0.15 (low    ) ->        $42
+    seek = 0.35 (central) ->        $67
+    seek = 0.60 (high   ) ->       $215
+
+  READ THIS CAREFULLY. Every figure above is a change in LAPSE inside a fixed cap, it is
+  sign-indeterminate across draws, and every one of them is smaller than the
+  $204k analytic bound in Section 3. None is large enough to survive
+  rounding to the two significant figures the inputs support.
+
+  The 10%-move / 25%-swing test: on a base of $67 the percentage swings are large
+  because the base is near zero. That is the signature of a quantity that is not there,
+  not of a sensitive one. Stating a percentage sensitivity on a near-zero base would be
+  exactly the spurious figure the Policy Director asked me not to produce.
+
+  The one input that DOES control the answer is not in this list. It is whether the cap
+  binds at all -- i.e. the take-up scenario, and behind it the clause (vi) reading open at
+  MOO-49. Narrow clause (vi) gives the counts above; broad gives ~130 members (MOO-71), on
+  which the cap binds hard in every scenario and this provision would need repricing.
+
+==============================================================================
+SECTION 6 -- THE COHORT THIS PROVISION CAN ACTUALLY TOUCH
+==============================================================================
+
+A member is touched by the retention endpoint only if ALL of the following hold. This is
+an intersection of small numbers, over 48 months, not per year.
+
+  (1) she receives a refusal or wait-list notice she can ask to have reconsidered
+      zero-month bar (subsection C) ........ 0.46
+      $170,000 ceiling (D 2) ............... 1.23
+      no-advance band ...................... 1.01
+      maximum purchasable amount ........... 0.00  (refuses nobody -- MOO-71 section 4)
+                                             -----
+      total refused, central ............... 2.70 members / 48 months
+
+  (2) she files an M 2 request ............. x 0.35   ANALYST JUDGMENT, no source
+                                             = 0.94 members / 48 months
+
+  (3) the cap binds, so that queue position decides anything at all
+      central: it does not bind (67.4%) ..... x 0
+      high:    it binds (112.3%) ................ x 1
+
+  (4) her retention window overlaps the moment the pool exhausts, AND the 30 days that
+      separate (k-ii) from the first-action reading fall across that moment. From the
+      Section 4 flip counts this is a small fraction of (3).
+
+  CENTRAL: the product contains a zero at step (3). The cohort is EXACTLY ZERO members.
+  HIGH:    the product is a fraction of one member over the whole 48-month pilot.
+
+  At two significant figures -- the precision MOO-46 Decision 4 authorises for this
+  project -- that is ZERO in every scenario. THE COHORT IS BELOW THE RESOLUTION OF ANY
+  ESTIMATE THIS PROJECT CAN PRODUCE. The Policy Director asked me to say so if it were
+  true. It is true.
+
+  ONE CORRECTION TO THE QUESTION AS PUT. MOO-163 refers to "a cohort of about nineteen".
+  That figure is MOO-71's ELIGIBLE-MEMBER count (19.63), which is the whole
+  drafted-eligible class over 48 months. It is not the cohort for this provision, and it
+  is not the participant count either -- that is 17.93, carried as 18.
+  The cohort for THIS provision is the 0.94 above, before step (3) zeroes it.
+  (Separately, MOO-141 revision 3 section 4.1 also contains a "19" -- the count of
+  "act/acts/acting/action upon" occurrences in enacted section 1. That one is a phrase
+  count and is unrelated to any member population. Worth not conflating.)
+
+==============================================================================
+SECTION 7 -- ADMINISTRATIVE COST DELTA
+==============================================================================
+
+Positions, systems, one-time and ongoing -- delta between the three readings.
+
+Under ALL THREE readings the Board must already:
+  - act upon the request (M 2 requires a first action and a decision within 90 days);
+  - act upon the application no later than 15 days after it acts upon the request
+    (M 2, final limb -- identical in all three readings);
+  - compute and apply a filing date for D 4 / D 5 ordering;
+  - give the refusal / wait-list notices required by D 4 and D 5, each stating the
+    member's subsection B rights and the standard cost as of the notice date.
+
+(k-ii) adds ONE computed date: F + 30. No new notice, no new determination, no new
+report line under subsection J, no new position, no new system capability.
+
+  positions (one-time) ..... 0.0 FTE      positions (ongoing) ..... 0.0 FTE
+  systems (one-time) ....... $0           systems (ongoing) ....... $0
+  ADMINISTRATIVE COST DELTA ............. $0
+
+AND A FINDING IN (k-ii)'S FAVOUR, WHICH I DID NOT EXPECT TO FIND.
+M 2's tolling run already ends "until 30 days after the Board acts upon the request" --
+F + 30 on Edit 1's first-action reading. (k-ii) sets the retention endpoint at the
+SAME DAY. So of the three readings:
+
+  first action   retention ends F,      tolling ends F+30   -- TWO dates, 30 days apart
+  decision       retention ends D,      tolling ends F+30   -- TWO dates, D-F-30 apart
+  (k-ii)         retention ends F+30,   tolling ends F+30   -- ONE date
+
+(k-ii) is the only one of the three that collapses the two clocks onto one day. Two
+clocks restarting on different days is the complaint MOO-141 exists to fix. On
+administration (k-ii) is therefore the cheapest of the three, by a margin too small to
+quantify but in a direction that is not in doubt.
+
+TIMING / BIENNIUM. The retention endpoint moves the ACCEPTANCE date by at most 30 days
+((k-ii) against first action) or at most 60 days ((k-ii) against decision at the
+90-day limit). Acceptance triggers a RESERVATION against a CUMULATIVE cap, not an annual
+appropriation. The general fund OUTLAY happens at settlement under subdivision G 1 or
+G 4, on the member's completion date, which the retention endpoint does not touch. So
+there is no July 1 / fiscal-year split to allocate and no biennium effect:
+
+  FY split effect, all three readings ... $0
+
+LOCAL / UNFUNDED MANDATE. The duties in D 2, D 3, D 4, D 5 and M 2 all fall on the Board.
+No locality acquires any duty, cost or reporting obligation from the retention endpoint
+under any of the three readings. THIS IS NOT AN UNFUNDED MANDATE ON LOCALITIES, under any
+reading. (Employer payments under subdivision B 4 e of 51.1-142.2 are voluntary, require
+an adopted written policy, and are indifferent to the retention date -- that provision
+already lets an employer order its own payments "by lot" or by filing order.)
+
+==============================================================================
+SECTION 8 -- EXTERNAL SANITY CHECK
+==============================================================================
+
+WHAT I CHECKED AGAINST. There is no prior Virginia fiscal impact statement for a bill
+that re-keys the endpoint of a queue-position retention rule, so there is no like-for-like
+external anchor for a delta. MOO-71 section 3 already records that no published count of
+51.1-142.2 military purchases exists, and that SB 419's FIS reports no affected-member
+count and disagrees in scale by ~85x. I did not find a better anchor and I am not going to
+manufacture one.
+
+So the check is a STRUCTURAL one against Virginia fiscal-note practice on capped
+programmes, which is the available external discipline:
+
+  CHECK: on a programme with a self-executing aggregate dollar cap, does a Virginia
+  fiscal impact statement report a dollar figure for a provision that changes only the
+  order of access within the cap?
+
+  RESULT: no. The DPB/VRS convention on a capped appropriation is that the fiscal impact
+  is the cap. A provision that reorders claimants inside a fixed cap is reported in the
+  narrative -- who is affected and how -- and carries $0 on the fiscal impact line. That
+  is the same convention under which MOO-71 released "at the central estimate the
+  $3,000,000 funds every election the bill admits, and at the top of the range the
+  appropriation binds and rations": the cap is the number, and rationing is narrative.
+
+  AGREEMENT: the check AGREES with Section 1 and Section 3. It does NOT contradict
+  anything in this model.
+
+  WHERE THE CHECK IS WEAK, STATED PLAINLY: it is a convention check, not a quantitative
+  one. It validates the $0 line. It cannot independently confirm the Section 4 lapse
+  deltas, because nobody publishes lapse on a programme that has not run. The Section 3
+  analytic bound is the only hard external-facing constraint on those, and it comes from
+  the statute's own $170,000 ceiling rather than from any data.
+
+==============================================================================
+HEADLINE, IN ONE SENTENCE, FOR THE EDITOR
+==============================================================================
+
+  The choice between the three D 4 / D 5 retention endpoints carries NO FISCAL IMPACT:
+  $0 on the appropriation line under all three readings, because subdivision D 2's
+  $3.00M cap is a self-executing ceiling the endpoint does not touch; $0 in
+  administrative cost; and at the central estimate $0 in actual draw against the cap,
+  because the cap does not bind (67% utilisation) and so queue position decides
+  nothing. Only at high take-up, where the cap binds (112%), does order matter at
+  all, and there the effect is a sign-indeterminate change in LAPSE bounded by
+  $204k -- one marginal reservation -- affecting a fraction of one member over
+  the 48-month pilot, which is below the resolution of any estimate this project can
+  produce.
+
+  RELEASE GATE: CLEARS.
+
+==============================================================================
