@@ -31,9 +31,10 @@ one named target for gate 4's bounded re-review (§4), and one confirmation for 
 | Enacted text (§ 51.1-142.2 + § 51.1-142.4) | **112,554** characters |
 | Base the patch was last verified against | store revision 60, 250,229 characters whole / 114,833 enacted |
 
-**The whole document shrank by 21,362 characters and the enacted text shrank by 2,279.** The first is
-the record moving out again; the second is store revision 61 curing its fatal finding **by deleting
-words**, which is what its own §0.0-61 says it did.
+**The whole document grew by 21,382 characters while the enacted text shrank by 2,279.** The growth is
+store revision 61's own record; the shrinkage is store revision 61 curing its fatal finding **by deleting
+words**, which is what its own §0.0-61 says it did. **The two move in opposite directions, so document
+size is not a proxy for whether the bill moved** — which is the same lesson as the anchors.
 
 ### 2.1 The three anchors, counted in the whole 271,611-character document
 
