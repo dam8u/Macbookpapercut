@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VRS V2 fiscal model — Retirement Bridge and Retirement Incentive</title>
+<style>
+  :root {
+    color-scheme: light;
+    --plane:        #f9f9f7;
+    --surface-1:    #fcfcfb;
+    --ink-1:        #0b0b0b;
+    --ink-2:        #52514e;
+    --ink-muted:    #898781;
+    --grid:         #e1e0d9;
+    --axis:         #c3c2b7;
+    --ring:         rgba(11,11,11,0.10);
+    --series-1:     #2a78d6;
+    --series-2:     #eb6834;
+    --series-3:     #1baf7a;
+    --ord-1:        #86b6ef;
+    --ord-2:        #5598e7;
+    --ord-3:        #2a78d6;
+    --ord-4:        #1c5cab;
+    --ord-5:        #104281;
+    --good:         #006300;
+    --critical:     #d03b3b;
+    --warning:      #fab219;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --plane:      #0d0d0d;
+      --surface-1:  #1a1a19;
+      --ink-1:      #ffffff;
+      --ink-2:      #c3c2b7;
+      --ink-muted:  #898781;
+      --grid:       #2c2c2a;
+      --axis:       #383835;
+      --ring:       rgba(255,255,255,0.10);
+      --series-1:   #3987e5;
+      --series-2:   #d95926;
+      --series-3:   #199e70;
+      --ord-1:      #cde2fb;
+      --ord-2:      #9ec5f4;
+      --ord-3:      #6da7ec;
+      --ord-4:      #3987e5;
+      --ord-5:      #184f95;
+      --good:       #0ca30c;
+      --critical:   #d03b3b;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --plane:      #0d0d0d;
+    --surface-1:  #1a1a19;
+    --ink-1:      #ffffff;
+    --ink-2:      #c3c2b7;
+    --ink-muted:  #898781;
+    --grid:       #2c2c2a;
+    --axis:       #383835;
+    --ring:       rgba(255,255,255,0.10);
+    --series-1:   #3987e5;
+    --series-2:   #d95926;
+    --series-3:   #199e70;
+    --ord-1:      #cde2fb;
+    --ord-2:      #9ec5f4;
+    --ord-3:      #6da7ec;
+    --ord-4:      #3987e5;
+    --ord-5:      #184f95;
+    --good:       #0ca30c;
+    --critical:   #d03b3b;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0 24px 72px;
+    background: var(--plane); color: var(--ink-1);
+    font: 15px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; }
+  header { padding: 32px 0 20px; }
+  h1 { font-size: 26px; line-height: 1.2; margin: 0 0 8px; font-weight: 650; letter-spacing: -0.01em; }
+  h2 { font-size: 17px; margin: 0 0 4px; font-weight: 620; }
+  h3 { font-size: 14px; margin: 0 0 10px; font-weight: 600; color: var(--ink-2);
+       text-transform: uppercase; letter-spacing: 0.06em; }
+  p  { margin: 0 0 10px; color: var(--ink-2); }
+  .prov { font-size: 13px; color: var(--ink-muted); }
+  .topbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 14px; }
+  button {
+    font: inherit; font-size: 13px; padding: 6px 12px; border-radius: 7px;
+    border: 1px solid var(--ring); background: var(--surface-1); color: var(--ink-1);
+    cursor: pointer;
+  }
+  button:hover { border-color: var(--axis); }
+  button[aria-pressed="true"] { background: var(--series-1); border-color: var(--series-1); color: #fff; }
+
+  .card {
+    background: var(--surface-1); border: 1px solid var(--ring);
+    border-radius: 12px; padding: 20px 22px; margin-bottom: 18px;
+  }
+  .controls { position: sticky; top: 0; z-index: 20; }
+  .ctlgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px 26px; }
+  .ctl label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 2px; }
+  .ctl .hint { font-size: 11.5px; color: var(--ink-muted); margin-bottom: 6px; }
+  .ctl .row { display: flex; align-items: center; gap: 10px; }
+  .ctl output {
+    font-variant-numeric: tabular-nums; font-weight: 650; font-size: 14px;
+    min-width: 58px; text-align: right; color: var(--ink-1);
+  }
+  input[type=range] { flex: 1; min-width: 0; accent-color: var(--series-1); height: 22px; }
+  .seg { display: flex; gap: 6px; margin-top: 4px; }
+
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin-bottom: 18px; }
+  .tile { background: var(--surface-1); border: 1px solid var(--ring); border-radius: 12px; padding: 16px 18px; }
+  .tile .k { font-size: 12px; font-weight: 600; color: var(--ink-2); text-transform: uppercase; letter-spacing: 0.055em; }
+  .tile .v { font-size: 31px; font-weight: 650; letter-spacing: -0.02em; margin: 6px 0 2px; }
+  .tile .s { font-size: 12px; color: var(--ink-muted); }
+
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(440px, 1fr)); gap: 18px; }
+  figure { margin: 0; }
+  figcaption { font-size: 12.5px; color: var(--ink-muted); margin-top: 10px; }
+  svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .gridline { stroke: var(--grid); stroke-width: 1; }
+  .axisline { stroke: var(--axis); stroke-width: 1; }
+  .tick { fill: var(--ink-muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+  .cat  { fill: var(--ink-2); font-size: 12px; }
+  .dlab { fill: var(--ink-1); font-size: 12px; font-weight: 620; font-variant-numeric: tabular-nums; }
+  .hit  { fill: transparent; cursor: default; }
+
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12.5px; color: var(--ink-2); margin: 0 0 12px; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .sw { width: 11px; height: 11px; border-radius: 3px; display: inline-block; }
+
+  #tip {
+    position: fixed; pointer-events: none; opacity: 0; transition: opacity .09s;
+    background: var(--surface-1); color: var(--ink-1); border: 1px solid var(--ring);
+    border-radius: 8px; padding: 8px 11px; font-size: 12.5px; line-height: 1.45;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.13); z-index: 60; max-width: 280px;
+  }
+  #tip b { font-variant-numeric: tabular-nums; }
+
+  table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+  th, td { text-align: right; padding: 7px 10px; border-bottom: 1px solid var(--grid); font-variant-numeric: tabular-nums; }
+  th:first-child, td:first-child { text-align: left; font-variant-numeric: normal; }
+  thead th { color: var(--ink-2); font-weight: 620; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
+  tbody tr.grp td { font-weight: 650; color: var(--ink-1); border-top: 1px solid var(--axis); }
+  caption { text-align: left; font-size: 13px; color: var(--ink-muted); padding-bottom: 8px; }
+
+  details { font-size: 13.5px; }
+  details summary { cursor: pointer; font-weight: 620; color: var(--ink-1); margin-bottom: 8px; }
+  .note { border-left: 3px solid var(--warning); padding: 2px 0 2px 14px; margin: 14px 0; font-size: 13.5px; color: var(--ink-2); }
+  .note.red { border-left-color: var(--critical); }
+  ul { margin: 0 0 10px; padding-left: 20px; color: var(--ink-2); }
+  li { margin-bottom: 5px; }
+  a { color: var(--series-1); }
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>VRS V2 fiscal model — Retirement Bridge and Retirement Incentive</h1>
+  <p class="prov">Policy Director · MOO-100 · built 12 October 2026 · internal, pre-decisional.
+  Move the sliders; every figure, chart and table below recalculates. Fixed inputs are verified against
+  primary VRS, DHRM and BLS sources — open <em>Verified inputs</em> for the list.</p>
+  <p class="prov" style="border-left:3px solid #2a6; padding-left:9px; margin-top:8px">
+  <strong>All six board decisions of 12 October 2026 are applied.</strong> Decisions 3 to 6 — the purchasable
+  Bridge screen, the non-hazardous State Employees scope, both Plan 2 findings, and no transfer mechanism for
+  the agency payroll saving — confirmed the reading this model was already built on, so no figure changed when
+  they were taken. The authoritative record is <strong>V2-decisions-adopted.pdf</strong>. This page is optional:
+  every figure the sliders produce is printed in <strong>V2-fiscal-model-scenarios.pdf</strong>.</p>
+  <div class="topbar">
+    <button id="btn-low">Low case</button>
+    <button id="btn-mid">Mid case</button>
+    <button id="btn-high">High case</button>
+    <button id="btn-reset">Reset to mid</button>
+    <span style="flex:1"></span>
+    <button id="btn-table" aria-pressed="false">Table view</button>
+    <button id="btn-theme">Dark / light</button>
+  </div>
+</header>
+
+<!-- ONE control row, above everything it scopes -->
+<section class="card controls" aria-label="Model controls">
+  <h3 style="margin-bottom:14px">Controls</h3>
+  <div class="ctlgrid">
+
+    <div class="ctl">
+      <label for="vet">Veteran share of the cohort</label>
+      <div class="hint">DHRM records 6% (a floor). Virginia labour-force parity is 8.1%.</div>
+      <div class="row"><input id="vet" type="range" min="3" max="16" step="0.5" value="8"><output id="vet-o"></output></div>
+    </div>
+
+    <div class="ctl">
+      <label for="qual">Share with qualifying purchasable service</label>
+      <div class="hint">Assumption. No source. The weakest number in the model.</div>
+      <div class="row"><input id="qual" type="range" min="10" max="90" step="5" value="50"><output id="qual-o"></output></div>
+    </div>
+
+    <div class="ctl">
+      <label for="takeup">Take-up over the four-year pilot</label>
+      <div class="hint">Board decision, 12 Oct 2026: low 5% / mid 12% / high 25%.</div>
+      <div class="row"><input id="takeup" type="range" min="1" max="40" step="1" value="12"><output id="takeup-o"></output></div>
+    </div>
+
+    <div class="ctl">
+      <label for="repl">Replacement salary</label>
+      <div class="hint">Share of the departing employee's salary. G10 set: 80 / 85 / 90%.</div>
+      <div class="row"><input id="repl" type="range" min="60" max="110" step="1" value="85"><output id="repl-o"></output></div>
+    </div>
+
+    <div class="ctl">
+      <label for="unfill">Vacated positions not refilled</label>
+      <div class="hint">Workforce reduction. G10 set: 1 / 3 / 5%.</div>
+      <div class="row"><input id="unfill" type="range" min="0" max="15" step="0.5" value="3"><output id="unfill-o"></output></div>
+    </div>
+
+    <div class="ctl">
+      <label for="kratio">k — actuarial-equivalent cost ÷ approximate normal cost</label>
+      <div class="hint">Only VRS can set this. It decides whether the bill is affordable.</div>
+      <div class="row"><input id="kratio" type="range" min="1" max="4" step="0.1" value="2"><output id="kratio-o"></output></div>
+    </div>
+
+    <div class="ctl">
+      <label>Bridge eligibility screen</label>
+      <div class="hint">Purchased service adds service, not age.</div>
+      <div class="seg">
+        <button id="scr-p" aria-pressed="true">Purchasable — 2,396 (adopted)</button>
+        <button id="scr-g" aria-pressed="false">G9 as written — 5,177 (retired)</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- STAT TILES -->
+<section class="tiles" aria-label="Headline results">
+  <div class="tile"><div class="k">Participants</div><div class="v" id="t-part"></div><div class="s">over the four-year pilot</div></div>
+  <div class="tile"><div class="k">Member payments</div><div class="v" id="t-pay"></div><div class="s">into the trust fund, one-time</div></div>
+  <div class="tile"><div class="k">Trust-fund subsidy</div><div class="v" id="t-sub"></div><div class="s" id="t-sub-s">at the chosen k</div></div>
+  <div class="tile"><div class="k">Agency payroll saving</div><div class="v" id="t-sav"></div><div class="s" id="t-sav-s">annual run-rate</div></div>
+</section>
+
+<div class="note red" id="g11-note">
+  <strong>G11 holds without exception.</strong> The payroll saving is agency appropriation, not trust-fund money.
+  Nothing in the current design moves it. No headline may net the fourth tile against the third.
+</div>
+
+<!-- CHARTS -->
+<div class="grid2" id="charts">
+
+  <section class="card">
+    <h2>Participation funnel</h2>
+    <p style="font-size:13.5px">Each bar is the share carried forward from the stage above it. Absolute counts are labelled.</p>
+    <figure>
+      <svg id="c-funnel" viewBox="0 0 560 290" role="img" aria-labelledby="funnel-t"></svg>
+      <figcaption id="funnel-t">Five stages from the verified state Plan 1/Plan 2 denominator down to pilot participants.
+      Stage 1 is verified; stages 3 and 4 are the two slider dials that G24 replaces with real counts.</figcaption>
+    </figure>
+  </section>
+
+  <section class="card">
+    <h2>Trust-fund subsidy against k</h2>
+    <p style="font-size:13.5px">The subsidy the pilot grants is (k − 1) × member payments. Your current k is marked.</p>
+    <figure>
+      <svg id="c-k" viewBox="0 0 560 290" role="img" aria-labelledby="k-t"></svg>
+      <figcaption id="k-t">Actuarial-equivalent cost rises sharply with age, and both pathways aim at the oldest
+      members in the plan — so k will sit at the high end of this range. VRS must supply it.</figcaption>
+    </figure>
+  </section>
+
+  <section class="card" style="grid-column: 1 / -1">
+    <h2>Agency payroll saving — the G10 grid</h2>
+    <p style="font-size:13.5px">Annual run-rate at full enrolment. Positions not refilled save the whole package;
+    refilled positions save only the salary difference. No double counting.</p>
+    <div class="legend" id="l-pay"></div>
+    <figure>
+      <svg id="c-pay" viewBox="0 0 1040 320" role="img" aria-labelledby="pay-t"></svg>
+      <figcaption id="pay-t">The nine G10 combinations. Your current slider setting is shown beneath the chart,
+      and moves independently of the nine fixed bars.</figcaption>
+    </figure>
+    <div class="note" id="pay-current"></div>
+  </section>
+
+</div>
+
+<!-- TABLE VIEW -->
+<section class="card hidden" id="tableview">
+  <h2>Table view</h2>
+  <table id="tbl"><caption>Every value on this page, at the current slider settings.</caption></table>
+</section>
+
+<!-- PROVENANCE -->
+<section class="card">
+  <details>
+    <summary>Verified inputs — fixed, with sources (all retrieved 12 October 2026)</summary>
+
+    <h3 style="margin-top:14px">The denominator</h3>
+    <ul>
+      <li><strong>81,274</strong> active participants in the VRS <em>State Employees</em> plan; average annual
+      compensation <strong>$77,215</strong>; average age 46.9; average total service 11.0 —
+      <a href="https://employers.varetire.org/media/employers/pdf/financial-reporting/valuations/valuation-report-vrs.pdf">VRS <em>Annual Actuarial Valuation, June 30, 2025</em></a>, pp. 49–50.</li>
+      <li>Plan-tier split derived from the published age × total-service table using statutory boundaries
+      (Plan 1 ≥ 15.0 years of service, Plan 2 11.5–15.0, Hybrid &lt; 11.5):
+      <strong>Plan 1 20,872 · Plan 2 8,122 · modeling denominator 28,994</strong>. Hybrid 52,280 is excluded by G15.</li>
+      <li>Board decision, 12 Oct 2026: 177,807 stays as the <em>system-wide context figure</em> only. It appears
+      nowhere in this arithmetic.</li>
+    </ul>
+
+    <h3>Pathway pools, computed cell by cell from that table</h3>
+    <ul>
+      <li><strong>Incentive — 6,254</strong> already eligible for unreduced retirement (Plan 1 5,928 at $84,616 · Plan 2 326 at $87,242).</li>
+      <li><strong>Bridge — 2,396</strong> can reach the threshold with ≤ 48 months purchased (Plan 1 only, $83,222, average 24.0 months needed).</li>
+      <li>G9's "within 4 years of the threshold" screen gives 5,177 — <strong>2.2× too many</strong>, because
+      purchased service adds service, not age. A member whose only path is Plan 1's age-65 rule or Plan 2's
+      age-67 rule cannot be bridged at any price. <strong>Decision 3, 12 Oct 2026: the purchasable screen is
+      adopted; 5,177 is retired as a Bridge figure and kept here only so the difference can be audited.</strong></li>
+      <li><strong>Plan 2 Bridge participation is structurally zero.</strong> A Plan 2 member holds at most 15.5 years
+      of service, so Rule of 90 needs age 74.5 — and anyone that old already qualified at 67 under the age rule,
+      which puts them in the Incentive pathway. <strong>Decision 5, 12 Oct 2026: confirmed. Plan 2 stays legally
+      eligible for the Bridge and is scored at zero for the whole pilot, and the Plan 2 proximity assumptions of
+      12% and 13% are withdrawn in favour of the derived 4.0% and 6.7%.</strong></li>
+    </ul>
+
+    <h3>Prices and benefit rules</h3>
+    <ul>
+      <li>Approximate normal cost, State/Teacher/Local Non-Hazardous Duty, effective 1 July 2025:
+      <strong>Plan 1 12.50% of salary, Plan 2 10.74%</strong> (Hybrid 6.68%; hazardous duty 23.78% / 19.15%;
+      judicial 31.97% / 29.67%). Charged on creditable compensation or AFC at purchase, whichever is higher —
+      <a href="https://www.varetire.org/media/shared/pdf/publications/pps-rate-charts.pdf">VRS <em>Purchase of Prior Service Cost Rates</em></a>.</li>
+      <li>Plan 1 unreduced: "age 65 with at least five years of service credit or at age 50 with at least 30 years";
+      multiplier 1.7%; AFC = highest 36 consecutive months —
+      <a href="https://www.varetire.org/media/shared/pdf/publications/handbook-plan-1.pdf">Plan 1 Handbook</a>.</li>
+      <li>Plan 2 unreduced: "normal Social Security retirement age with at least five years of service credit or
+      when your age and service credit equal 90"; multiplier 1.65% on service purchased on or after 1 January 2013;
+      AFC = highest 60 consecutive months —
+      <a href="https://www.varetire.org/media/shared/pdf/publications/handbook-plan-2.pdf">Plan 2 Handbook</a>.</li>
+      <li>48-month active-duty maximum, 180 consecutive days, no military pension at purchase —
+      <a href="https://www.varetire.org/benefits-and-programs/programs/pps/types/">VRS Types of Service</a>.</li>
+    </ul>
+
+    <h3>Employer costs</h3>
+    <ul>
+      <li>State Employees employer DB contribution rate, FY2027–28: <strong>11.07%</strong> =
+      employer normal cost 4.34% + administrative expense 0.24% + <strong>amortization of UAAL 6.49%</strong>.
+      UAAL $6.05 billion — VRS valuation, p. 12.</li>
+      <li><strong>Only 4.58 of those 11.07 points is a real saving.</strong> The amortization component is a
+      percentage-of-payroll charge against a <em>fixed dollar</em> liability. Cutting payroll does not cut the
+      liability by a cent — it cuts the dollars collected against it, and the rate must rise later. Booking
+      11.07% as avoided cost would record a timing cost as a saving. The scalable multiplier used here is
+      <strong>1 + 4.34% + 0.24% + 7.65% FICA = 1.1223</strong>.</li>
+    </ul>
+
+    <h3>Veteran share</h3>
+    <ul>
+      <li><strong>6%</strong> of the classified state workforce, DHRM EPR Reports as of 30 June 2024 —
+      <a href="https://sfac.virginia.gov/pdf/General%20Gov/2025/01212025_No1_DHRM.pdf">DHRM to Senate Finance and
+      Appropriations, 21 January 2025</a>, slide 8. Treat as a <em>floor</em>: this is the same field V1 found
+      reads "unknown" for 69% of members.</li>
+      <li>Virginia context: veterans were 369,000 of a 4,528,987 civilian labour force in 2025 — <strong>8.1%</strong> —
+      <a href="https://www.bls.gov/news.release/vet.t06A.htm">BLS Table 6A</a> and
+      <a href="https://fred.stlouisfed.org/series/LAUST510000000000006A">FRED LAUST510000000000006A</a>.</li>
+    </ul>
+  </details>
+</section>
+
+<section class="card">
+  <details>
+    <summary>What this model does not do — and must not be read as doing</summary>
+    <ul style="margin-top:12px">
+      <li><strong>Nothing here is a VRS actuarial result.</strong> Ledger 1 deliberately stops at the member
+      payment and expresses the trust-fund cost as the ratio k. That is the G13 discipline, not a gap.</li>
+      <li><strong>The cost of earlier benefit commencement is not quantified.</strong> The Bridge accelerates
+      retirement by up to 24 months. Pricing that needs mortality, COLA, forgone accrual and forgone member
+      contributions — VRS work, not ours.</li>
+      <li><strong>The Incentive has no eligibility acceleration at all.</strong> That cohort is already eligible,
+      so the purchase raises the benefit amount and nothing else. The G5 true-up is the only mechanism tying the
+      Incentive to a retirement outcome, and whether it is collectable is a written question for VRS counsel.</li>
+      <li><strong>Administration cost is not quantified</strong> (G14). V1's $375,000 does not carry over — it
+      priced a queue and a certified-subsidy reservation that no longer exist.</li>
+      <li><strong>Not in the workforce ledger:</strong> health insurance (per-head, so it saves only on unfilled
+      positions); leave payout at separation, which is a one-time cost <em>against</em> the ledger; vacancy and
+      training cost during transition; the risk that a senior post cannot be filled at 85% in a tight market.</li>
+      <li><strong>Assumptions, labelled per G23:</strong> any veteran share above the recorded 6%; the
+      qualifying-service share; the service-based tier proxy; Plan 2 normal Social Security age of 67; uniform
+      distribution inside the published age and service bands; salary as a proxy for AFC; k as a ratio rather
+      than a computed value.</li>
+      <li><strong>Scope:</strong> the VRS State Employees (non-hazardous-duty) plan only. State Police (1,902),
+      Virginia Law Officers (7,459) and Judicial (473) are excluded. <strong>Decision 4, 12 Oct 2026: excluded, and
+      the exclusion is stated expressly in the bill</strong> — their eligibility rules differ and their
+      approximate-normal-cost price rates run roughly 1.9× and 2.6× the non-hazardous rate.</li>
+    </ul>
+  </details>
+</section>
+
+</div>
+<div id="tip" role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+  "use strict";
+
+  /* ---------- verified constants ---------- */
+  const DENOM = 28994;                 // state Plan 1 + Plan 2, derived from VRS valuation p.50
+  const POOLS = {
+    incentive: [
+      { plan: "Plan 1", n: 5928, sal: 84616, anc: 0.1250, yrs: 1.00, mult: 0.0170 },
+      { plan: "Plan 2", n:  326, sal: 87242, anc: 0.1074, yrs: 1.00, mult: 0.0165 }
+    ],
+    bridgePurchasable: [
+      { plan: "Plan 1", n: 2396, sal: 83222, anc: 0.1250, yrs: 2.00, mult: 0.0170 }
+    ],
+    bridgeG9: [
+      { plan: "Plan 1", n: 4635, sal: 82819, anc: 0.1250, yrs: 2.00, mult: 0.0170 },
+      { plan: "Plan 2", n:  542, sal: 83492, anc: 0.1074, yrs: 2.00, mult: 0.0165 }
+    ]
+  };
+  const ENC = 0.0434, ADMIN = 0.0024, AMORT = 0.0649, FICA = 0.0765;
+  const SCALE = 1 + ENC + ADMIN + FICA;     // 1.1223 — the honest scalable multiplier
+  const REPL_SET = [0.80, 0.85, 0.90];
+  const UNFILL_SET = [0.01, 0.03, 0.05];
+  const K_SET = [1.5, 2.0, 2.5, 3.0];
+
+  /* ---------- state ---------- */
+  const S = { vet: 8, qual: 50, takeup: 12, repl: 85, unfill: 3, k: 2.0, screen: "purchasable" };
+
+  /* ---------- formatting ---------- */
+  const f0  = n => Math.round(n).toLocaleString("en-US");
+  const f1  = n => n.toLocaleString("en-US", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  const usd = n => "$" + Math.round(n).toLocaleString("en-US");
+  const usdK = n => n >= 1e6
+      ? "$" + (n / 1e6).toLocaleString("en-US", { maximumFractionDigits: 2 }) + "M"
+      : (n >= 10000 ? "$" + f0(n / 1000) + "k" : "$" + f0(n));
+  const pct = n => n.toLocaleString("en-US", { maximumFractionDigits: 1 }) + "%";
+  const cnt = n => n >= 20 ? f0(n) : f1(n);
+  // round axis maximum up to a readable step, and return 4-5 even ticks
+  function niceScale(rawMax, want = 4) {
+    if (!(rawMax > 0)) return { max: 1, ticks: [0, 1] };
+    const step0 = rawMax / want;
+    const mag = Math.pow(10, Math.floor(Math.log10(step0)));
+    const step = [1, 2, 2.5, 5, 10].map(m => m * mag).find(c => c >= step0) || 10 * mag;
+    const max = Math.ceil(rawMax / step) * step;
+    const ticks = [];
+    for (let v = 0; v <= max + step / 2; v += step) ticks.push(v);
+    return { max, ticks };
+  }
+
+  /* ---------- the model ---------- */
+  function compute() {
+    const bridge = S.screen === "purchasable" ? POOLS.bridgePurchasable : POOLS.bridgeG9;
+    const factor = (S.vet / 100) * (S.qual / 100) * (S.takeup / 100);
+
+    const segs = [
+      ...POOLS.incentive.map(s => ({ ...s, pathway: "Incentive" })),
+      ...bridge.map(s => ({ ...s, pathway: "Bridge" }))
+    ].map(s => {
+      const count = s.n * factor;
+      return { ...s, count,
+        pay: count * s.anc * s.sal * s.yrs,
+        benefit: count * s.mult * s.sal * s.yrs };
+    });
+
+    const poolTotal = segs.reduce((a, s) => a + s.n, 0);
+    const parts     = segs.reduce((a, s) => a + s.count, 0);
+    const memberPay = segs.reduce((a, s) => a + s.pay, 0);
+    const benefit   = segs.reduce((a, s) => a + s.benefit, 0);
+    const avgSal    = parts > 0 ? segs.reduce((a, s) => a + s.count * s.sal, 0) / parts : 0;
+
+    const byPath = p => {
+      const g = segs.filter(s => s.pathway === p);
+      return { count: g.reduce((a, s) => a + s.count, 0),
+               pool:  g.reduce((a, s) => a + s.n, 0),
+               pay:   g.reduce((a, s) => a + s.pay, 0) };
+    };
+
+    // workforce ledger — unfilled positions save the whole package, refilled save the difference
+    const payroll = (r, u) => {
+      let saving = 0, comp = 0, unf = 0, amort = 0;
+      for (const s of segs) {
+        const nf = s.count * u, rf = s.count - nf;
+        unf  += nf * s.sal * SCALE;
+        comp += rf * (1 - r) * s.sal * SCALE;
+        amort += (nf * s.sal + rf * (1 - r) * s.sal) * AMORT;
+      }
+      saving = unf + comp;
+      return { saving, comp, unf, amort };
+    };
+
+    const funnel = [
+      { label: "State Plan 1 / Plan 2 employees", v: DENOM,
+        note: "Verified — VRS valuation p. 50, tier boundaries applied" },
+      { label: "Pathway-eligible", v: poolTotal,
+        note: "Computed from the published age × service table" },
+      { label: "Veterans among them", v: poolTotal * S.vet / 100,
+        note: "Slider — DHRM records 6%; labour-force parity 8.1%" },
+      { label: "With qualifying purchasable service", v: poolTotal * S.vet / 100 * S.qual / 100,
+        note: "Slider — assumption, no source. G24 resolves it." },
+      { label: "Participants", v: parts,
+        note: "Slider — board take-up bounds 5 / 12 / 25%" }
+    ];
+
+    return { segs, parts, memberPay, benefit, avgSal, poolTotal, funnel,
+             incentive: byPath("Incentive"), bridge: byPath("Bridge"),
+             subsidy: memberPay * (S.k - 1), aeValue: memberPay * S.k,
+             payroll, current: payroll(S.repl / 100, S.unfill / 100) };
+  }
+
+  /* ---------- tooltip ---------- */
+  const tip = document.getElementById("tip");
+  function showTip(e, html) {
+    tip.innerHTML = html;
+    tip.style.opacity = "1";
+    const pad = 14, r = tip.getBoundingClientRect();
+    let x = e.clientX + pad, y = e.clientY + pad;
+    if (x + r.width  > innerWidth  - 8) x = e.clientX - r.width  - pad;
+    if (y + r.height > innerHeight - 8) y = e.clientY - r.height - pad;
+    tip.style.left = x + "px"; tip.style.top = y + "px";
+  }
+  const hideTip = () => { tip.style.opacity = "0"; };
+  addEventListener("scroll", hideTip, { passive: true });
+
+  const NS = "http://www.w3.org/2000/svg";
+  // pick readable ink for a label sitting on a filled mark, from the mark's own luminance
+  function inkOn(cssVar) {
+    const hex = getComputedStyle(document.documentElement).getPropertyValue(cssVar).trim();
+    const m = /^#?([0-9a-f]{6})$/i.exec(hex);
+    if (!m) return "var(--ink-1)";
+    const n = parseInt(m[1], 16);
+    const lin = c => { c /= 255; return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4); };
+    const L = 0.2126 * lin(n >> 16 & 255) + 0.7152 * lin(n >> 8 & 255) + 0.0722 * lin(n & 255);
+    return L > 0.179 ? "#0b0b0b" : "#ffffff";
+  }
+  function el(tag, attrs = {}, text) {
+    const n = document.createElementNS(NS, tag);
+    for (const k in attrs) n.setAttribute(k, attrs[k]);
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function attach(node, html) {
+    node.addEventListener("mousemove", e => showTip(e, html));
+    node.addEventListener("mouseleave", hideTip);
+    node.setAttribute("tabindex", "0");
+    node.addEventListener("focus", e => {
+      const b = node.getBoundingClientRect();
+      showTip({ clientX: b.left + b.width / 2, clientY: b.top }, html);
+    });
+    node.addEventListener("blur", hideTip);
+  }
+
+  /* ---------- chart 1: funnel (ordinal ramp, retention scale) ---------- */
+  function drawFunnel(M) {
+    const svg = document.getElementById("c-funnel");
+    svg.textContent = "";
+    const W = 560, H = 290, L = 212, R = 46, T = 26, B = 34;
+    const pw = W - L - R, rows = M.funnel.length;
+    const bh = 22, step = (H - T - B) / rows;
+    const ord = ["--ord-1", "--ord-2", "--ord-3", "--ord-4", "--ord-5"];
+
+    for (let p = 0; p <= 100; p += 25) {
+      const x = L + pw * p / 100;
+      svg.appendChild(el("line", { x1: x, x2: x, y1: T - 8, y2: T + step * rows - step / 2 + 6,
+                                   class: p === 0 ? "axisline" : "gridline" }));
+      svg.appendChild(el("text", { x, y: H - 12, class: "tick", "text-anchor": "middle" }, p + "%"));
+    }
+    svg.appendChild(el("text", { x: L + pw / 2, y: H - 0, class: "tick", "text-anchor": "middle",
+                                 "font-size": "10.5" }, "share carried forward from the stage above"));
+
+    M.funnel.forEach((d, i) => {
+      const prev = i === 0 ? d.v : M.funnel[i - 1].v;
+      const ret  = prev > 0 ? d.v / prev : 0;
+      const y    = T + i * step;
+      const w    = Math.max(2, pw * Math.min(1, ret));
+      const fill = `var(${ord[i]})`;
+
+      svg.appendChild(el("text", { x: L - 12, y: y + bh / 2 + 4, class: "cat", "text-anchor": "end" }, d.label));
+
+      const bar = el("path", { d: roundEnd(L, y, w, bh, 4), fill });
+      svg.appendChild(bar);
+
+      const lab = cnt(d.v);
+      const inside = w > 104;
+      svg.appendChild(el("text", {
+        x: inside ? L + w - 10 : L + w + 9, y: y + bh / 2 + 4,
+        class: "dlab", "text-anchor": inside ? "end" : "start",
+        style: "fill:" + (inside ? inkOn(ord[i]) : "var(--ink-1)")
+      }, lab));
+      if (i > 0) svg.appendChild(el("text", {
+        x: L + pw + 20, y: y + bh / 2 + 4, class: "tick", "text-anchor": "end"
+      }, pct(ret * 100)));
+
+      const hit = el("rect", { x: L, y: y - 4, width: pw, height: bh + 8, class: "hit" });
+      svg.appendChild(hit);
+      attach(hit, `<b>${d.label}</b><br>${lab} members<br>` +
+                  (i === 0 ? "" : `${pct(ret * 100)} of the stage above<br>`) +
+                  `<span style="color:var(--ink-muted)">${d.note}</span>`);
+    });
+  }
+  // rounded data-end anchored to the baseline (4px radius on the free end only)
+  function roundEnd(x, y, w, h, r) {
+    r = Math.min(r, w / 2);
+    return `M${x},${y} H${x + w - r} Q${x + w},${y} ${x + w},${y + r} V${y + h - r} ` +
+           `Q${x + w},${y + h} ${x + w - r},${y + h} H${x} Z`;
+  }
+  function roundTop(x, y, w, h, r) {
+    r = Math.min(r, w / 2, h);
+    return `M${x},${y + h} V${y + r} Q${x},${y} ${x + r},${y} H${x + w - r} Q${x + w},${y} ${x + w},${y + r} V${y + h} Z`;
+  }
+
+  /* ---------- chart 2: subsidy vs k ---------- */
+  function drawK(M) {
+    const svg = document.getElementById("c-k");
+    svg.textContent = "";
+    const W = 560, H = 290, L = 76, R = 20, T = 22, B = 52;
+    const pw = W - L - R, ph = H - T - B;
+    const vals = K_SET.map(k => M.memberPay * (k - 1));
+    const sc = niceScale(Math.max(1, ...vals, M.subsidy) * 1.06);
+    const max = sc.max;
+
+    for (const v of sc.ticks) {
+      const y = T + ph - ph * v / max;
+      svg.appendChild(el("line", { x1: L, x2: L + pw, y1: y, y2: y, class: v === 0 ? "axisline" : "gridline" }));
+      svg.appendChild(el("text", { x: L - 10, y: y + 4, class: "tick", "text-anchor": "end" }, usdK(v)));
+    }
+
+    const bw = pw / K_SET.length;
+    K_SET.forEach((k, i) => {
+      const v = vals[i], h = ph * v / max;
+      const x = L + bw * i + bw * 0.22, w = bw * 0.56;
+      const near = Math.abs(S.k - k) < 0.05;
+      svg.appendChild(el("path", {
+        d: roundTop(x, T + ph - h, w, h, 4),
+        fill: "var(--series-1)",
+        "fill-opacity": near ? 1 : 0.38
+      }));
+      svg.appendChild(el("text", { x: x + w / 2, y: T + ph - h - 8, class: "dlab", "text-anchor": "middle" }, usdK(v)));
+      svg.appendChild(el("text", { x: x + w / 2, y: T + ph + 20, class: "tick", "text-anchor": "middle" }, "k = " + k.toFixed(1)));
+      const hit = el("rect", { x: L + bw * i, y: T, width: bw, height: ph, class: "hit" });
+      svg.appendChild(hit);
+      attach(hit, `<b>k = ${k.toFixed(1)}</b><br>Actuarial value granted ${usd(M.memberPay * k)}<br>` +
+                  `Member pays ${usd(M.memberPay)}<br>Trust-fund subsidy <b>${usd(v)}</b>`);
+    });
+
+    svg.appendChild(el("text", { x: L + pw / 2, y: H - 14, class: "tick", "text-anchor": "middle" },
+      `Your k = ${S.k.toFixed(1)} → subsidy ${usd(M.subsidy)}`));
+    svg.appendChild(el("text", { x: L - 10, y: T - 8, class: "tick", "text-anchor": "end" }, ""));
+  }
+
+  /* ---------- chart 3: payroll saving grid (3 series) ---------- */
+  function drawPay(M) {
+    const svg = document.getElementById("c-pay");
+    svg.textContent = "";
+    const W = 1040, H = 320, L = 92, R = 24, T = 26, B = 58;
+    const pw = W - L - R, ph = H - T - B;
+    const series = ["--series-1", "--series-2", "--series-3"];
+    const cells = UNFILL_SET.map(u => REPL_SET.map(r => M.payroll(r, u)));
+    const sc = niceScale(Math.max(1, ...cells.flat().map(c => c.saving)) * 1.08);
+    const max = sc.max;
+
+    for (const v of sc.ticks) {
+      const y = T + ph - ph * v / max;
+      svg.appendChild(el("line", { x1: L, x2: L + pw, y1: y, y2: y, class: v === 0 ? "axisline" : "gridline" }));
+      svg.appendChild(el("text", { x: L - 10, y: y + 4, class: "tick", "text-anchor": "end" }, usdK(v)));
+    }
+
+    const gw = pw / UNFILL_SET.length;
+    UNFILL_SET.forEach((u, gi) => {
+      const inner = gw * 0.72, bw = (inner - 2 * 2) / 3;   // 2px surface gap between adjacent bars
+      const x0 = L + gw * gi + (gw - inner) / 2;
+      REPL_SET.forEach((r, si) => {
+        const c = cells[gi][si], h = ph * c.saving / max;
+        const x = x0 + si * (bw + 2);
+        svg.appendChild(el("path", { d: roundTop(x, T + ph - h, bw, h, 4), fill: `var(${series[si]})` }));
+        svg.appendChild(el("text", { x: x + bw / 2, y: T + ph - h - 8, class: "dlab", "text-anchor": "middle" }, usdK(c.saving)));
+        const hit = el("rect", { x: x - 1, y: T, width: bw + 2, height: ph, class: "hit" });
+        svg.appendChild(hit);
+        attach(hit,
+          `<b>Replacement at ${(r * 100).toFixed(0)}%, ${(u * 100).toFixed(0)}% not refilled</b><br>` +
+          `Total annual saving <b>${usd(c.saving)}</b><br>` +
+          `— salary compression ${usd(c.comp)} (${pct(c.saving ? c.comp / c.saving * 100 : 0)})<br>` +
+          `— positions not refilled ${usd(c.unf)} (${pct(c.saving ? c.unf / c.saving * 100 : 0)})<br>` +
+          `<span style="color:var(--critical)">Amortization no longer collected ${usd(c.amort)} — a timing cost, not a saving</span>`);
+      });
+      svg.appendChild(el("text", { x: L + gw * gi + gw / 2, y: T + ph + 22, class: "cat", "text-anchor": "middle" },
+        `${(u * 100).toFixed(0)}% of vacated positions not refilled`));
+    });
+
+    svg.appendChild(el("text", { x: L - 10, y: T - 10, class: "tick", "text-anchor": "end" }, "annual"));
+
+    const leg = document.getElementById("l-pay");
+    leg.innerHTML = REPL_SET.map((r, i) =>
+      `<span><i class="sw" style="background:var(${series[i]})"></i>Replacement at ${(r * 100).toFixed(0)}% of departing salary</span>`
+    ).join("");
+
+    const c = M.current;
+    document.getElementById("pay-current").innerHTML =
+      `<strong>At your current setting</strong> — replacement at ${S.repl}%, ` +
+      `${S.unfill}% not refilled, ${cnt(M.parts)} retirements: ` +
+      `<strong>${usd(c.saving)} a year</strong> ` +
+      `(salary compression ${usd(c.comp)}, positions not refilled ${usd(c.unf)}). ` +
+      `A further <strong>${usd(c.amort)}</strong> of unfunded-liability amortization is no longer collected — ` +
+      `that is a timing cost, and it must never be shown as a saving.`;
+  }
+
+  /* ---------- table view ---------- */
+  function drawTable(M) {
+    const c = M.current;
+    const rows = [];
+    const row = (a, b, cc, cls) => rows.push(
+      `<tr${cls ? ` class="${cls}"` : ""}><td>${a}</td><td>${b}</td><td>${cc ?? ""}</td></tr>`);
+
+    row("<strong>Settings</strong>", "", "", "grp");
+    row("Veteran share", pct(S.vet), "slider");
+    row("Share with qualifying purchasable service", pct(S.qual), "slider");
+    row("Take-up over four years", pct(S.takeup), "board decision: 5 / 12 / 25%");
+    row("Replacement salary", pct(S.repl), "G10 set: 80 / 85 / 90%");
+    row("Vacated positions not refilled", pct(S.unfill), "G10 set: 1 / 3 / 5%");
+    row("k — actuarial equivalent ÷ ANC", S.k.toFixed(1), "VRS must supply");
+    row("Bridge screen", S.screen === "purchasable" ? "Purchasable (2,396)" : "G9 as written (5,177)", S.screen === "purchasable" ? "board decision 12 Oct 2026" : "RETIRED — superseded screen");
+
+    row("<strong>Stage A — denominator</strong>", "", "", "grp");
+    row("State Plan 1 employees", f0(20872), "verified / derived");
+    row("State Plan 2 employees", f0(8122), "verified / derived");
+    row("Modeling denominator", f0(DENOM), "board decision 12 Oct 2026");
+
+    row("<strong>Stage B — pathway pools</strong>", "", "", "grp");
+    row("Incentive pool", f0(M.incentive.pool), "already unreduced-eligible");
+    row("Bridge pool", f0(M.bridge.pool), S.screen === "purchasable" ? "Plan 1 only — Plan 2 is zero" : "most cannot be bridged");
+
+    row("<strong>Participants over the pilot</strong>", "", "", "grp");
+    row("Retirement Incentive", f1(M.incentive.count), "shown to one decimal — this is the precise view");
+    row("Retirement Bridge", f1(M.bridge.count), "");
+    row("Total", f1(M.parts), "");
+
+    row("<strong>Ledger 1 — VRS pension</strong>", "", "", "grp");
+    row("Member payments received", usd(M.memberPay), "one-time, into the trust fund");
+    row("Actuarial value of service granted", usd(M.aeValue), `at k = ${S.k.toFixed(1)}`);
+    row("Trust-fund subsidy", usd(M.subsidy), "(k − 1) × member payments");
+    row("Annual benefit uplift granted", usd(M.benefit) + " / yr", "illustrative — not an actuarial result");
+    row("Cost of earlier benefit commencement", "not quantified", "VRS work (G12)");
+
+    row("<strong>Ledger 2 — employer / workforce</strong>", "", "", "grp");
+    row("Average salary of participants", usd(M.avgSal), "");
+    row("Salary compression on replacement", usd(c.comp) + " / yr", pct(c.saving ? c.comp / c.saving * 100 : 0));
+    row("Positions not refilled", usd(c.unf) + " / yr", pct(c.saving ? c.unf / c.saving * 100 : 0));
+    row("Total agency payroll saving", usd(c.saving) + " / yr", "agency appropriation, not the trust fund");
+    row("Amortization no longer collected", "−" + usd(c.amort) + " / yr", "a timing cost, NOT a saving");
+    row("Administration", "not quantified", "G14");
+
+    row("<strong>G10 grid — annual payroll saving</strong>", "", "", "grp");
+    for (const u of UNFILL_SET) for (const r of REPL_SET)
+      row(`${(u * 100).toFixed(0)}% not refilled · replacement at ${(r * 100).toFixed(0)}%`,
+          usd(M.payroll(r, u).saving) + " / yr", "");
+
+    row("<strong>Subsidy against k</strong>", "", "", "grp");
+    for (const k of K_SET) row(`k = ${k.toFixed(1)}`, usd(M.memberPay * (k - 1)), "");
+
+    document.getElementById("tbl").innerHTML =
+      `<caption>Every value on this page, at the current slider settings.</caption>` +
+      `<thead><tr><th>Line</th><th>Value</th><th>Basis</th></tr></thead><tbody>${rows.join("")}</tbody>`;
+  }
+
+  /* ---------- render ---------- */
+  function render() {
+    const M = compute();
+
+    document.getElementById("vet-o").textContent    = pct(S.vet);
+    document.getElementById("qual-o").textContent   = pct(S.qual);
+    document.getElementById("takeup-o").textContent = pct(S.takeup);
+    document.getElementById("repl-o").textContent   = pct(S.repl);
+    document.getElementById("unfill-o").textContent = pct(S.unfill);
+    document.getElementById("kratio-o").textContent = S.k.toFixed(1) + "×";
+
+    document.getElementById("t-part").textContent = f0(M.parts);
+    document.getElementById("t-pay").textContent  = usdK(M.memberPay);
+    document.getElementById("t-sub").textContent  = usdK(M.subsidy);
+    document.getElementById("t-sub-s").textContent = `at k = ${S.k.toFixed(1)}, one-time`;
+    document.getElementById("t-sav").textContent  = usdK(M.current.saving);
+    document.getElementById("t-sav-s").textContent =
+      `per year · replacement ${S.repl}%, ${S.unfill}% not refilled`;
+
+    drawFunnel(M); drawK(M); drawPay(M); drawTable(M);
+  }
+
+  /* ---------- wiring ---------- */
+  const bind = (id, key, int) => {
+    const n = document.getElementById(id);
+    n.value = S[key];
+    n.addEventListener("input", () => { S[key] = int ? +n.value : parseFloat(n.value); render(); });
+  };
+  bind("vet", "vet"); bind("qual", "qual"); bind("takeup", "takeup");
+  bind("repl", "repl"); bind("unfill", "unfill");
+  const kn = document.getElementById("kratio");
+  kn.addEventListener("input", () => { S.k = parseFloat(kn.value); render(); });
+
+  const sp = document.getElementById("scr-p"), sg = document.getElementById("scr-g");
+  sp.addEventListener("click", () => { S.screen = "purchasable"; sp.setAttribute("aria-pressed","true");  sg.setAttribute("aria-pressed","false"); render(); });
+  sg.addEventListener("click", () => { S.screen = "g9";          sp.setAttribute("aria-pressed","false"); sg.setAttribute("aria-pressed","true");  render(); });
+
+  function preset(vet, qual, takeup) {
+    S.vet = vet; S.qual = qual; S.takeup = takeup;
+    document.getElementById("vet").value = vet;
+    document.getElementById("qual").value = qual;
+    document.getElementById("takeup").value = takeup;
+    render();
+  }
+  document.getElementById("btn-low").onclick   = () => preset(6, 35, 5);
+  document.getElementById("btn-mid").onclick   = () => preset(8, 50, 12);
+  document.getElementById("btn-high").onclick  = () => preset(10, 65, 25);
+  document.getElementById("btn-reset").onclick = () => {
+    S.repl = 85; S.unfill = 3; S.k = 2.0; S.screen = "purchasable";
+    document.getElementById("repl").value = 85;
+    document.getElementById("unfill").value = 3;
+    kn.value = 2.0;
+    sp.setAttribute("aria-pressed","true"); sg.setAttribute("aria-pressed","false");
+    preset(8, 50, 12);
+  };
+
+  const bt = document.getElementById("btn-table"), tv = document.getElementById("tableview");
+  bt.onclick = () => {
+    const on = bt.getAttribute("aria-pressed") !== "true";
+    bt.setAttribute("aria-pressed", String(on));
+    tv.classList.toggle("hidden", !on);
+    if (on) tv.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+  document.getElementById("btn-theme").onclick = () => {
+    const r = document.documentElement;
+    const effective = r.dataset.theme ||
+      (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    r.dataset.theme = effective === "dark" ? "light" : "dark";
+    render();
+  };
+
+  addEventListener("resize", () => render());
+  render();
+})();
+</script>
+</body>
+</html>
