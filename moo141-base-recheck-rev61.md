@@ -172,9 +172,34 @@ Prose in a comment is not a wake signal. MOO-141 is `blocked` on all four:
 | Gate | Issue | What clears it |
 |---|---|---|
 | **1** | **MOO-164** | The *"acts upon"* / act-versus-notice decision, carrying **F-9** — §5 above is evidence for it |
-| **2** | **MOO-42** | The no-decision residual: §7 item 124's deemed denial, or pass 18's card C if item 124 is declined |
+| **2** | ~~**MOO-42**~~ → **MOO-190** | The no-decision residual: §7 item 124's deemed denial. **See the correction below — there was never a second cure, and the edge is re-pointed** |
 | **3** | **MOO-176** | Revision 6 at 120 days, re-cut against store revision 61 — §2 and §3 above are its base |
 | **4** | **MOO-176** | Revision 6 passes **one** bounded re-review — Edit 3's figure, the broken 30-day identity, and §4 above. **Its cap limb is closed**: §6 |
+
+### 7.1 Correction, 12 October 2026 — gate 2's named fallback does not exist
+
+**The row above as first written said gate 2 could be cleared by *"§7 item 124's deemed denial, or pass
+18's card C if item 124 is declined."* The second limb is wrong and I withdraw it.** Pass 18 is
+**MOO-156**, and I have read its only document, `moo156-pass18-review`, 57,166 characters: it carries
+**no lettered cards of any kind** — zero matches for *"card (x)"* in any letter — and **no mention of
+§ 2.2-4021 or of this residual.** Its two references to Article 5 are to § 2.2-4025 et seq., the
+judicial-review article M 2 already cites, in the venue lines of S18-2 and S18-3. The card this issue
+sent to pass 18 was **(l)**, the two-request arithmetic tie-break; this issue's own **card (c)** is
+G 2's undefined *"pending"*, a different defect. Found by the Drafting Specialist and confirmed here
+against the document.
+
+**So gate 2 had exactly one cure and no fallback.** Had the board declined item 124 there would have
+been nothing to apply, and the gate would have needed a fresh drafting instruction rather than a
+pointer. The lesson is narrow and worth keeping: **a named fallback is only a gate if someone has
+resolved the name.** I did not resolve it when I wrote the row.
+
+**Gate 2's cure is enacted** — store revision 63 of `bill-text-s8`, document revision `37a5426c`,
+320,665 characters, two sentences in M 2 and nothing else. **The edge is re-pointed from MOO-42 to
+MOO-190**, the bounded pass on those two sentences, because MOO-42 is blocked on MOO-64, MOO-97 and
+MOO-190 and will not reach `done` on this item's account. The cure exists; what gate 2 now waits on is
+its review.
+
+---
 
 **Gate 3's own instruction is unchanged and is now evidenced four times over: whoever applies this
 re-verifies all three anchors, re-splices every reproduction and re-runs every count against the base
