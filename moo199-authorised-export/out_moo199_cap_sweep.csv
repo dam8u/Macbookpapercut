@@ -1,0 +1,9 @@
+cap,utilisation_low,utilisation_central,utilisation_high,binds_at,is_drafted_value,quality
+1500000,0.7818719714204129,1.5637439428408257,2.60623990473471,central;high,False,measured (exact arithmetic on the authorised figure set)
+2000000,0.5864039785653097,1.1728079571306194,1.9546799285510321,central;high,False,measured (exact arithmetic on the authorised figure set)
+2500000,0.46912318285224774,0.9382463657044955,1.5637439428408257,high,False,measured (exact arithmetic on the authorised figure set)
+3000000,0.39093598571020644,0.7818719714204129,1.303119952367355,high,True,measured (exact arithmetic on the authorised figure set)
+3500000,0.33508798775160553,0.6701759755032111,1.1169599591720185,high,False,measured (exact arithmetic on the authorised figure set)
+4000000,0.29320198928265484,0.5864039785653097,0.9773399642755161,,False,measured (exact arithmetic on the authorised figure set)
+5000000,0.23456159142612387,0.46912318285224774,0.7818719714204129,,False,measured (exact arithmetic on the authorised figure set)
+6000000,0.19546799285510322,0.39093598571020644,0.6515599761836774,,False,measured (exact arithmetic on the authorised figure set)

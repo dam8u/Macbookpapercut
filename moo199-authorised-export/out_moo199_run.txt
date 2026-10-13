@@ -1,0 +1,470 @@
+
+================================================================================================
+[0] LOCKS - nothing below runs unless all of these pass
+================================================================================================
+Engine provenance: moo183-cost-per-participant/engine/ — the published repaired (v2) engine as shipped with sponsor package v1.0 (AgentCreated/v1.0/05-model-code-and-data/python), copied byte-for-byte at MOO-183 and not modified since. This issue modifies no line of it.
+
+NOT REACHABLE FROM THIS WORKSPACE: AgentCreated/v2.0/05-model-code-and-data/model-current-12-october/moo32_v6_engine.py is not present in this repository or in any workspace readable by this agent. Checked: the project repository, every instances/default/workspaces/* tree, and a filesystem-wide search for a directory named AgentCreated. Result: no match.
+
+EXPORT SCHEMA: make_model.py is inside the same unreadable AgentCreated tree, so the exact key names it consumes could not be verified. out_moo199_model_data.json therefore carries meta.key_binding_verified = false and a meta.key_binding_table mapping each block to the model tab and the dial it feeds. Binding the keys is a mechanical check for whoever runs the v2.1 pass with the folder in hand; no figure in the export depends on it.
+
+--- 0.1  the recommended design's measured ladder, all six rungs x three levels ---
+  PASS  rung  0 trust PV central                                       got   1,661,818.702970  want   1,661,818.702970
+  PASS  rung  0 trust PV low                                           got     830,909.351485  want     830,909.351485
+  PASS  rung  0 trust PV high                                          got   2,769,697.838283  want   2,769,697.838283
+  PASS  rung  0 participants central                                   got          18.905904  want          18.905904
+  PASS  rung  0 mean acceleration months                               got          56.851615  want          56.851615
+  PASS  rung  1 trust PV central                                       got   1,641,823.787237  want   1,641,823.787237
+  PASS  rung  1 trust PV low                                           got     820,911.893619  want     820,911.893619
+  PASS  rung  1 trust PV high                                          got   2,736,372.978728  want   2,736,372.978728
+  PASS  rung  1 participants central                                   got          18.905904  want          18.905904
+  PASS  rung  1 mean acceleration months                               got          55.851615  want          55.851615
+  PASS  rung  6 trust PV central                                       got   1,539,576.096268  want   1,539,576.096268
+  PASS  rung  6 trust PV low                                           got     769,788.048134  want     769,788.048134
+  PASS  rung  6 trust PV high                                          got   2,565,960.160446  want   2,565,960.160446
+  PASS  rung  6 participants central                                   got          18.905904  want          18.905904
+  PASS  rung  6 mean acceleration months                               got          50.851615  want          50.851615
+  PASS  rung 12 trust PV central                                       got   1,411,988.092433  want   1,411,988.092433
+  PASS  rung 12 trust PV low                                           got     705,994.046216  want     705,994.046216
+  PASS  rung 12 trust PV high                                          got   2,353,313.487388  want   2,353,313.487388
+  PASS  rung 12 participants central                                   got          18.905904  want          18.905904
+  PASS  rung 12 mean acceleration months                               got          44.851615  want          44.851615
+  PASS  rung 18 trust PV central                                       got   1,279,234.806822  want   1,279,234.806822
+  PASS  rung 18 trust PV low                                           got     639,617.403411  want     639,617.403411
+  PASS  rung 18 trust PV high                                          got   2,132,058.011369  want   2,132,058.011369
+  PASS  rung 18 participants central                                   got          18.905904  want          18.905904
+  PASS  rung 18 mean acceleration months                               got          38.851615  want          38.851615
+  PASS  rung 24 trust PV central                                       got   1,141,495.675702  want   1,141,495.675702
+  PASS  rung 24 trust PV low                                           got     570,747.837851  want     570,747.837851
+  PASS  rung 24 trust PV high                                          got   1,902,492.792837  want   1,902,492.792837
+  PASS  rung 24 participants central                                   got          18.905904  want          18.905904
+  PASS  rung 24 mean acceleration months                               got          32.885541  want          32.885541
+
+--- 0.2  the authorised member-price pair (MOO-72 register item C) ---
+  PASS  multiple of ANC                                                got           1.416630  want           1.420000
+  PASS  share of AEC                                                   got           0.425069  want           0.430000
+
+--- 0.3  the authorised ladder agrees with the v6 rung-12 figure ---
+  PASS  authorised ladder rung 12 == V6 trust PV central               got   1,321,112.000000  want   1,321,111.502977
+  PASS  authorised cost per participant                                got      71,813.212450  want      71,813.000000
+  PASS  cost per participant is take-up invariant (low)                got      71,813.212450  want      71,813.212450
+  PASS  cost per participant is take-up invariant (central)            got      71,813.212450  want      71,813.212450
+  PASS  cost per participant is take-up invariant (high)               got      71,813.212450  want      71,813.212450
+
+--- 0.4  cap utilisation = (1 + contingency) x certified reserved / cap ---
+  PASS  cap utilisation low                                            got           0.390936  want           0.390936
+  PASS  cap utilisation central                                        got           0.781872  want           0.781872
+  PASS  cap utilisation high                                           got           1.303120  want           1.303120
+
+--- 0.5  the PRINTED workforce exchange, reproduced on its own basis ---
+    If this fails, my reconstruction of what the documents print is wrong and the
+    recomputation below has nothing to be a correction OF.
+  PASS  printed anchor: S1 central trust per participant at the 6-month rung got      64,678.241247  want      64,678.000000
+  PASS  printed coverage: net workforce effect / anchor                got           0.711782  want           0.710000
+
+All locks pass.
+
+================================================================================================
+[1] THE AUTHORISED BASIS, RESTATED - the anchor every figure below hangs on
+================================================================================================
+  participants, central              18.3965   (9.1982 to 30.6608)
+  net trust cost PV, rung 12         $1,321,112   ($660,556 to $2,201,853)
+  cost per participant               $71,813   (take-up invariant)
+  cap utilisation                    39.1% / 78.2% / 130.3%
+  member-price pair (measured)        1.4166x ANC, 42.51% of AEC
+  mean participating salary (measured)    104,180.53
+  mean acceleration, months (measured)      44.8516
+  mean years purchased (measured)            1.6114
+
+The three MEASURED cohort statistics above are the MOO-48 cohort's, not the v6
+cohort's, because the v6 engine is not in this workspace.  Direction of error on each
+is stated in moo199_inputs.py §F.  They are used only where the authorised figure set
+does not carry the statistic at all.
+
+================================================================================================
+[2] BLOCK 1 of 5 - THE RETIREMENT-DEADLINE LADDER (authorised, cited)
+================================================================================================
+The one block that is authorised outright.  Participants are rung-invariant, so the
+per-participant column is the ladder divided by one constant.
+
+ rung  authorised trust PV  $/participant  accel months  vs rung 12  v6/MOO-48 note
+-----------------------------------------------------------------------------------
+    0           $1,567,024        $85,181         56.85       18.6%    0.94296 what the superseded documents printed
+    1           $1,547,336        $84,110         55.85       17.1%    0.94245 the drafted text
+    6           $1,446,675        $78,639         50.85        9.5%    0.93966 
+   12           $1,321,112        $71,813         44.85        0.0%    0.93564 THE AUTHORISED RUNG
+   18           $1,190,510        $64,714         38.85       -9.9%    0.93064 
+   24           $1,055,048        $57,350         32.89      -20.1%    0.92427 
+
+Sanity check on the authorised ladder's shape.  The v6/MOO-48 ratio falls monotonically
+from rung 0 to rung 24 (0.94296 -> 0.92427): the two bases diverge MORE the longer the
+permitted delay.  That is the expected sign - the no-advance bar refuses the least-
+accelerated members, and the longer the window the larger the share of cost that is
+acceleration.  The ladder is internally consistent with the figure set.  Agreement.
+
+================================================================================================
+[3] BLOCK 2 of 5 - THE MEMBER-PRICE GRID (measured; basis-invariant)
+================================================================================================
+What the dial shows: the S8 earned-service price per year purchased, as a surface over
+age x completed service, at the decided 6.00% statutory interest, beside the ANC and
+full-AEC references.
+
+WHY THIS BLOCK IS BASIS-INVARIANT, stated because it is the load-bearing claim here:
+§7 item 22 option (c) measures subsection C clause (ii) - the CERTIFIED SUBSIDY - at the
+filing date, and clause (vii)'s no-advance bar is an ELIGIBILITY screen.  Neither is a
+term of the member price.  So option (c) and the bar move WHO is in the cohort and what
+the Commonwealth certifies; they do not move the price function.  The cohort-weighted
+MEAN price does move with the cohort, and the authorised mean is not available here -
+what is available is the authorised PAIR, 1.42x ANC and 43% of AEC, which §0.2 locks.
+
+Grid held at the measured mean participating salary $104,181 and the measured mean
+1.6114 years purchased.  Age and service are the cohort's own support (ages 50-67,
+service concentrated at 27-30 years).
+
+plan     age  svc    S8 price   per year    ANC ref     AEC ref   xANC   %AEC interest yrs
+------------------------------------------------------------------------------------------------
+plan1     50   27     $29,111    $18,066    $20,985     $69,040   1.39  42.2%        24.00
+plan1     53   27     $29,111    $18,066    $20,985     $69,291   1.39  42.0%        24.00
+plan1     53   30     $31,272    $19,407    $20,985     $48,751   1.49  64.1%        27.00
+plan1     56   27     $29,111    $18,066    $20,985     $69,553   1.39  41.9%        24.00
+plan1     56   30     $31,272    $19,407    $20,985     $46,597   1.49  67.1%        27.00
+plan1     59   27     $29,111    $18,066    $20,985     $69,817   1.39  41.7%        24.00
+plan1     59   30     $31,272    $19,407    $20,985     $44,228   1.49  70.7%        27.00
+plan1     62   27     $29,111    $18,066    $20,985     $70,070   1.39  41.5%        24.00
+plan1     62   30     $31,272    $19,407    $20,985     $41,640   1.49  75.1%        27.00
+plan1     65   27     $29,111    $18,066    $20,985     $38,838   1.39  75.0%        24.00
+plan1     65   30     $31,272    $19,407    $20,985     $38,838   1.49  80.5%        27.00
+
+(56 grid cells in the export; the printed extract above is Plan 1 at 27
+and 30 completed years, which is where 44% of the cohort's weight sits.)
+
+The structural result the grid shows, and the sponsor question it answers: the S8 price
+rises with time since hire at roughly (1 + i_stat) / (1 + salary growth) - 1 per year, so
+the basis is calendar-neutral only where the statutory rate equals the member's own salary
+growth.  At 6.00% it is above it, so S8 re-creates a calendar penalty - smaller than the
+full-AEC one it replaces, and not zero.
+
+================================================================================================
+[4] BLOCK 3 of 5 - THE STATUTORY-INTEREST DIAL (measured on the MOO-48 cohort)
+================================================================================================
+PUBLICATION RESTRICTION.  Every row below at a rate other than 6.00% is tagged
+publication_restricted = true, under the board's standing restriction on the S8 family's
+comparative dollar cells (the restriction MOO-183 §9 invoked over its 4.00% and 5.00%
+rows).  CONSEQUENCE FOR THE PRODUCT, which is a finding and not a note: a LIVE interest
+dial in a sponsor-facing model exposes restricted figures to anyone who moves it.  The
+dial can ship as a static 6.00% column, or the restriction has to be lifted first.
+
+Anchor ratio, authorised / MOO-48 at 6.00% and rung 12: 0.935639.
+Rows marked `derived` are the measured MOO-48 figure multiplied by that ratio.  That is
+an ASSUMPTION, not a measurement: the no-advance bar and the zero-month bar screen on
+quantities the member price enters, so the share of the cohort they refuse moves with the
+rate.  Direction of error: a higher rate prices more members out of a positive clause (ii)
+solution, so the authorised cohort shrinks FASTER than the MOO-48 cohort as the rate
+rises; the derived figures above 6.00% are therefore an UPPER bound on cost and the ones
+below 6.00% a LOWER bound.  Only the 6.00% row is authorised.
+
+  rate  participants  trust PV (MOO-48)     $/part  member paid/part   xANC  derived authorised PV tag
+----------------------------------------------------------------------------------------------------------------
+ 4.00%       25.0955         $2,094,569    $83,464           $14,553  0.884             $1,959,761 RESTRICTED
+ 4.50%       23.3690         $1,907,562    $81,628           $16,388  0.995             $1,784,790 RESTRICTED
+ 5.00%       21.7681         $1,732,101    $79,570           $18,446  1.120             $1,620,622 RESTRICTED
+ 5.50%       20.2834         $1,567,211    $77,266           $20,751  1.260             $1,466,344 RESTRICTED
+ 6.00%       18.9059         $1,411,988    $74,685           $23,331  1.417             $1,321,112 AUTHORISED (measured)
+ 6.50%       17.6275         $1,265,601    $71,797           $26,219  1.592             $1,184,146 RESTRICTED
+ 6.75%       17.0230         $1,195,478    $70,227           $27,789  1.687             $1,118,536 RESTRICTED
+ 7.00%       16.4405         $1,127,280    $68,567           $29,449  1.788             $1,054,727 RESTRICTED
+
+The dial's shape: from 4.00% to 7.00% the member pays 2.02x more per participant and the
+count falls 34.5%, so net trust cost falls - the rate is the strongest single lever in the
+model on the aggregate, and it moves the count and the price in the same direction.
+
+================================================================================================
+[5] BLOCK 4 of 5 - THE CAP SWEEP
+================================================================================================
+Unit discipline first, because the package has made this error once already (MOO-72
+register item B): § 51.1-142.4 D 2 caps CERTIFIED SUBSIDY plus its mandatory 20 percent
+contingency.  It does NOT cap trust cost.  Those are different quantities and the ratio
+between them is not 1.
+
+5.1  Utilisation against the cap dial - EXACT on the authorised basis, because
+     utilisation is a ratio and both terms are in the authorised figure set.
+
+         cap          low      central         high   binds at
+--------------------------------------------------------------------
+  $1,500,000       78.2%       156.4%       260.6%    central, high
+  $2,000,000       58.6%       117.3%       195.5%    central, high
+  $2,500,000       46.9%        93.8%       156.4%    high
+  $3,000,000       39.1%        78.2%       130.3%    high (DRAFTED)
+  $3,500,000       33.5%        67.0%       111.7%    high
+  $4,000,000       29.3%        58.6%        97.7%    never
+  $5,000,000       23.5%        46.9%        78.2%    never
+  $6,000,000       19.5%        39.1%        65.2%    never
+
+  reservation aggregate including contingency: central $2,345,616, high $3,909,360
+  the cap that just clears high take-up:       $3,909,360  (i.e. $909,360 above the drafted $3,000,000)
+  the take-up multiple at which $3,000,000 binds: 1.279x central
+  per-election ceiling $170,000 plus contingency = $204,000 against the cap
+
+  AND THE THING THE DIAL MUST NOT IMPLY: the retirement rung does not move this table.
+  D 2 meters the RESERVATION, certified on the anticipated earliest qualifying retirement
+  date, which the window does not move.  A cap tab wired to the rung dial would be wrong.
+
+5.2  The cap as an admission rule - MEASURED, but on the MOO-48 cohort, because
+     admission is a run and the v6 engine is not here.  Reported as a SHAPE, not a level.
+
+         cap  participants    denied       trust PV     $/part
+--------------------------------------------------------------
+  $1,500,000       19.5845   11.9253     $1,500,000    $76,591
+  $2,000,000       26.3432    5.1667     $2,000,000    $75,921
+  $2,500,000       31.5098    0.0000     $2,353,313    $74,685
+  $3,000,000       31.5098    0.0000     $2,353,313    $74,685
+  $3,500,000       31.5098    0.0000     $2,353,313    $74,685
+  $4,000,000       31.5098    0.0000     $2,353,313    $74,685
+  $5,000,000       31.5098    0.0000     $2,353,313    $74,685
+  $6,000,000       31.5098    0.0000     $2,353,313    $74,685
+
+  Read the SHAPE, and read it against 5.1, because the two tables disagree and the
+  disagreement is the finding.  Applied to TRUST COST as an admission rule the cap stops
+  denying anyone at $2,500,000; at the drafted $3,000,000 it denies nobody even at
+  high take-up, because trust cost PV there is $2,353,313.  Applied to the
+  RESERVATION aggregate - which is what D 2 actually meters - the same $3,000,000 is at
+  130% at high take-up and binds.
+  So an interactive model that caps the trust-cost ledger tells a sponsor the cap never
+  binds, when on the drafted figures and the drafted quantity it binds at high take-up.
+  5.1 is the table to wire the cap tab to. 5.2 is here to show what the wrong wiring says.
+
+================================================================================================
+[6] BLOCK 5 of 5 / DELIVERABLE 2 - THE WORKFORCE EXCHANGE, RECOMPUTED
+================================================================================================
+NUMERATOR CONVENTION: T (trust-only).  The denominator is net
+trust cost per participant, $71,813, EXCLUDING the $375,000 one-time
+nongeneral-fund implementation allowance.  Convention A (all-in) is reported beside every
+headline.  Reasons for the choice are in the deliverable; in one line, T makes this a
+one-driver change against the printed figure and does not pair a fixed cost with a
+per-participant flow.
+
+  convention T anchor  $71,813 per participant
+  convention A anchor  $92,198 per participant  (= T + $20,384, the allowance over 18.3965 participants)
+  the printed anchor   $64,678 per participant  (repaired S1, 6-month rung)
+  T less printed       $7,135 higher (+11.0%)
+
+The workforce leg's months of acceleration: 44.8516, MEASURED on the recommended
+design's own rung-12 run - not the engine's MONTHS_ACCELERATION default {'conservative': 2.0, 'central': 6.0, 'optimistic': 14.0}.
+The incumbent salary: $104,181, the same run's mean participating salary.
+Both are the MOO-48 cohort's; §1 states the direction of error on each.  On acceleration
+it is one-sided and favourable: the no-advance bar removes the least-accelerated band, so
+the authorised cohort's own mean is at or above 44.85 months and every coverage figure
+below is a LOWER bound.
+
+6.1  THE THREE DIFFERENTIAL CASES, on the recommended design's own anchor
+
+case             diff  accel mo  gross saving   frictions  net workforce  covers (T)  covers (A)  net state/part
+----------------------------------------------------------------------------------------------------------------------
+conservative       8%     44.85       $33,613     $46,338       $-12,725      -17.7%      -13.8%         $84,538
+central           18%     44.85       $89,888     $26,357        $63,531       88.5%       68.9%          $8,283
+optimistic        30%     44.85      $153,250          $0       $153,250      213.4%      166.2%        $-81,436
+
+6.2  THE REVISED "COVERS X%" FIGURE - and the two different questions it can answer
+
+  (i)  DENOMINATOR-ONLY SWAP - what the documents' own wording implies.  Keep the printed
+       workforce effect of $46,037 (which is S1's, at S1's 34.1 months)
+       and divide by the recommended design's anchor:  64.1%   (printed: 71%)
+       This is the figure that makes the exchange WORSE, and it is the one the documents
+       now point at.  It is also the one I will not print, because it divides one design's
+       workforce effect by another design's pension cost.  Mixing units is the error.
+
+  (ii) CONSISTENT SINGLE-DESIGN RECOMPUTATION - both legs from the recommended design on
+       the authorised rung:  88.5% on convention T, 68.9% on convention A.
+       This is the figure to print.  It is HIGHER than the printed 71%, not lower.
+
+  Why (ii) rises even though the anchor rose.  Both legs scale with acceleration, and the
+  recommended design accelerates 44.9 months against S1's 34.1 - +31%.
+  The pension leg rose +11.0%; the workforce leg rose +38.0%, because the
+  workforce saving is close to linear in the window while the frictions are fixed per hire.
+
+  SO THE DOCUMENTS' STATED DIRECTION IS WRONG, and this is a finding against the text the
+  Editor has already cut.  04-fiscal-analysis.md §9 and 02-policy-brief.md §6 now say the
+  error 'runs against the proposal' and that the real exchange is worse.  On a consistent
+  recomputation the coverage RATIO is better.  What is genuinely worse is the per-
+  participant net state cost in dollars at the SAME acceleration, and the dollar gap of $7,135
+  the documents name.  The v2.1 pass has to change the direction sentence, not just the
+  figure.  §6.5 gives the one qualification that can reverse this again.
+
+6.3  THE REVISED BREAK-EVEN
+
+  break-even months, convention T   49.90   against a measured 44.85 months => does NOT clear it - it falls 5.05 months short
+  break-even months, convention A   62.33   against a measured 44.85 months => does NOT clear it - it falls 17.48 months short
+  break-even months as printed      45.47   (on S1's salary and the $64,678 anchor)
+  break-even replacement differential at the measured 44.85 months, convention T: 19.77%
+    against the central assumption of 18% - so the
+    exchange clears on convention T at any differential above 19.8%.
+
+  Break-even grid: net workforce effect LESS the convention-T anchor, per participant.
+  A positive cell is a design that pays for itself on the workforce leg alone.
+
+ months          8%         13%         18%         24%         30%
+--------------------------------------------------------------------
+     12    $-73,409    $-67,786    $-62,164    $-55,417    $-48,671
+     24    $-66,687    $-54,585    $-42,482    $-27,959    $-13,437
+     33    $-61,646    $-44,683    $-27,721     $-7,366     $12,989
+     45    $-54,924    $-31,481     $-8,039     $20,092     $48,223  <- measured
+     57    $-48,202    $-18,280     $11,643     $47,550     $83,456
+     69    $-41,480     $-5,078     $31,324     $75,007    $118,690
+
+6.4  THE AGGREGATE EXCHANGE, and the sentence the Editor needs
+
+  pension cost PV, authorised           $1,321,112
+  implementation allowance, FY2029 NGF  $375,000
+  net workforce effect, central case    $1,168,742   (= $63,531 x 18.3965, undiscounted)
+  net state effect, convention T        $152,369
+  net state effect, convention A        $527,369
+
+  range across the three cases, convention T:
+    conservative   workforce    $-234,096  net state   $1,555,208  covers -17.7%
+    central        workforce   $1,168,742  net state     $152,369  covers  88.5%
+    optimistic     workforce   $2,819,257  net state  $-1,498,146  covers 213.4%
+
+6.5  THE PV / NOMINAL MISMATCH - inherited, large, and it reverses the direction
+
+Each election's workforce saving is discounted at ENGINE_DISCOUNT_RATE from the midpoint of its acceleration window back to 6/30/2025. The window is taken to open at the election month plus the central purchase-completion window plus the retirement rung, which is the earliest date the design permits the member to retire. STATED APPROXIMATION, not a measurement: the engine does not expose a per-election retirement date, and the true opening date is at or after this one for every election. Direction of error: this adjustment is therefore an upper bound on the PV-consistent workforce leg.
+  conservative   PV workforce effect      $-7,813 per participant   covers -10.9% (T)    -8.5% (A)
+  central        PV workforce effect      $38,927 per participant   covers  54.2% (T)    42.2% (A)
+  optimistic     PV workforce effect      $93,922 per participant   covers 130.8% (T)   101.9% (A)
+
+  mean election month 43.47; discount rate 6.75%; window midpoint 1.87 years after it opens.
+
+  On a PV-consistent comparison the central case covers 54.2%, not 88.5%.
+  THE PRINTED EXCHANGE HAS THE SAME FLAW, so this is not a new defect of the recomputation;
+  it is a defect of the comparison the package has always made.  It is also larger than
+  the design-anchor correction this issue was raised to make.  I am NOT folding it into the
+  headline - one driver at a time, and the issue asked for the anchor - but the v2.1 pass
+  cannot print a coverage percentage without deciding which convention it is on.
+  Direction: the nominal convention OVERSTATES the workforce leg, so it flatters the bill.
+
+================================================================================================
+[7] SENSITIVITY - the assumptions that control these answers
+================================================================================================
+Standard check: does a 10% move in any single input swing the answer by more than 25%?
+
+input                            -10%       base       +10%     swing dominant?
+----------------------------------------------------------------------------
+months of acceleration          78.2%      88.5%      98.7%     11.6% 
+replacement differential        76.8%      88.5%     100.2%     13.2% 
+incumbent salary                78.9%      88.5%      98.0%     10.8% 
+pension anchor                  98.3%      88.5%      80.4%     11.1% 
+
+No 10% move swings the coverage figure by more than 25%.  The three items that DO
+control the answer are choices of basis, which is why they are reported as bases:
+  1. WHICH RUNG the exchange is printed on.  Both legs move with it, and they move
+     together - so the ratio is far steadier than either leg.  The table:
+
+ rung  $/participant  accel mo  net workforce  covers (T)  net state/part
+--------------------------------------------------------------------------
+    0        $85,181     56.85        $83,212       97.7%          $1,968
+    1        $84,110     55.85        $81,572       97.0%          $2,538
+    6        $78,639     50.85        $73,372       93.3%          $5,267
+   12        $71,813     44.85        $63,531       88.5%          $8,283
+   18        $64,714     38.85        $53,690       83.0%         $11,024
+   24        $57,350     32.89        $43,905       76.6%         $13,446
+
+     Coverage runs from 77% to 98% across the whole ladder while the
+     pension leg alone moves 48%.  THAT IS THE STURDY FINDING IN THIS DOCUMENT: the
+     exchange ratio is nearly rung-invariant, which the two printed figures - one
+     design's ratio at one rung - could never have shown.
+  2. WHETHER THE COMPARISON IS IN PV OR NOMINAL.  §6.5: it moves the central coverage
+     from 88% to 54%, which is larger than everything else on this page.
+  3. The acceleration itself is UNSOURCED as a behavioural quantity.  The model measures
+     how much earlier the design PERMITS retirement; nobody has measured how much earlier
+     members actually retire.  There is no published distribution of chosen retirement
+     dates inside a VRS window.  Analyst judgment, no anchor, and it is the single biggest
+     unevidenced input in the exchange - the same item MOO-183 §5 flagged second.
+
+================================================================================================
+[8] EXTERNAL SANITY CHECK
+================================================================================================
+The exchange's one externally anchorable input is the replacement-salary differential,
+because that is where every dollar of agency-level saving has to come from.  The engine's
+register records the central 18% as JUDGMENT between two published anchors, and the LOWER
+anchor is the only one that is a measured salary gap: VRS valuation p.50, average salary at
+age 35-39 ($74,012) against age 55-59 ($83,081) = 10.9% lower.  So the check is: run the
+exchange at the published 10.9% instead of the judged 18% and see what survives.
+
+Check 1 - at the published-anchored 10.9% differential, central frictions:
+  net workforce effect $30,430 per participant, covering 42.4% of the authorised anchor
+  against 88.5% on the judged 18%.  DISAGREEMENT, and it is material:
+  the only published salary gap available cuts the coverage figure by 52%.
+  The register's own note says why the published figure is a floor rather than the answer -
+  it is CROSS-SECTIONAL (two age bands in one year), so it understates an incumbent-versus-
+  new-hire gap, and DHRM publishes no incumbent/new-hire salary pairs by role.  That
+  reasoning is sound and I am not overturning it.  What the check establishes is that the
+  18% is not anchored, that the gap between the anchored floor and the judged central moves
+  the headline by 52%, and that a hostile reader who insists on published figures only
+  gets 42% coverage, not 88%.  Print the range, never the point.
+
+Check 2 - the sign of the tier effect on the AGENCY's books.  At the central 18% on a
+  $104,181 incumbent the annual salary differential is $18,752 and the annual LOADED
+  differential is $19,682.  Had the successor carried the incumbent's own load
+  rate it would be $22,672, so the tier change destroys $2,990 a year of the
+  saving - the Hybrid successor pays up to 3.5% of pay in DC contributions the Plan 1
+  incumbent does not, on top of the same blended employer DB rate.  So on the agency's own
+  books replacing a Plan 1 incumbent with a Hybrid hire at the SAME salary costs MORE, and
+  every dollar of agency-level saving has to come out of the salary gap alone.  The model
+  already has that sign right, against the direction a 'turnover savings pay for it' claim
+  usually assumes.  Agreement, and it is the one structural check that comes out in the
+  model's favour.
+
+Check 3 - against the engine's own default.  The published engine's central acceleration
+  assumption is 6 months; this design MEASURES 44.9.  The measured figure is
+  7.5x the assumption.  DISAGREEMENT, and it is
+  the disagreement that matters most in this document.  The engine's 2/6/14-month ladder
+  was set for a GENERAL early-retirement offset; this bill's Pathway A cohort buys an
+  average 1.61 years of credit that advances unreduced eligibility by nearly four years.
+  Those are not the same quantity, and anyone who reads the 6-month default as a bound on
+  the measured 44.9 will conclude the workforce leg is seven times smaller than the model
+  says.  The measured figure is the right one for THIS cohort; the gap is a reason to
+  distrust the LEVEL of the workforce leg, not its sign, and it is why §6 reports a range
+  from -18% to 213% and not a point.
+
+Not checkable at all, and all three are data requests to VRS and DHRM:
+  - every participant count here (no published count of § 51.1-142.2 purchases exists);
+  - the retirement-date distribution inside a VRS window;
+  - the actual salary of the actual replacement for an actual accelerated retiree.
+
+================================================================================================
+[9] THE EXPORT
+================================================================================================
+  wrote out_moo199_model_data.json  (62,723 bytes)
+  wrote out_moo199_ladder.csv  (6 rows)
+  wrote out_moo199_member_price_grid.csv  (56 rows)
+  wrote out_moo199_interest_dial.csv  (8 rows)
+  wrote out_moo199_cap_sweep.csv  (8 rows)
+  wrote out_moo199_cap_admission.csv  (8 rows)
+  wrote out_moo199_workforce_exchange.csv  (3 rows)
+  wrote out_moo199_workforce_by_rung.csv  (6 rows)
+  wrote out_moo199_breakeven_grid.csv  (30 rows)
+
+================================================================================================
+[10] THE SENTENCE FOR THE EDITOR
+================================================================================================
+On the recommended design's own anchor - $71,813 of net trust cost per participant on the
+authorised basis - the workforce effect covers about 88% of the pension cost in the central
+case (-18% to 213% across the three replacement-differential cases), not the 71% the
+documents print against repaired S1's $64,678; the exchange breaks even at 50 months of
+acceleration against the 45 months this design measures, and the coverage ratio is nearly
+invariant to the retirement rung (77% to 98% across the whole ladder) even though the
+pension leg alone moves 49%.
+
+Two-significant-figure form: about $72,000 per participant, workforce effect about
+88% of it, break-even about 50 months.
+
+And the correction the sentence carries: the documents say the real exchange is WORSE than
+they show.  On a consistent recomputation the coverage RATIO is better; what is worse is
+the pension cost per participant, by $7,135.  The direction sentence must change.
+
+run completed 2026-10-12T20:25:43
+  * Two significant figures. No figure in this package is a VRS actuarial result.
+  * Participant counts are MODELED DEMAND, not actual cap utilisation. No participant count in this programme has an external anchor: no published count of purchases under § 51.1-142.2 exists.
+  * 18.4 participants is an UPPER BOUND. Clause (viii) of "eligible member" is in the live draft at document revision 76 and in no committed run, and can only refuse more.
+  * The 12-month rung is the CHEAP END of the retirement window: +7.5% uniform across the permissible dates, +16.3% all at the earliest date (MOO-85 §4).
+  * S8 publication restriction: the S8 family's comparative dollar cells at statutory interest rates other than the decided 6.00% are internal under the board's standing restriction. Every such row in this run is tagged publication_restricted = true and must not reach a sponsor-facing artifact. Participant counts are not dollar figures.
+  * Pre-decisional and internal. Release is the Policy Director's decision.
