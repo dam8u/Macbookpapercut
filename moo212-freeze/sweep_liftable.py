@@ -71,6 +71,10 @@ PROTECTED = [
     ("08-source-appendix.md", "4.74% of that cohort", 1),
     ("09-sponsor-and-advocacy-plan.md", "4.74% of that cohort", 1),
     ("04-fiscal-analysis.md", "$1,641,824 on that cohort", 1),
+    # Ruled no class by the Policy Director on 13 October 2026 (MOO-212): the guard covers
+    # back-references to the unreduced subdivision A 1 cohort, and this names the cost model's
+    # population, whose antecedent is the Finding cell of its own row. Protected by ruling, not
+    # pending one. See moo212-director/moo212-r1f1f2-ruling.md.
     ("07-risk-register.md", "the cohort was rebuilt monthly from membership history", 1),
 ]
 
