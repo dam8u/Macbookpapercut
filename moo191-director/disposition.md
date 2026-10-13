@@ -119,7 +119,9 @@ Steps 1 to 5 sum to **+590** in §1; step 6 adds **+44** to the document outside
 
 **Scope held.** **E1 is not re-cut.** The MOO-141 patch is not applied and MOO-176 revision 6's strings are not touched. **MOO-97 §7 item 129's other answers stay open.** D5 is not applied. F7 is not cut.
 
-**Re-resolve everything on the base as it stands at the moment of application.** The base moved three times under the last cut and MOO-197, MOO-199 and MOO-200 are live. An anchor counted in this document is not an anchor.
+**Re-resolve everything on the base as it stands at the moment of application.** The base moved three times under the last cut and MOO-197 and MOO-97 are live on the same text. An anchor counted in this document is not an anchor.
+
+**Commissioned at [MOO-208](/MOO/issues/MOO-208).**
 
 ## 8. F7 and F8
 
