@@ -1,0 +1,301 @@
+--- /Users/davidmoody/AgentCreated/v2.0/08-markdown-sources/00-cover-and-contents.md	2026-10-12 14:25:23
++++ staged-sources/00-cover-and-contents.md	2026-10-12 20:48:36
+@@ -10,7 +10,8 @@
+ > keeps most of the benefit and the Commonwealth is not selling service credit below the cost VRS
+ > itself states. On the authorised basis the pilot is **18.4 elections over four years, range 9.2 to
+ > 30.7** — measured on § 51.1-142.4 C as option (c) with the no-advance bar of clause (vii) in the
+-> cohort. **That count is an upper bound, not a measurement of the current text:** clause (viii) of
++> unreduced subdivision A 1 cohort, reached through § 51.1-153 A, B 2 or B 3. **That count is an
++> upper bound, not a measurement of the current text:** clause (viii) of
+ > "eligible member" is in the live draft and in no committed model run, and it is a further screen,
+ > so it can only refuse more. Each election certifies a mean **$106,253** of subsidy as
+ > § 51.1-142.4 D 2 certifies it — median $106,405, 90th percentile $152,558 — which is the quantity
+@@ -19,7 +20,7 @@
+ > earliest qualifying retirement date and the retirement window does not move it. **Two of the
+ > bill's own limits turn members away before money does:** § 51.1-142.4 C refuses any election that
+ > would not advance the member's unreduced retirement eligibility date, and a **$170,000** per-member
+-> ceiling refuses the most expensive 4.74% of the cohort — and the bill still brackets `[$100,000]`,
++> ceiling refuses the most expensive 4.74% of that cohort — and the bill still brackets `[$100,000]`,
+ > so the ceiling figure is directed but not yet in the text. On modelled demand, at the central
+ > estimate the $3,000,000 funds every election the bill admits, and at the top of the range the
+ > appropriation binds and rations. **The pilot's estimated net cost to the trust is $1.3 million in
+--- /Users/davidmoody/AgentCreated/v2.0/08-markdown-sources/01-one-page-summary.md	2026-10-12 14:21:15
++++ staged-sources/01-one-page-summary.md	2026-10-12 20:48:36
+@@ -27,7 +27,7 @@
+   statutory interest** — Virginia's own legal rate, § 6.2-301 — to the date of payment. The basis is
+   Pennsylvania's, 71 Pa.C.S. § 5505(b).
+ - **Leaves the member paying more than VRS's own stated cost** of a year of service credit:
+-  **1.42× approximate normal cost**, and **43% of the current-law price**, on the bill's cohort.
++  **1.42× approximate normal cost**, and **43% of the current-law price**, on the unreduced subdivision A 1 cohort, reached through § 51.1-153 A, B 2 or B 3.
+ - **Caps the Commonwealth's share in the enactment clause** at **$3.0 million** of certified
+   subsidy, self-executing: VRS certifies an available reservation before accepting an election and
+   wait-lists beyond it, and a wait-listed applicant keeps every right current law gives them today.
+--- /Users/davidmoody/AgentCreated/v2.0/08-markdown-sources/02-policy-brief.md	2026-10-12 14:21:15
++++ staged-sources/02-policy-brief.md	2026-10-12 20:48:36
+@@ -10,7 +10,8 @@
+ > keeps most of the benefit and the Commonwealth is not selling service credit below the cost VRS
+ > itself states. On the authorised basis the pilot is **18.4 elections over four years, range 9.2 to
+ > 30.7** — measured on § 51.1-142.4 C as option (c) with the no-advance bar of clause (vii) in the
+-> cohort. **That count is an upper bound, not a measurement of the current text:** clause (viii) of
++> unreduced subdivision A 1 cohort, reached through § 51.1-153 A, B 2 or B 3. **That count is an
++> upper bound, not a measurement of the current text:** clause (viii) of
+ > "eligible member" is in the live draft and in no committed model run, and it is a further screen,
+ > so it can only refuse more. Each election certifies a mean **$106,253** of subsidy as
+ > § 51.1-142.4 D 2 certifies it — median $106,405, 90th percentile $152,558 — which is the quantity
+@@ -19,7 +20,7 @@
+ > earliest qualifying retirement date and the retirement window does not move it. **Two of the
+ > bill's own limits turn members away before money does:** § 51.1-142.4 C refuses any election that
+ > would not advance the member's unreduced retirement eligibility date, and a **$170,000** per-member
+-> ceiling refuses the most expensive 4.74% of the cohort — and the bill still brackets `[$100,000]`,
++> ceiling refuses the most expensive 4.74% of that cohort — and the bill still brackets `[$100,000]`,
+ > so the ceiling figure is directed but not yet in the text. On modelled demand, at the central
+ > estimate the $3,000,000 funds every election the bill admits, and at the top of the range the
+ > appropriation binds and rations. **The pilot's estimated net cost to the trust is $1.3 million in
+@@ -135,7 +136,7 @@
+ |---|---:|---:|---|
+ | 4.00% (Pennsylvania's own rate) | 0.89× | 36% | **Rejected** — at 4.00% the member pays less than the original draft asked, which loses the sentence the design rests on |
+ | 5.00% | 1.15× | 47% | The floor, and only with the cap clause reopened in the same motion |
+-| **6.00%** | **1.50×** | **61%** | **Recommended.** These two figures are the **Pathways A+B** cohort; on the bill's own narrower cohort the member pays **1.42×** and **43%** |
++| **6.00%** | **1.50×** | **61%** | **Recommended.** These two figures are the **Pathways A+B** cohort; on the unreduced subdivision A 1 cohort, reached through § 51.1-153 A, B 2 or B 3 the member pays **1.42×** and **43%** |
+ | 6.75% (today's assumed rate of return) | 1.81× | 74% | Lower cost to the Commonwealth, but it takes the near-crossover member from a 23% discount to a 6% one. **The comparison is not stated in dollars here:** every absolute S8 figure is `[WITHHELD — S8 publication restriction]`, and its cost per participant may not be published before reconciliation |
+ | "the Board's assumed rate of return" | floats | floats | **Never draft it this way.** At 7.00% the price exceeds current law for the longest-serving members — 25 basis points above today's assumption |
+ 
+@@ -152,7 +153,7 @@
+ | **$3.0M aggregate subsidy cap**, self-executing, certified by VRS before an election is accepted, with wait-listing beyond it | Vermont 2009; red-team finding R4 | Converts an estimate into a maximum. On modelled demand it is **39% / 78% / 130%** committed at low, central and high take-up with the `[20]`% contingency inside it: at the central estimate it funds every election the bill admits, and at the top of the range it binds and rations. Modelled demand against the cap, not observed utilisation. |
+ | **Per-member subsidy ceiling of $170,000** | Red-team finding R7 | Refuses the most expensive 4.74% of the cohort — about 1.2 of 20.65 members — so a few expensive elections cannot consume the appropriation. **A refusal is not a trim:** the refused member's whole certified subsidy is $183,577 central against $9,147 of excess, a factor of twenty. The bill still brackets `[$100,000]`; $170,000 is directed and not yet in the text. |
+ | **Retirement on completing the purchase** | Utah § 49-12-409 | Makes the transition real. **This raises cost, not lowers it**, and is kept as policy, not as a saving. |
+-| **One pathway only** — a member already eligible for an unreduced benefit is excluded | Red-team finding F6 | Closes the windfall channel: someone already retiring next month cannot take the price and deliver nothing. |
++| **One pathway only** — a member already eligible for an unreduced benefit is excluded | Red-team finding F6 | Closes the windfall channel: someone already retiring next month cannot take the price and deliver nothing. The date the member must reach is the unreduced retirement eligibility date, which the bill defines as reached through § 51.1-153 A, B 2 or B 3, or, on an involuntary separation or a lawfully abolished office, through subsection A or C of § 51.1-155.1. |
+ | **Service-matching cap** — no more military service than credited state service | 71 Pa.C.S. § 5304(d) | Structural, and free. It binds on **nobody** in this pilot; no document in this package scores it. |
+ | **Settlement at retirement**, with pro-rata credit for partial payment, and re-valuation at the current-law price if the member does not retire | N.Y. RSSL § 1000(3) | Replaces a post-retirement clawback. Virginia has no clawback precedent and no collection mechanism for one. |
+ | **Member pays at least 5%; employer must first adopt a written non-discriminatory policy** | Utah § 49-12-409 | Answers the age-discrimination exposure in form; not by itself a safe harbour. |
+--- /Users/davidmoody/AgentCreated/v2.0/08-markdown-sources/03-decision-memo.md	2026-10-12 14:21:15
++++ staged-sources/03-decision-memo.md	2026-10-12 20:48:36
+@@ -10,7 +10,8 @@
+ > keeps most of the benefit and the Commonwealth is not selling service credit below the cost VRS
+ > itself states. On the authorised basis the pilot is **18.4 elections over four years, range 9.2 to
+ > 30.7** — measured on § 51.1-142.4 C as option (c) with the no-advance bar of clause (vii) in the
+-> cohort. **That count is an upper bound, not a measurement of the current text:** clause (viii) of
++> unreduced subdivision A 1 cohort, reached through § 51.1-153 A, B 2 or B 3. **That count is an
++> upper bound, not a measurement of the current text:** clause (viii) of
+ > "eligible member" is in the live draft and in no committed model run, and it is a further screen,
+ > so it can only refuse more. Each election certifies a mean **$106,253** of subsidy as
+ > § 51.1-142.4 D 2 certifies it — median $106,405, 90th percentile $152,558 — which is the quantity
+@@ -19,7 +20,7 @@
+ > earliest qualifying retirement date and the retirement window does not move it. **Two of the
+ > bill's own limits turn members away before money does:** § 51.1-142.4 C refuses any election that
+ > would not advance the member's unreduced retirement eligibility date, and a **$170,000** per-member
+-> ceiling refuses the most expensive 4.74% of the cohort — and the bill still brackets `[$100,000]`,
++> ceiling refuses the most expensive 4.74% of that cohort — and the bill still brackets `[$100,000]`,
+ > so the ceiling figure is directed but not yet in the text. On modelled demand, at the central
+ > estimate the $3,000,000 funds every election the bill admits, and at the top of the range the
+ > appropriation binds and rations. **The pilot's estimated net cost to the trust is $1.3 million in
+@@ -157,7 +158,7 @@
+ | **Under the bill, at 6.00%** | **$47,705** | **1.39×** | **$68,917** |
+ | The original draft (approximate normal cost) | $34,388 | 1.00× | $82,234 |
+ 
+-Across the bill's own cohort the member pays **1.42× approximate normal cost** and **43% of the
++Across the unreduced subdivision A 1 cohort, reached through § 51.1-153 A, B 2 or B 3 the member pays **1.42× approximate normal cost** and **43% of the
+ current-law price**. On the 15 profiles nearest the crossover — the hardest cases — the member pays
+ **68%–77% of the current-law price, median 72%**, and **not one of them is worse off**.
+ 
+@@ -231,8 +232,11 @@
+ 4. **Scope: state agency employees only.** Removes an order of magnitude of exposure and the entire
+    local-mandate fight. And no tier within it is costless — Plan 2 members are about 7% of the
+    cohort and reach eligibility by a different rule.
+-5. **One pathway only.** A member already eligible for an unreduced benefit is excluded. That
+-   closes the windfall channel and it is most of why the bill's cohort is **18.4 rather than 79.2**.
++5. **One pathway only.** A member already eligible for an unreduced benefit is excluded — the
++   date the member must reach is the unreduced retirement eligibility date, which the bill
++   defines as reached through § 51.1-153 A, B 2 or B 3, or, on an involuntary separation or a lawfully abolished office, through subsection A or C of § 51.1-155.1.
++   Neither of those two routes carries weight in the modelled distribution. That closes the windfall channel and it is most of why the unreduced subdivision A 1 cohort, reached through § 51.1-153 A, B 2 or B 3
++   is **18.4 rather than 79.2**.
+ 6. **The post-retirement clawback is removed entirely**, and replaced by settlement at retirement
+    with re-valuation at the current-law price if the member does not retire. Virginia has no
+    clawback precedent, no collection mechanism, and a due-process problem on death, disability,
+--- /Users/davidmoody/AgentCreated/v2.0/08-markdown-sources/04-fiscal-analysis.md	2026-10-12 14:25:23
++++ staged-sources/04-fiscal-analysis.md	2026-10-12 20:48:36
+@@ -10,7 +10,8 @@
+ > keeps most of the benefit and the Commonwealth is not selling service credit below the cost VRS
+ > itself states. On the authorised basis the pilot is **18.4 elections over four years, range 9.2 to
+ > 30.7** — measured on § 51.1-142.4 C as option (c) with the no-advance bar of clause (vii) in the
+-> cohort. **That count is an upper bound, not a measurement of the current text:** clause (viii) of
++> unreduced subdivision A 1 cohort, reached through § 51.1-153 A, B 2 or B 3. **That count is an
++> upper bound, not a measurement of the current text:** clause (viii) of
+ > "eligible member" is in the live draft and in no committed model run, and it is a further screen,
+ > so it can only refuse more. Each election certifies a mean **$106,253** of subsidy as
+ > § 51.1-142.4 D 2 certifies it — median $106,405, 90th percentile $152,558 — which is the quantity
+@@ -19,7 +20,7 @@
+ > earliest qualifying retirement date and the retirement window does not move it. **Two of the
+ > bill's own limits turn members away before money does:** § 51.1-142.4 C refuses any election that
+ > would not advance the member's unreduced retirement eligibility date, and a **$170,000** per-member
+-> ceiling refuses the most expensive 4.74% of the cohort — and the bill still brackets `[$100,000]`,
++> ceiling refuses the most expensive 4.74% of that cohort — and the bill still brackets `[$100,000]`,
+ > so the ceiling figure is directed but not yet in the text. On modelled demand, at the central
+ > estimate the $3,000,000 funds every election the bill admits, and at the top of the range the
+ > appropriation binds and rations. **The pilot's estimated net cost to the trust is $1.3 million in
+@@ -163,7 +164,7 @@
+ 
+ *(This table is the full A + B cohort on a six-month deadline, which is the comparison basis used
+ across the scenario set. **The member-price columns, 1.50× and 61%, are that A + B cohort and must
+-always be labelled as such;** the bill's own narrower cohort pays 1.42× and 43% and is priced in §2.
++always be labelled as such;** the unreduced subdivision A 1 cohort, reached through § 51.1-153 A, B 2 or B 3 pays 1.42× and 43% and is priced in §2.
+ The cost columns are withheld: no absolute S8 dollar figure goes into an external document, and no
+ S8 cost per participant may be published before reconciliation. The dial the rate moves is the
+ **member's price**, which is the column that is published.)*
+@@ -198,7 +199,7 @@
+ **57 months** earlier than VRS's own rates expect them to. The member's payment does not touch
+ that, which is why the price is the wrong dial.
+ 
+-**The retirement-deadline ladder**, bill cohort, 6.00% statutory interest:
++**The retirement-deadline ladder**, the unreduced subdivision A 1 cohort, reached through § 51.1-153 A, B 2 or B 3, 6.00% statutory interest:
+ 
+ | Retirement deadline after completing the purchase | Acceleration | Cost to the trust, central | Range |
+ |---|---:|---:|---:|
+@@ -355,7 +356,7 @@
+ | Longevity selection (+10% annuity) | $5.12M | $5.73M | $0.61M | 12% |
+ 
+ *(Swings are measured on the full-cohort baseline so that one driver can be compared with another;
+-the bill's own cohort is about a quarter of that baseline and the percentages carry.)*
++the unreduced subdivision A 1 cohort, reached through § 51.1-153 A, B 2 or B 3 is about a quarter of that baseline and the percentages carry.)*
+ 
+ **All three top drivers are drafting or behavioural choices, not measurements** — and the second
+ runs backwards from intuition: **faster completion is dearer**, because it brings the retirement
+--- /Users/davidmoody/AgentCreated/v2.0/08-markdown-sources/05-bill-drafting-request.md	2026-10-12 14:21:15
++++ staged-sources/05-bill-drafting-request.md	2026-10-12 20:48:36
+@@ -10,7 +10,8 @@
+ > keeps most of the benefit and the Commonwealth is not selling service credit below the cost VRS
+ > itself states. On the authorised basis the pilot is **18.4 elections over four years, range 9.2 to
+ > 30.7** — measured on § 51.1-142.4 C as option (c) with the no-advance bar of clause (vii) in the
+-> cohort. **That count is an upper bound, not a measurement of the current text:** clause (viii) of
++> unreduced subdivision A 1 cohort, reached through § 51.1-153 A, B 2 or B 3. **That count is an
++> upper bound, not a measurement of the current text:** clause (viii) of
+ > "eligible member" is in the live draft and in no committed model run, and it is a further screen,
+ > so it can only refuse more. Each election certifies a mean **$106,253** of subsidy as
+ > § 51.1-142.4 D 2 certifies it — median $106,405, 90th percentile $152,558 — which is the quantity
+@@ -19,7 +20,7 @@
+ > earliest qualifying retirement date and the retirement window does not move it. **Two of the
+ > bill's own limits turn members away before money does:** § 51.1-142.4 C refuses any election that
+ > would not advance the member's unreduced retirement eligibility date, and a **$170,000** per-member
+-> ceiling refuses the most expensive 4.74% of the cohort — and the bill still brackets `[$100,000]`,
++> ceiling refuses the most expensive 4.74% of that cohort — and the bill still brackets `[$100,000]`,
+ > so the ceiling figure is directed but not yet in the text. On modelled demand, at the central
+ > estimate the $3,000,000 funds every election the bill admits, and at the top of the range the
+ > appropriation binds and rations. **The pilot's estimated net cost to the trust is $1.3 million in
+@@ -67,7 +68,7 @@
+ | 2 | **No-worse-than-current-law ceiling** | The member pays the **lesser** of that amount and the amount payable under current law. This answers the crossover risk directly rather than relying on the rate staying below it. |
+ | 3 | **Interest rate** | **"Six percent per annum, compounded annually," as a fixed number in the Code.** No cross-reference to a floating rate and **no reference to the Board's assumed rate of return.** Cite § 6.2-301 in the drafting note, not in the bill. |
+ | 4 | **Window** | The 24-month trigger does not apply to a purchase under the new subdivision. Everything else in B 3 is preserved. |
+-| 5 | **Eligibility** | A Plan 1 or Plan 2 **state agency employee** who is **not** already eligible for an unreduced allowance without the purchase, and **would be** eligible on the first of the month after the credit posts. This is the narrow reading and it is deliberate — the broad reading, reaching any member whose eligibility date merely moves forward, costs **3.7×**. |
++| 5 | **Eligibility** | A Plan 1 or Plan 2 **state agency employee** who is **not** already eligible for an unreduced allowance without the purchase, and **would be** eligible on the first of the month after the credit posts. The date the member must reach is the unreduced retirement eligibility date, which the bill defines as reached through § 51.1-153 A, B 2 or B 3, or, on an involuntary separation or a lawfully abolished office, through subsection A or C of § 51.1-155.1. Neither of those two routes carries weight in the modelled distribution. This is the narrow reading and it is deliberate — the broad reading, reaching any member whose eligibility date merely moves forward, costs **3.7×**. |
+ | 6 | **Retirement condition** | Retirement with an effective date tied to the posting of the credit. **The length of the deadline is an open decision** — see §5 item 1. |
+ | 7 | **Minimum purchase** | Only the months necessary to reach unreduced eligibility. |
+ | 8 | **Aggregate cap** | **$3,000,000** of certified subsidy across the pilot, self-executing, certified and reserved **before** an election is accepted, with wait-listing, published running balance, and express preservation of the denied member's current-law rights. |
+--- /Users/davidmoody/AgentCreated/v2.0/08-markdown-sources/06-questions-and-answers.md	2026-10-12 14:28:02
++++ staged-sources/06-questions-and-answers.md	2026-10-12 20:48:36
+@@ -10,7 +10,8 @@
+ > keeps most of the benefit and the Commonwealth is not selling service credit below the cost VRS
+ > itself states. On the authorised basis the pilot is **18.4 elections over four years, range 9.2 to
+ > 30.7** — measured on § 51.1-142.4 C as option (c) with the no-advance bar of clause (vii) in the
+-> cohort. **That count is an upper bound, not a measurement of the current text:** clause (viii) of
++> unreduced subdivision A 1 cohort, reached through § 51.1-153 A, B 2 or B 3. **That count is an
++> upper bound, not a measurement of the current text:** clause (viii) of
+ > "eligible member" is in the live draft and in no committed model run, and it is a further screen,
+ > so it can only refuse more. Each election certifies a mean **$106,253** of subsidy as
+ > § 51.1-142.4 D 2 certifies it — median $106,405, 90th percentile $152,558 — which is the quantity
+@@ -19,7 +20,7 @@
+ > earliest qualifying retirement date and the retirement window does not move it. **Two of the
+ > bill's own limits turn members away before money does:** § 51.1-142.4 C refuses any election that
+ > would not advance the member's unreduced retirement eligibility date, and a **$170,000** per-member
+-> ceiling refuses the most expensive 4.74% of the cohort — and the bill still brackets `[$100,000]`,
++> ceiling refuses the most expensive 4.74% of that cohort — and the bill still brackets `[$100,000]`,
+ > so the ceiling figure is directed but not yet in the text. On modelled demand, at the central
+ > estimate the $3,000,000 funds every election the bill admits, and at the top of the range the
+ > appropriation binds and rations. **The pilot's estimated net cost to the trust is $1.3 million in
+@@ -74,9 +75,10 @@
+ trust and subsection D 2 caps certified subsidy — a different quantity.
+ 
+ **And the appropriation is not the first thing that turns a member away.** The bill's own limits do
+-that: subsection C refuses an election that would not advance the member's unreduced retirement
+-eligibility date, and the $170,000 per-member ceiling refuses the most expensive 4.74% of the
+-cohort. Between them they refuse about **2.2 of a 20.65** modelled population at the central
++that. Subsection C refuses an election that would not advance the member's unreduced retirement
++eligibility date — the date the member must reach, which the bill defines as reached through § 51.1-153 A, B 2 or B 3, or, on an involuntary separation or a lawfully abolished office, through subsection A or C of § 51.1-155.1.
++Neither of those two routes carries weight in the modelled distribution. And the $170,000 per-member ceiling refuses the most expensive 4.74% of the unreduced subdivision A 1 cohort, reached through § 51.1-153 A, B 2 or B 3.
++Between them they refuse about **2.2 of a 20.65** modelled population at the central
+ estimate — about 1.0 by the eligibility bars, about 1.2 by the ceiling — where the appropriation
+ refuses none.
+ 
+@@ -235,7 +237,8 @@
+ 
+ - **The windfall channel is closed by the eligibility definition.** A member already eligible for
+   an unreduced benefit — who could have satisfied every condition while retiring on a date they had
+-  already chosen — is excluded from the bill entirely.
++  already chosen — is excluded from the bill entirely. The date the member must reach is the
++  unreduced retirement eligibility date, which the bill defines as reached through § 51.1-153 A, B 2 or B 3, or, on an involuntary separation or a lawfully abolished office, through subsection A or C of § 51.1-155.1.
+ - **The member must retire** on completion of the purchase, and credit is settled at retirement
+   rather than created first and collected on later.
+ - **A re-employment and contractor bar** reaches indirect return through a staffing vendor, which
+--- /Users/davidmoody/AgentCreated/v2.0/08-markdown-sources/07-risk-register.md	2026-10-12 14:28:02
++++ staged-sources/07-risk-register.md	2026-10-12 20:48:36
+@@ -10,7 +10,8 @@
+ > keeps most of the benefit and the Commonwealth is not selling service credit below the cost VRS
+ > itself states. On the authorised basis the pilot is **18.4 elections over four years, range 9.2 to
+ > 30.7** — measured on § 51.1-142.4 C as option (c) with the no-advance bar of clause (vii) in the
+-> cohort. **That count is an upper bound, not a measurement of the current text:** clause (viii) of
++> unreduced subdivision A 1 cohort, reached through § 51.1-153 A, B 2 or B 3. **That count is an
++> upper bound, not a measurement of the current text:** clause (viii) of
+ > "eligible member" is in the live draft and in no committed model run, and it is a further screen,
+ > so it can only refuse more. Each election certifies a mean **$106,253** of subsidy as
+ > § 51.1-142.4 D 2 certifies it — median $106,405, 90th percentile $152,558 — which is the quantity
+@@ -19,7 +20,7 @@
+ > earliest qualifying retirement date and the retirement window does not move it. **Two of the
+ > bill's own limits turn members away before money does:** § 51.1-142.4 C refuses any election that
+ > would not advance the member's unreduced retirement eligibility date, and a **$170,000** per-member
+-> ceiling refuses the most expensive 4.74% of the cohort — and the bill still brackets `[$100,000]`,
++> ceiling refuses the most expensive 4.74% of that cohort — and the bill still brackets `[$100,000]`,
+ > so the ceiling figure is directed but not yet in the text. On modelled demand, at the central
+ > estimate the $3,000,000 funds every election the bill admits, and at the top of the range the
+ > appropriation binds and rations. **The pilot's estimated net cost to the trust is $1.3 million in
+--- /Users/davidmoody/AgentCreated/v2.0/08-markdown-sources/08-source-appendix.md	2026-10-12 14:21:15
++++ staged-sources/08-source-appendix.md	2026-10-12 20:48:36
+@@ -10,7 +10,8 @@
+ > keeps most of the benefit and the Commonwealth is not selling service credit below the cost VRS
+ > itself states. On the authorised basis the pilot is **18.4 elections over four years, range 9.2 to
+ > 30.7** — measured on § 51.1-142.4 C as option (c) with the no-advance bar of clause (vii) in the
+-> cohort. **That count is an upper bound, not a measurement of the current text:** clause (viii) of
++> unreduced subdivision A 1 cohort, reached through § 51.1-153 A, B 2 or B 3. **That count is an
++> upper bound, not a measurement of the current text:** clause (viii) of
+ > "eligible member" is in the live draft and in no committed model run, and it is a further screen,
+ > so it can only refuse more. Each election certifies a mean **$106,253** of subsidy as
+ > § 51.1-142.4 D 2 certifies it — median $106,405, 90th percentile $152,558 — which is the quantity
+@@ -19,7 +20,7 @@
+ > earliest qualifying retirement date and the retirement window does not move it. **Two of the
+ > bill's own limits turn members away before money does:** § 51.1-142.4 C refuses any election that
+ > would not advance the member's unreduced retirement eligibility date, and a **$170,000** per-member
+-> ceiling refuses the most expensive 4.74% of the cohort — and the bill still brackets `[$100,000]`,
++> ceiling refuses the most expensive 4.74% of that cohort — and the bill still brackets `[$100,000]`,
+ > so the ceiling figure is directed but not yet in the text. On modelled demand, at the central
+ > estimate the $3,000,000 funds every election the bill admits, and at the top of the range the
+ > appropriation binds and rations. **The pilot's estimated net cost to the trust is $1.3 million in
+--- /Users/davidmoody/AgentCreated/v2.0/08-markdown-sources/09-sponsor-and-advocacy-plan.md	2026-10-12 14:21:15
++++ staged-sources/09-sponsor-and-advocacy-plan.md	2026-10-12 20:48:36
+@@ -10,7 +10,8 @@
+ > keeps most of the benefit and the Commonwealth is not selling service credit below the cost VRS
+ > itself states. On the authorised basis the pilot is **18.4 elections over four years, range 9.2 to
+ > 30.7** — measured on § 51.1-142.4 C as option (c) with the no-advance bar of clause (vii) in the
+-> cohort. **That count is an upper bound, not a measurement of the current text:** clause (viii) of
++> unreduced subdivision A 1 cohort, reached through § 51.1-153 A, B 2 or B 3. **That count is an
++> upper bound, not a measurement of the current text:** clause (viii) of
+ > "eligible member" is in the live draft and in no committed model run, and it is a further screen,
+ > so it can only refuse more. Each election certifies a mean **$106,253** of subsidy as
+ > § 51.1-142.4 D 2 certifies it — median $106,405, 90th percentile $152,558 — which is the quantity
+@@ -19,7 +20,7 @@
+ > earliest qualifying retirement date and the retirement window does not move it. **Two of the
+ > bill's own limits turn members away before money does:** § 51.1-142.4 C refuses any election that
+ > would not advance the member's unreduced retirement eligibility date, and a **$170,000** per-member
+-> ceiling refuses the most expensive 4.74% of the cohort — and the bill still brackets `[$100,000]`,
++> ceiling refuses the most expensive 4.74% of that cohort — and the bill still brackets `[$100,000]`,
+ > so the ceiling figure is directed but not yet in the text. On modelled demand, at the central
+ > estimate the $3,000,000 funds every election the bill admits, and at the top of the range the
+ > appropriation binds and rations. **The pilot's estimated net cost to the trust is $1.3 million in
