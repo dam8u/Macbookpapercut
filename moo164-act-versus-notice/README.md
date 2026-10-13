@@ -1,7 +1,22 @@
 # MOO-164 apply kit — the act-versus-notice cut, **revision 5**
 
-**Current check: `verify_r65.py`. Current splicer: `repro65.py`. There is exactly one of each.**
+**Current check: `verify_r68.py`. Current splicer: `repro65.py`. There is exactly one of each.**
 Everything else in this directory is superseded and is named as such below.
+
+> ## ⚠ STORE REVISION 68 BROKE AN ANCHOR — AND IT IS **MOO-141's**, NOT THIS CUT'S
+>
+> Store revision 68 re-cast subsection A's three-day mailing sentence. It is now confined to mailing
+> (*"where the Board mails a written statement, notice, or certification"*) and the triplet replaces
+> *"that statement or notice"*, so **MOO-141 Edit 1's FIND string resolves 0 times.** `verify_r68.py`
+> keeps the dead string as `E1_F_R65_DEAD` and asserts it at **0**, and supplies the repair as
+> `E1_F_R68`. **MOO-141 must re-cut its own Edit 1; this kit only proves the break and carries a
+> working repair for the order-independence test.**
+>
+> **All thirteen MOO-164 anchors still resolve exactly once**, on all three bases, and the delta is
+> still **+642**. `verify_r68.py`: **0 failures.**
+>
+> **§6's reproductions are stale again** — store revisions 66, 67 and 68 grew enacted §1 from 121,576
+> to **131,066** characters. Re-run the splicer before the next document revision goes out.
 
 > ## ⚠ APPLY EVERY FIND INSIDE ENACTED §1 ONLY
 >
@@ -37,7 +52,14 @@ three.
 
 ## Files
 
-- `verify_r65.py` — **the current check.** Counts over enacted §1 only. Builds all three bases,
+- `verify_r68.py` — **the current check.** Counts over enacted §1 only. Everything `verify_r65.py`
+  did, plus: the named MOO-141 Edit 1 break, four assertions on what store revision 68 newly contains
+  (m8-a enacted in clause (ii); the three-day extension confined to mailing; the electronic-giving
+  rule; the 5:00 p.m. rule), and a sentence-order test on M 2 proving no MOO-164 edit or candidate
+  inserts before the sentence D 1's ordinal reference points at.
+- `verify_r65.py` — **superseded by `verify_r68.py`; it aborts on store revision 68** because it
+  asserts MOO-141 Edit 1's dead FIND at 1. Kept as the record of the revision-5 run. Counts over
+  enacted §1 only. Builds all three bases,
   asserts every anchor resolves exactly once, asserts the +642 delta, and **counts** (never predicts)
   the verb census, the `period allowed` sweep and every figure the deliverable quotes. Exits non-zero
   if any of them moves.
@@ -57,7 +79,7 @@ three.
 
 ```
 # fetch bill-text-s8 from MOO-42 to bill.md, then:
-python3 verify_r65.py bill.md     # 0 failures expected
+python3 verify_r68.py bill.md     # 0 failures expected
 python3 apply164.py bill.md       # writes applied.md
 python3 repro65.py                # writes repro65.json (reads bill.md)
 ```
