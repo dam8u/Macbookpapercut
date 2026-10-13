@@ -190,11 +190,15 @@ chk('the second branch\'s "such a duty" is unchanged, so it carries the longer l
     SAVING_R9.endswith('or whether the Board has performed such a duty within a period required by this section.'), True)
 chk('saving body grows by', len(SAVING_R9) - len(SAVING_R8), 111)
 
-print('\n== F4 counted: the premise that failed, and why the reversal moves no date')
-# 164-7's two deeming predicates are BOTH no-act predicates, so the date 164-7 deems necessarily
-# precedes any real act of the Board upon the same request. Edit 1 selects the FIRST act. The two
-# deemings therefore agree by construction, not by chance — which is why naming R-6's duty in
-# Edit 1's exception moves no date.
+print('\n== F4 counted: the premise that failed, and the two deeming predicates')
+# WITHDRAWN, 13 October 2026, on MOO-216 R1 and R2. The claim this block used to carry — that the
+# date 164-7 deems "necessarily precedes any real act of the Board upon the same request", so the
+# two deemings "agree by construction" and naming R-6's duty in Edit 1's exception moves no date —
+# is FALSE for 164-7's limb 1. M 2's predicate is a WINDOWED no-act predicate: it asks whether the
+# Board acts within the 30 days after the expiry notice is filed, and a real act BEFORE that window
+# opens does not answer it. Counted immediately below under "MOO-216 R1". The checks that follow
+# count the words of the two predicates and nothing more; no string count can construct the
+# ordering claim, and the labels no longer assert one (MOO-216 R11).
 E164_7 = [r for _l, _f, r in EDITS if 'is deemed' in r][0]
 chk("164-7 limb 1's predicate is a denial by operation of M 2's no-act sentence",
     E164_7.count('Where a request is denied by operation of the preceding sentence'), 1)
@@ -202,10 +206,27 @@ chk("and M 2's sentence is itself predicated on the Board's NOT acting",
     S1.count('Where the Board does not act upon the request within 30 days after that notice is filed'), 1)
 chk("164-7 limb 2's predicate is the Board's NOT acting within the period",
     E164_7.count('where the Board does not act upon a request under the definition'), 1)
-chk('164-7 deems the act on the denial date or the day after expiry — both before any real act',
+chk('164-7 deems the act on the denial date or the day after the expiry of the period (words counted)',
     E164_7.count('on the date of that denial or, as the case may be, on the day after the expiration of that period'), 1)
-chk("Edit 1 selects the FIRST act, so it selects 164-7's deemed date",
+chk("Edit 1's operative words select the FIRST act (words counted; which date that is, is R1)",
     E1_R.count('on the date on which the Board first acts upon it'), 1)
+print('\n== MOO-216 R1 counted: the four base facts that falsify the withdrawn premise')
+chk("M 2's filing right is given on a condition stated as a completed fact",
+    S1.count('Where the Board does not act upon a request for reconsideration within the 90 days '
+             'allowed by this subsection'), 1)
+chk('the filer files the expiry notice, which is what opens the 30-day window',
+    S1.count('may file with the Board written notice that the period has expired'), 1)
+chk("M 2's deemed-denial predicate is WINDOWED, not 'any act up to that date'",
+    S1.count('within 30 days after that notice is filed'), 1)
+chk('the drafter writes an express continuing condition elsewhere in M 2 and did not here',
+    S1.count('at any time before the Board makes the determination'), 1)
+chk("both base occurrences of 'first acts upon' are in G 4's one pendency sentence — once for the "
+    "disability application and once for 'such a request', which is the tolling-class request",
+    S1.count('from the date on which the member files it until the date on which the Board first acts upon it'), 2)
+chk("and G 4's pendency sentence is a single sentence, so both ends move together",
+    S1.count('and such a request is pending from the date on which the member files it until the '
+             'date on which the Board first acts upon it.'), 1)
+
 chk("revision 8: Edit 1's exception named ONE duty", E1_EXC_R8.count('the duty of the Board'), 1)
 chk("revision 9: it names TWO", E1_EXC_R9.count('the duty of the Board'), 2)
 chk("and it names R-6's duty in 164-7's own words",

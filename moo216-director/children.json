@@ -1,0 +1,22 @@
+{
+ "draft": {
+  "id": "b1e08c30-0dce-4f96-ac4b-3cbec8634a2a",
+  "identifier": "MOO-221"
+ },
+ "xref": {
+  "id": "1e4da976-7300-4606-a5a2-12a143f1ec62",
+  "identifier": "MOO-222"
+ },
+ "fiscal": {
+  "id": "24645e03-5770-487b-b34d-1d3c58c3f84f",
+  "identifier": "MOO-223"
+ },
+ "stat": {
+  "id": "25c8c89f-2dbb-4591-90b5-ff32355a8b49",
+  "identifier": "MOO-224"
+ },
+ "stake": {
+  "id": "f0149ea0-bf6a-4f57-8756-02125caf171c",
+  "identifier": "MOO-225"
+ }
+}
