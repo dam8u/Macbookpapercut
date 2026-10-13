@@ -1,169 +1,183 @@
-# MOO-164 apply kit — the act-versus-notice cut, **revision 6**
+# MOO-164 apply kit — the act-versus-notice cut, **revision 7**
 
-**Current check: `verify_r69_v6.py` (base `bill69.md`). Current splicer: `repro68.py`. Current
-applier: `apply164.py`. There is exactly one of each.** Everything else in this directory is
-superseded and is named as such below.
+**Current check: `verify_r70_v7.py` (base `bill70.md`). Current splicer: `repro70.py`. Current
+applier: `apply164.py`. Current document build: `build_rev7.py`. Current consistency check:
+`check_doc_vs_kit.py`. There is exactly one of each.** Everything else is superseded and is named as
+such below.
 
-> ## ⚠ `verify_r68_v6.py` IS SUPERSEDED FOR TWO REASONS, NEITHER OF THEM A CHANGE TO THIS CUT
->
-> 1. **The base moved to store revision 69** — document revision 88, whole document **482,941**,
->    enacted §1 **131,923**. Revision 69 enacted [MOO-189](/MOO/issues/MOO-189)'s answers.
-> 2. **Its `E1_R` fixture was stale.** It carried MOO-141 Edit 1's saving *without* the express
->    exception. [MOO-141](/MOO/issues/MOO-141) re-cut Edit 1 at store revision 69 so that its saving
->    carries 164-7's exception, drafted for subsection A. `verify_r69_v6.py` lifts that text from
->    `moo141-rev68-recut/verify_r69.py` and **cross-checks it** — the MOO-141 patch delta over §1 must
->    come out at **+847**, MOO-141's own published figure, or the check fails.
->
-> **Revision 6's text does not change.** 164-7 keeps its exception exactly as cut; Edit 1 was conformed
-> to it, not the other way round. The eleven edits and both decisions are byte-identical.
+```
+python3 verify_r70_v7.py bill70.md   # 0 failures expected — the current check
+python3 apply164.py bill70.md        # writes applied.md; asserts +3375 and out-of-§1 byte-identity
+python3 repro70.py bill70.md         # writes repro70.json — the §6 reproductions, by content
+python3 build_rev7.py                # writes moo164_rev7.md; 0 post-condition failures expected
+python3 check_doc_vs_kit.py          # 0 mismatches expected — the document against the kit
+```
 
-> ## ⚠ THE PATCH IS **ELEVEN** EDITS AT REVISION 6, AND THE DELTA IS **+2,551**
+> ## ⚠ THE PATCH IS **TWELVE EDITS IN THIRTEEN SUBSTITUTIONS** AT REVISION 7, AND THE DELTA IS **+3,375**
 >
-> The Policy Director's disposition promoted five held candidates to applied text: **164-7** (carrying
-> F19's limb (B)), **164-7-B** (folded into 164-7 as its deeming sentence), **164-8**, **164-10**,
-> **164-11**, and **(c-2)** as the new **164-12**. **Candidate 164-9 stays HELD for
-> [MOO-204](/MOO/issues/MOO-204) and the edit number 164-9 is reserved, not reused. Candidate (c-1) is
-> retired and must not be applied.**
+> [MOO-209](/MOO/issues/MOO-209)'s counsel pass is folded. **164-7** takes F1's extended exception,
+> **164-8** takes F2 and F3, **164-12** takes F6, and **164-13 is new** on F4 — two substitutions
+> inside one sentence of subdivision D 1.
 >
-> Revision 5's figures were six edits and **+642**. Anything in this directory that still says +642 or
-> +490 is a superseded file, not a disagreement.
+> Revision 6 was eleven substitutions and **+2,551**; revision 5 was six and **+642**. Anything in
+> this directory that still says +2,551, +642 or +490 is a superseded file, not a disagreement.
 
 > ## ⚠ APPLY EVERY FIND INSIDE ENACTED §1 ONLY
 >
 > From store revision 62 the §0 revision narrative of `bill-text-s8` quotes anchor strings. At store
-> revision 68, **five of the eleven FINDs occur more than once whole-document** — 164-10's occurs
-> **four** times. **A whole-document find-and-replace will corrupt the revision record.** `apply164.py`
-> slices §1 before substituting and asserts afterwards that the head and tail are byte-identical. This
-> is [MOO-187](/MOO/issues/MOO-187) finding **F21**, and it is the finding most likely to cause actual
-> damage.
+> revision 70, **five of the thirteen FINDs occur more than once whole-document** — 164-10's occurs
+> **four** times. **A whole-document find-and-replace will corrupt the revision record.**
+> `apply164.py` slices §1 before substituting and asserts afterwards that the head and tail are
+> byte-identical. This is [MOO-187](/MOO/issues/MOO-187) finding **F21**, and it is the finding most
+> likely to cause actual damage.
 
-> ## ⚠ MOO-141 EDIT 1's BROKEN ANCHOR IS **REPAIRED, BY MOO-141** — AND ITS TEXT HAS CHANGED
+> ## ⚠ TWO HELD CANDIDATES AND ONE DECLINED FIX — DO NOT APPLY ANY OF THEM
 >
-> Store revision 68 re-cast subsection A's three-day sentence: it is now confined to mailing
-> (*"where the Board mails a written statement, notice, or certification"*) and the triplet replaces
-> *"that statement or notice"*, so **MOO-141 Edit 1's FIND string resolved 0 times.**
-> **MOO-141 re-cut it at store revision 69**, and in the same re-cut **conformed Edit 1's saving clause
-> to 164-7's express exception**, drafted for subsection A. The dead string is still kept as
-> `E1_F_R65_DEAD` and asserted at **0** so the break stays visible. Edits 2 and 3 still resolve exactly
-> once. **MOO-141 now carries its own ordering constraint: its Edit 2 must be applied in the same cut
-> as its Edit 1**, because the exception's descriptor resolves twice until Edit 2 consumes the
-> occurrence in the definition. Nothing in that reaches this cut's anchors.
->
-> **All eleven MOO-164 anchors resolve exactly once at store revision 69**, on all three bases, with
-> the identical **+2,551** delta. `verify_r69_v6.py`: **0 failures.**
+> - **164-9 — HELD.** The two-limb cap closing the last 60 days at M 2's tolling endpoint. Priced at
+>   [MOO-204](/MOO/issues/MOO-204) (*take it, with 164-10*), **still held pending the Policy
+>   Director**. It amends **Edit 164-1's own new text**, so its FIND resolves **0** in the base and
+>   **1** in the applied text — both asserted.
+> - **164-14 — HELD.** [MOO-209](/MOO/issues/MOO-209) **F10**: *"or the application is otherwise
+>   disposed of"*, +39 characters. It amends **Edit 164-12's own new text** — same 0/1 pattern.
+>   **Held because it narrows (c-2), whose cost-neutrality is the express reason no item-46 card went
+>   to the board.** Question 1.
+> - **164-7-F13 — DECLINED on drafting grounds**, words drafted at §17.9. F13's *"for acting upon
+>   that request"* would create a **sixth variant** of the formula card (j) and Edit 164-6 exist to
+>   conform. The Policy Director can overrule it in one line.
+> - **(c-1) — RETIRED.** Counsel's first-pass F9 makes it defective, not merely impolitic. The
+>   verifier asserts its FIND still resolves once **unamended**, which is how it proves Edit 164-12
+>   leaves G 4 alone.
+> - **Card (i)'s 33-word confirming sentence — DECLINED.**
+> - **First-pass F11 — carried forward, not drafted.** For the next pass that opens the definition.
 
 **Deliverable:** the issue document
 [`moo164-act-versus-notice`](/MOO/issues/MOO-164#document-moo164-act-versus-notice) on
-[MOO-164](/MOO/issues/MOO-164). The bill text lives in the Paperclip store, not here.
+[MOO-164](/MOO/issues/MOO-164), **revision 7**, 322,095 characters. The bill text lives in the
+Paperclip store, not here.
 
 ## Base
 
-Re-verified at **store revision 69** (document revision 88; whole document 482,941 characters;
-**enacted §1 131,923**). **The base has moved fourteen times under this cut.**
+**Store revision 70** — whole document **515,219**; **enacted §1 132,557**. **The base has moved
+fifteen times under this cut.**
 
-Revision 6 was cut at store revision 68 (enacted §1 131,066). Revision 69 changed **three** provisions
-in enacted §1, counted by a structural diff of the two bodies and not assumed:
+Revision 6 was cut at store revision 68 (§1 131,066) and re-verified at 69 (§1 131,923). Two moves
+since:
 
-| Provision | What revision 69 did | In §6's reproductions? |
-|---|---|---|
-| subsection **B** | took in the *"No person whom the definition of 'eligible member' … excludes"* sentence | no |
-| subsection **L** | gave that sentence up — L is now the Dillon's-Rule sentence alone | no |
-| subdivision **G 4** | the retirement-before-death carve-out, and the § 51.1-162 B benefit conditioned on identity of payees | **yes** |
+| | What moved | Reproduced at §6? | Anchor moved? |
+|---|---|---|---|
+| store rev **69** | **G 4** rewritten; subsections B and L exchanged a sentence | **G 4 yes** | no |
+| store rev **70** | **D 1** — the certification series' new item 7, the subsection M exception, the subsection J limb, the series' *"and"*; and the **title line** | **D 1 yes**, title yes | no |
 
-So **§6's G 4 reproduction is stale for the seventh time**, behind anchors that all still resolve
-exactly once. Re-splice by `repro68.py`, **by content and not by line index**, in the next cut.
-**The other seven reproductions (A, the definition, D 1, G 2, M 1, M 2, M 3) are unaffected at
-revision 69.** Nothing in the G 4 change creates or moves a period keyed to the Board's acting or to
-notice: *"no later than"* is still **74** in §1 and the verb census is still **21**, both counted.
+**Eighth stale reproduction behind anchors that all still resolved exactly once.** `repro70.py`
+re-splices every provision **by content, not by line index**, and now also reproduces the **title
+line, enacting clause and first enactment** so §5 cannot go stale silently either.
+
+**Store revision 70 did one thing for this cut, unasked:** its substitution 3 moved D 1's
+certification series' *"and"* to that series' new last item — the identical repair Edit 164-13(b)
+needs for the disclosure series. **Precedent, not preference.**
 
 ## Application order
 
-**Application of the MOO-141 patch does not precede this cut carrying F-9.** This cut carries it, so that
-condition is satisfied. Beyond that the two patches are **order-independent**, verified on three bases:
-store revision 69 as it stands, with the MOO-141 patch carrying Edit 3 at **30 days**, and with it
-carrying Edit 3 at **120 days**. Eleven anchors, all 1; delta **+2,551** on all three.
+**Application of the MOO-141 patch does not precede this cut carrying F-9.** This cut carries it, so
+that condition is satisfied. Beyond that the two patches are **order-independent**, verified on three
+bases: store revision 70 as it stands, with the MOO-141 patch carrying Edit 3 at **30 days**, and
+with it carrying Edit 3 at **120 days**. **Thirty-nine counts, all 1; delta +3,375 on all three.**
 
-Stated exactly, so the claim is checkable: **the eleven-edit form is verified at store revisions 68
-and 69** — two store bases, three patch bases each. The six-edit form was verified the same way at
-store revisions 63, 64 and 65. Order-independence of the two patches, and indifference to the 30/120
-answer, hold at every one of them.
+Stated exactly, so the claim is checkable: **the thirteen-substitution form is verified at store
+revision 70**; the eleven-edit form was verified at store revisions 68 and 69; the six-edit form at
+63, 64 and 65. **Order-independence and indifference to the 30/120 answer hold at every one.**
 
-**The apostrophe normalisation runs AFTER the eleven substitutions, not before.**
+**The apostrophe normalisation runs AFTER the substitutions, not before.**
 
-## The eleven edits
+## The thirteen substitutions
 
-| Edit | Site | Delta |
-|---|---|---|
-| 164-1 | M 2, the tolling endpoint | +233 |
-| 164-2 | G 2, the 120-day exception | +366 |
-| 164-3 | M 2 clause (ii) | +24 |
-| 164-4 | the definition, R-5 | +1 |
-| 164-5 | D 1, the lateness descriptor | +8 |
-| 164-6 | G 4, the period formula | +10 |
-| **164-7** | M 2, after the enacted denial sentence — the deemed act, two triggers + saving | **+1,153** |
-| **164-8** | D 1, the filing vehicle | **+485** |
-| **164-10** | M 2's 90-day duty, commencement | **+27** |
-| **164-11** | M 2's expiry-notice sentence, conformed formula | **+24** |
-| **164-12** | G 2, item 46's carve-out — this is candidate (c-2) | **+220** |
-| | **total** | **+2,551** |
+| Edit | Site | Rev 6 | **Rev 7** |
+|---|---|---|---|
+| 164-1 | M 2, the tolling endpoint | +233 | +233 |
+| 164-2 | G 2, the 120-day exception | +366 | +366 |
+| 164-3 | M 2 clause (ii) | +24 | +24 |
+| 164-4 | the definition, R-5 | +1 | +1 |
+| 164-5 | D 1, the lateness descriptor | +8 | +8 |
+| 164-6 | G 4, the period formula | +10 | +10 |
+| **164-7** | M 2 — the deemed act and its saving | +1,153 | **+1,337** (F1) |
+| **164-8** | D 1, the filing vehicle | +485 | **+621** (F2, F3) |
+| **164-13(a)** | D 1, the disclosure duty's document list | — | **+103** (F4) |
+| **164-13(b)** | D 1, clause (iv) and the series' *"and"* | — | **+454** (F4) |
+| 164-10 | M 2's 90-day duty, commencement | +27 | +27 |
+| 164-11 | M 2's expiry-notice sentence | +24 | +24 |
+| **164-12** | G 2, item 46's carve-out | +220 | **+167** (F6) |
+| | **total** | **+2,551** | **+3,375** |
+
+`verify_r70_v7.py` sums the per-substitution deltas and asserts them against the measured total, so
+this table is counted and not added up by hand.
+
+## What revision 7's check adds, and why each line exists
+
+Every one of these exists because [MOO-209](/MOO/issues/MOO-209) asked for a **proposition** rather
+than a string:
+
+- **F1** — the extended exception's second descriptor has exactly **one** referent (R-6), counted on
+  the base; **and R-6's own keying is counted on both bases**, which is how the MOO-141 Edit 2
+  interaction is made visible rather than argued. **This is the one thing revision 7 cannot close by
+  drafting** — see below.
+- **F5** — the mislabelled line is **deleted, not relabelled**. Replaced by a count of the duty the
+  notice-keyed endpoint actually keys to, of which there is **none** (*"notice of its decision"* is
+  **0** in the base). **48 is a chosen outer limit, not a restatement of the section's arithmetic.**
+- **F16** — a commencement phrase is asserted **within each** of the five *"shall act upon"* duties,
+  not once against 164-10's own sentence.
+- **N1** — the saving's **256-character** body is asserted **byte-identical** between 164-7 and
+  MOO-141 Edit 1. The *"word for word"* claim was made twice and was false twice (first-pass F19,
+  F20). **`verbatim` is a counted claim.**
+- **N2** — every *"preceding sentence"* reference in the applied §1 is counted, and revision 7 is
+  asserted to add **exactly three** — two in 164-7, one in 164-8, **none in 164-13**.
+- **F12** — the act-upon family is counted at **0** anywhere in § 51.1-142.2, so the next reader does
+  not go looking for the provision the B 4 f extension reaches. **The clause is kept.**
+- **F6** — 164-12 is asserted to add a confinement clause and **no** notwithstanding.
+- **F4** — the disclosure series is asserted to carry **exactly one** *"; and ("*, before **(iv)** and
+  not before **(iii)**, in both directions.
+- **`check_doc_vs_kit.py`** — extracts every FIND and READ block from §3 of the built document and
+  asserts each appears **verbatim** in the kit's edit table, both ways. **F5's lesson one level up: a
+  check that counts strings against the bill cannot detect a document that quotes a superseded
+  edit**, and revision 7 re-cut four of them.
+
+## The one thing revision 7 cannot close by drafting
+
+**F1's cure is operative on store revision 70 and INERT after MOO-141's Edit 2.** Edit 2 re-keys R-6's
+15 days from the Board's **act** to the **giving of its decision**, which 164-7's confinement clause
+does not reach. On the combined text R-6 becomes a duty keyed to an event that in the deemed case
+never occurs — limb 3's shape, relocated to the definition by a patch that is not this one. **Both
+counts are in the verifier.** The smallest cure is a second limb in **MOO-141's Edit 2**, which is
+theirs; [MOO-141](/MOO/issues/MOO-141) has been told and nothing has been drafted into their patch.
+**164-7's deeming will not be made to reach a *giving*** — deeming a decision given when it has not
+been would start the member's own clocks without her knowledge, which is card (b)'s whole subject.
 
 ## Files
 
-- `verify_r69_v6.py` — **the current check** (`python3 verify_r69_v6.py bill69.md`). Counts over
-  enacted §1 only. Everything the revision-68 check did, plus the MOO-141 fixture cross-check at
-  **+847** and the **two savings' symmetry**: after both patches there are two savings, each carrying
-  an express exception, one naming *"this subsection"* (164-7, in M 2) and one naming *"subsection M"*
-  (Edit 1, in subsection A), and exactly **one** referent for the shared descriptor survives outside
-  the two exceptions — M 2's 15-day duty, which is what both exceptions are about. **0 failures.**
-- `verify_r68_v6.py` — **superseded**, for the two reasons in the box at the top. Counts over
-  enacted §1 only. Eleven anchors on three
-  bases, the +2,551 delta, the named MOO-141 Edit 1 break, the verb census, the formula census at five
-  sites, the five ordering invariants the promotions create (164-5 before 164-8; 164-7's two
-  *"preceding sentence"* references; M 2's sentence order against D 1's ordinal reference; item 131's
-  antecedent; (c-1)'s FIND unamended), candidate 164-9's FIND against the **applied** text, the
-  apostrophe count **and** its confinement to G 4, and the 300-day arithmetic. Exits non-zero if any of
-  them moves.
-- `repro68.py` → `repro68.json` — **the current splicer** for the §6 reproductions. Locates every
-  provision by content. **Re-run this, do not hand-edit the reproductions**, whenever the base moves.
-- `apply164.py` — applies all **eleven** edits to a **copy**, §1 only, with the out-of-§1 byte-identity
-  assertion, then performs the apostrophe normalisation.
-- `moo164.md` — the assembled deliverable as stored (revision 6).
-- `disposition-rev5.md` — the Policy Director's disposition that revision 6 folds in.
-- **Superseded, kept only as the record of earlier runs:** `verify_r68.py` (the **six**-edit check at
-  store revision 68 — the Director's own run), `verify_r65.py`, `verify_r63.py`, `verify_r64.py`,
+- `verify_r70_v7.py` — **the current check**. Counts over enacted §1 only.
+- `repro70.py` → `repro70.json` — **the current splicer**. Locates every provision by content.
+  **Re-run this, do not hand-edit the reproductions**, whenever the base moves.
+- `apply164.py` — **the current applier**. Applies all thirteen substitutions to a **copy**, §1 only,
+  with the out-of-§1 byte-identity assertion, then performs the apostrophe normalisation. **Its edit
+  set is lifted verbatim from `verify_r70_v7.py` so the check and the applier cannot drift.**
+- `build_rev7.py` → `moo164_rev7.md` — **the current document build**. Every in-place correction is
+  asserted for an exact occurrence count before it is made, so a correction that matches nothing — or
+  twice — fails the build instead of shipping.
+- `check_doc_vs_kit.py` — **the current consistency check** between the document and the kit.
+- `sec17.md` — revision 7's new section, as drafted.
+- `bill70.md` — the current base. `bill69.md` / `bill.md` — store revisions 69 and 68, kept as record.
+- `moo164.md` — the assembled deliverable as stored at revision 6. `disposition-rev5.md` — the
+  Policy Director's disposition that revision 6 folded in.
+- **Superseded, kept only as the record of earlier runs:** `verify_r69_v6.py`, `verify_r68_v6.py`,
+  `verify_r68.py`, `verify_r65.py`, `verify_r64.py`, `verify_r63.py`, `repro68.py` / `repro68.json`,
   `repro65.py` / `repro65.json`, `repro63.py` / `repro63.json`, `repro.py`, `head63.md`, `head64.md`,
   `s1_64.txt`, `s1_68.txt`, `doc_part1..6.md`. **`verify_r6.py` and `verify.py` were deleted at
   revision 5** — they counted whole-document and hard-failed from store revision 63 on (F21).
 
-## To reproduce
-
-```
-# fetch bill-text-s8 from MOO-42 to bill69.md, then:
-python3 verify_r69_v6.py bill69.md   # 0 failures expected — the current check
-python3 apply164.py bill69.md        # writes applied.md; asserts +2551 and out-of-§1 byte-identity
-python3 repro68.py                   # the splicer; point it at the current base before re-reading §6
-```
-
-`bill.md` is the **store revision 68** base revision 6 was cut against, kept as the record.
-`bill69.md` is the current base.
-
 **Nothing in this kit has been applied to the store.** The apostrophe normalisation is drafted and
-verified, not applied; it belongs in the next store revision carrying these edits and must be recorded
-in §0 as a non-substantive normalisation.
-
-## Held and retired, so nobody applies them by mistake
-
-- **164-9 — HELD.** F1's five-word cap: *"48 days after the later of the Board's acting upon the request
-  and the expiration of the period allowed by this section for acting upon the request."* It amends
-  **Edit 164-1's own new text**, so its FIND resolves **0** times in the base and **1** in the applied
-  text — both asserted. Priced at [MOO-204](/MOO/issues/MOO-204). **Do not apply without that answer.**
-- **(c-1) — RETIRED.** Counsel's F9 makes it defective, not merely impolitic. **Do not apply.** The
-  verifier asserts its FIND still resolves once **unamended**, which is how it proves Edit 164-12 leaves
-  G 4 alone.
-- **Card (i)'s 33-word confirming sentence — DECLINED.**
-- **F11 — carried forward, not drafted.** For the next pass that opens the definition.
+verified, not applied; it belongs in the next store revision carrying these edits and must be
+recorded in §0 as a non-substantive normalisation.
 
 **Internal working draft. Not a Division of Legislative Services bill. Not legally cleared by
-counsel — [MOO-187](/MOO/issues/MOO-187) is an internal adversarial pass, expressly not legal advice,
-and the five edits promoted at revision 6 have not been reviewed as applied text at all. Not legally
-sufficient for introduction.**
+counsel — [MOO-187](/MOO/issues/MOO-187) and [MOO-209](/MOO/issues/MOO-209) are internal adversarial
+passes, expressly not legal advice, and revision 7's four new and re-cut texts have not been read
+adversarially at all. Not legally sufficient for introduction.**
