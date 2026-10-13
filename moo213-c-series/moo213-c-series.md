@@ -8,6 +8,23 @@
 > counsel or by DLS, and nothing here is an opinion that any provision is legally sufficient for
 > introduction. Pre-decisional and internal. Nothing below is inserted into any artifact.**
 
+> ### ⚠ SUPERSEDED BASE — read `moo213-verification` before incorporating anything from here
+>
+> **This document is the text the Policy Director approved, and it is kept unchanged as that record.
+> Its datelines say store revision 70. The live bill is at store revision 72.**
+>
+> All 66 strings were re-counted at store revision 72 and **every count holds — zero failures**
+> (`count72.py`, `out72.txt`). **So the entries re-date to "store revision 72, 13 October 2026"**, and
+> they re-date because the counts were re-printed and held, not because a number was edited. **Do not
+> carry a revision-70 dateline out of this document into any artifact.**
+>
+> **The approval was also conditional on seven verification checks.** Those were carried out in
+> [`moo213-verification`](/MOO/issues/MOO-213#document-moo213-verification), which found **four
+> entries clean, five carrying a proposed correction (C6 ×2, C12 ×2, C13), and one held (C18)**, and
+> which returns the attached C6 bill-text instruction. **Four of the ten entries below are therefore
+> not yet clear for incorporation in the form printed here.** The verification record governs; this
+> document is the approved baseline it is measured against.
+
 ---
 
 ## 0. The answers in one line each

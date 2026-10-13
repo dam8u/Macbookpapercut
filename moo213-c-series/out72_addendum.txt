@@ -1,0 +1,27 @@
+== live base, store revision 72: enacted § 51.1-142.4 102357 chars
+
+     C6 fix 1   1  the amount so reinstated shall be charged against the limitations in ...  [asserted 1]
+                  - SITE 1 — the death-release limb: an amount released on death that would not have been released had the determination stood as it does after reconsideration or judicial review
+
+     C6 fix 1   1  and the reinstated reservation and contingency amount shall be charge...  [asserted 1]
+                  - SITE 2 — the general reinstatement sentence: release in error, OR rescission, OR reversal or modification on reconsideration under subsection M or on judicial review
+
+     C6 fix 2   1  of the date of the release, of whether the release was in accordance ...  [asserted 1]
+                  - the money-committee notice carries five particulars, not two
+
+     C6 fix 2   1  to each applicant then on the waiting list maintained under subdivisi...  [asserted 1]
+                  - a SECOND 15-day notice duty, to every waiting-list applicant — absent from the drafted entry
+
+     C6 fix 2   1  shall request a confirmation under subdivision D 3 in respect of the ...  [asserted 1]
+                  - the funding-confirmation procedure the Director named in ranking instruction 6 — it exists, and the over-cap sentence is already wired into it
+
+     C6 fix 2   1  and shall certify the amount of the excess to the Governor and to tho...  [asserted 1]
+                  - the excess is certified back to the Governor and the money committees as an amount necessary to fund — the $3,000,000 control is not escaped, it is re-asserted
+
+     rank 4     1  shall accept the election if and when sufficient amounts become avail...  [asserted 1]
+                  - D 5: a waiting-list placement reserves nothing; the election is accepted only if and when amounts become available. Instruction 4 is satisfied by the enacted text
+
+     rank 4     1  A placement on the waiting list under this subdivision is a determina...  [asserted 1]
+                  - and the placement is reviewable, so instruction 6's reconsideration procedure reaches it
+
+== all 8 strings the proposed corrections introduce hold at store revision 72

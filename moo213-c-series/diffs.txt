@@ -1,0 +1,860 @@
+====================================================================================================
+C4   source moo111-risk-section-carry-through-pass10.md   (source 118 words -> drafted 145 words)
+====================================================================================================
+  [INSERT] ...the unfunded difference. It is enacted as
+      DRAFTED : an automatic operator: on the live text the certified subsidy
+
+  [REPLACE] ...unfunded difference. It is enacted as "is
+      SOURCE  : settled."
+      DRAFTED : settled" in every one of the four places the section settles one, and the permissive form appears nowhere.
+
+====================================================================================================
+C5   source moo111-risk-section-carry-through-pass10.md   (source 413 words -> drafted 286 words)
+====================================================================================================
+  [REPLACE] ...
+      SOURCE  : One
+      DRAFTED : An
+
+  [REPLACE] ...ambiguity in who gets into the pilot
+      SOURCE  : is still open, and it is the only
+      DRAFTED : was the one
+
+  [REPLACE] ...is the only open question that could
+      SOURCE  : move
+      DRAFTED : have moved
+
+  [REPLACE] ...open question that could move a cost
+      SOURCE  : figure.
+      DRAFTED : figure, and the text now closes it.
+
+  [DELETE] ...could move a cost figure. The bill
+      SOURCE  : now
+
+  [REPLACE] ...bill now lets the § 51.1-155.1 involuntary-separation
+      SOURCE  : route
+      DRAFTED : and abolished-office routes
+
+  [REPLACE] ...the reading the package is priced on,
+      SOURCE  : that admits
+      DRAFTED : those words admit
+
+  [REPLACE] ...that admits nobody new: § 51.1-155.1 A
+      SOURCE  : requires
+      DRAFTED : reaches
+
+  [REPLACE] ...member "who is involuntarily separated from state
+      SOURCE  : service,"
+      DRAFTED : service",
+
+  [REPLACE] ...and so the words do no work.
+      SOURCE  : On a
+      DRAFTED : A
+
+  [INSERT] ...words do no work. On a second
+      DRAFTED : reading was
+
+  [REPLACE] ...do no work. On a second available
+      SOURCE  : reading they do a great deal of work,
+      DRAFTED : and it moved admission
+
+  [REPLACE] ...a great deal of work, in both
+      SOURCE  : directions. The
+      DRAFTED : directions -- the
+
+  [REPLACE] ...earliest date on which the member may
+      SOURCE  : retire" --
+      DRAFTED : retire",
+
+  [REPLACE] ...the member may retire" -- a forward
+      SOURCE  : projection --
+      DRAFTED : projection,
+
+  [REPLACE] ...forward projection -- and nothing in it
+      SOURCE  : says
+      DRAFTED : said
+
+  [REPLACE] ...and nothing in it says which facts
+      SOURCE  : are
+      DRAFTED : were
+
+  [REPLACE] ...says which facts are projected and which
+      SOURCE  : are
+      DRAFTED : were
+
+  [REPLACE] ...fixed. Project the separation too, and a
+      SOURCE  : Plan 1 division director of 53 with 24 years is excluded from the Program the model counted her in, because her eligibility date is three years in the past;
+      DRAFTED : long-service senior employee at the top of the salary distribution could fall out of the priced pool
+
+  [INSERT] ...three years in the past; while a
+      DRAFTED : shorter-service
+
+  [REPLACE] ...years in the past; while a colleague
+      SOURCE  : of 51 with 18 years, who fails the bill's tests today, is admitted, and the cap on what she may buy falls from 48 months to 24. She was not in the priced pool. An unresolved ambiguity in the admission rule is not a drafting nicety on this model; the admission rule is one of the largest drivers the model carries, and this cohort -- Plan 1, 20-plus years, age 50-plus, in senior positions -- sits at 
+      DRAFTED : fell into it.
+
+  [REPLACE] ...keep it only in "qualifying retirement." The
+      SOURCE  : ambiguity cannot arise in "qualifying retirement," which is applied to a retirement that has already happened, by a person who has already been separated. The Red Team traced the consequences of the deletion through clauses (v) to (viii), subsection C clause (ii), subdivision D 1's certification, subsection E and subdivision G 3, and nothing breaks. If the words are kept instead, the alternative f
+      DRAFTED : bill now confines the route in terms, and the confinement runs across the whole section. It requires that the member have
+
+  [REPLACE] ...51.1-155.1 only where the member has incurred
+      SOURCE  : an
+      DRAFTED : the
+
+  [REPLACE] ...member has incurred an involuntary separation, or
+      SOURCE  : the member's
+      DRAFTED : that the
+
+  [REPLACE] ...an involuntary separation, or the member's office
+      SOURCE  : has
+      DRAFTED : have
+
+  [DELETE] ...the member's office has been lawfully abolished,
+      SOURCE  : as the case may be,
+
+  [REPLACE] ...or before the date as of which
+      SOURCE  : the determination is made."
+      DRAFTED : her unreduced retirement eligibility date is determined -- and, where the sentence is applied otherwise than in determining that date, on or before her effective date of retirement. A separation that has not happened cannot be projected, so neither direction of the ambiguity survives.
+
+  [REPLACE] ...of which the determination is made." The
+      SOURCE  : question is open on the Policy Director's card as item 48.
+      DRAFTED : Red Team's own alternative cure is what was enacted, in a section-wide rather than a single-definition form. No admission quantity moves and no priced figure moves on this account: the confinement restates § 51.1-155.1's own conditions and admits nobody.
+
+====================================================================================================
+C6   source moo111-risk-section-carry-through-pass10.md   (source 520 words -> drafted 470 words)
+====================================================================================================
+  [REPLACE] ...was stripped can have the whole thing
+      SOURCE  : restored years later,
+      DRAFTED : restored,
+
+  [INSERT] ...reinstates her reservation over the $3,000,000 limit.
+      DRAFTED : Subdivision D 2 is the one control the General Assembly holds: the Board may not accept an election if the total "would exceed $3,000,000."
+
+  [REPLACE] ...her reservation over the $3,000,000 limit. If
+      SOURCE  : she
+      DRAFTED : a member
+
+  [REPLACE] ...credit back and releases her reservation. If
+      SOURCE  : she
+      DRAFTED : the determination
+
+  [REPLACE] ...releases her reservation. If she is later
+      SOURCE  : approved for a disability retirement,
+      DRAFTED : rescinded,
+
+  [REPLACE] ...the Board to undo all of that
+      SOURCE  : -- and there is no outer limit on when that approval may come. The Code supplies the reason: § 51.1-156 ordinarily requires a disability application within ninety days of termination, but subsection H provides that "good cause shall exist and the Board shall waive such ninety-day notification periods" where the Medical Board certifies that the disability existed at termination and that the member 
+      DRAFTED : and to charge the reinstated reservation against D 2
+
+  [REPLACE] ...amount available to be reserved is thereby
+      SOURCE  : exceeded" -- so the one control the General Assembly holds, the $3,000,000 cumulative cap, is breached
+      DRAFTED : exceeded." So the cap can be exceeded
+
+  [REPLACE] ...breached by operation of the Board's own
+      SOURCE  : duty. Two of the three
+      DRAFTED : duty, and that command stands twice in the section. Three of the four
+
+  [INSERT] ...own duty. Two of the three problems
+      DRAFTED : the review found
+
+  [REPLACE] ...duty. Two of the three problems are
+      SOURCE  : already fixed
+      DRAFTED : now answered
+
+  [REPLACE] ...and the memo should say so. The
+      SOURCE  : bill requires the Board to give written notice of every such reinstatement, of the amount of the excess and of its cause, to the Chairmen of the House Committee on Appropriations and the Senate Committee on Finance and Appropriations within 15 days; to state every reinstatement and every excess in its annual report; and to accept no further election until the excess is eliminated. What is still op
+      DRAFTED : trigger no longer runs without
+
+  [REPLACE] ...is still open is the time limit
+      SOURCE  : and the report's end date. The trigger has no outer bound, and the annual report's duty runs only "until the first December 1 following
+      DRAFTED : for the ordinary case: the rescission is keyed to an application "filed no later than
+
+  [DELETE] ...December 1 following the date on which
+      SOURCE  : every election … has been settled … cancelled … or determined," which can fall before the restoration happens. On the facts the Red Team put: a determination takes effect in 2031, the final report is filed, the section expires in 2033, and a 2036 approval then commands a rescission, a restoration, an over-cap reinstatement and a payment that no report covers. Both gaps are open on the Policy Direc
+
+  [REPLACE] ...the date on which the determination took
+      SOURCE  : effect" -- or state an outer period; add to the report's list "the number of determinations rescinded and
+      DRAFTED : effect." The annual report now states the rescissions,
+
+  [REPLACE] ...of determinations rescinded and the service credit
+      SOURCE  : restored under subdivision G 4, and every
+      DRAFTED : restored, and "every
+
+  [REPLACE] ...limitation in subdivision D 2 to be
+      SOURCE  : exceeded"; run the
+      DRAFTED : exceeded." The
+
+  [REPLACE] ...2 to be exceeded"; run the report's
+      SOURCE  : tail "until the first December 1 following
+      DRAFTED : end date no longer falls before the restoration: it runs to
+
+  [REPLACE] ...first December 1 following the later of
+      SOURCE  : that
+      DRAFTED : the settlement
+
+  [REPLACE] ...following the later of that date and
+      SOURCE  : the
+      DRAFTED : "the
+
+  [REPLACE] ...of the last rescission under subdivision G
+      SOURCE  : 4"; and name rescission and reinstatement expressly in
+      DRAFTED : 4." And
+
+  [REPLACE] ...the charging regime alive after the section
+      SOURCE  : expires.
+      DRAFTED : expires now names rescission, restoration and reinstatement expressly, and keeps the subsection J duties in effect until the last report has been submitted. On top of that the Board must notify the money committees of every reinstatement, of the excess and of its cause within 15 days, must state it in the annual report, and may accept no further election until the excess is eliminated. What surviv
+
+====================================================================================================
+C12   source moo133-risk-section-carry-through-pass12.md   (source 356 words -> drafted 431 words)
+====================================================================================================
+  [DELETE] ...fail to retire on time. The rescue
+      SOURCE  : added by card item 54
+
+  [REPLACE] ...The model carries no non-completion parameter at
+      SOURCE  : all; a search of its four input files for every form of
+      DRAFTED : all, and neither does the bill:
+
+  [REPLACE] ...files for every form of the term
+      SOURCE  : returns nothing, and the assumption register has no entry for it.
+      DRAFTED : appears nowhere in the section.
+
+  [DELETE] ...Each recalled member carries $117,392 including the
+      SOURCE  : 20 percent
+
+  [REPLACE] ...same range stays trivial -- about $1,800.
+      SOURCE  : Three
+      DRAFTED : Five
+
+  [INSERT] ...the Board to extend to thirty-six months.
+      DRAFTED : Two further conditions are on the bill's side of the line and are new to this statement. The contingency the per-member figure includes is a bracketed drafting figure in the text, not a settled one -- the bill reserves "a contingency amount equal to [20] percent of that certified subsidy" -- so the per-member amount moves with whatever the bracket resolves to. And the per-member figures predate th
+
+====================================================================================================
+C13   source moo160.md   (source 454 words -> drafted 312 words)
+====================================================================================================
+  [REPLACE] ...rule against paying the Commonwealth's share twice
+      SOURCE  : can stop
+      DRAFTED : could once have stopped
+
+  [REPLACE] ...paid at all, and the member it
+      SOURCE  : catches is
+      DRAFTED : caught was
+
+  [REPLACE] ...member it catches is an ordinary one.
+      SOURCE  : Subdivision G 4 provides that "no certified subsidy is settled under this subdivision
+      DRAFTED : One amendment to the rule closed both routes. The rule bars a second settlement
+
+  [DELETE] ...settled under this subdivision after the reservation
+      SOURCE  : for the election
+
+  [DELETE] ...reservation for the election has been released
+      SOURCE  : in accordance with subdivision D 7
+
+  [INSERT] ...with subdivision D 7 or after a
+      DRAFTED : reduction
+
+  [DELETE] ...subdivision D 7 or after a determination
+      SOURCE  : under subdivision 2 or 3
+
+  [REPLACE] ...under subdivision 2 or 3 has taken
+      SOURCE  : effect." Store revision 52 lifted that bar in the two sentences it rewrote. It did not lift it anywhere else, and two
+      DRAFTED : effect. Two
+
+  [REPLACE] ...lift it anywhere else, and two routes
+      SOURCE  : still
+      DRAFTED : used to
+
+  [REPLACE] ...routes still run into it. The first
+      SOURCE  : is
+      DRAFTED : was
+
+  [REPLACE] ...into it. The first is the modal
+      SOURCE  : case. A member's
+      DRAFTED : case: a member whose
+
+  [REPLACE] ...because the Board corrects her service record
+      SOURCE  : upward and recertifies: subdivision D 6 provides that "the service credit to be purchased is reduced to the amount the member may purchase as recertified," and subdivision D 7 then requires the Board to release the set-aside "to the extent of any reduction … if a recertification under subdivision 6 reduces the certified subsidy." Part
+      DRAFTED : upward, so part
+
+  [REPLACE] ...the certified subsidy." Part of her reservation
+      SOURCE  : has therefore been released in accordance with D 7. She
+      DRAFTED : is released, who then
+
+  [REPLACE] ...is credited, and dies before she retires.
+      SOURCE  : The bill's death limb applies and the Board credits the service and pays the death benefit -- but on the face of
+      DRAFTED : On the old words
+
+  [REPLACE] ...but on the face of the bar
+      SOURCE  : the Commonwealth's share is never settled, because the reservation "has been released in accordance with subdivision D 7" and
+      DRAFTED : reached her even though
+
+  [REPLACE] ...with subdivision D 7" and no rescission
+      SOURCE  : is
+      DRAFTED : was
+
+  [REPLACE] ...D 7" and no rescission is involved,
+      SOURCE  : so neither of the two rewritten sentences reaches her. Three
+      DRAFTED : and the
+
+  [REPLACE] ...two rewritten sentences reaches her. Three consequences
+      SOURCE  : follow: subsection N
+      DRAFTED : were real -- the retirement system was
+
+  [REPLACE] ...her. Three consequences follow: subsection N never
+      SOURCE  : pays the retirement system;
+      DRAFTED : paid,
+
+  [REPLACE] ...retirement system; the remainder of her reservation
+      SOURCE  : stays
+      DRAFTED : stayed
+
+  [REPLACE] ...stays charged against the $3,000,000 cumulative limitation
+      SOURCE  : permanently; and her election falls into none of the classes that let
+      DRAFTED : permanently, and
+
+  [REPLACE] ...of the classes that let the annual
+      SOURCE  : report to the Governor and the money committees end, so that
+      DRAFTED : report's
+
+  [REPLACE] ...the money committees end, so that duty
+      SOURCE  : is
+      DRAFTED : became
+
+  [REPLACE] ...so that duty is perpetual. The second
+      SOURCE  : is
+      DRAFTED : was
+
+  [REPLACE] ...second is the member who is laid
+      SOURCE  : off. The involuntary-separation rescission is a fourth
+      DRAFTED : off, where the
+
+  [REPLACE] ...involuntary-separation rescission is a fourth rescission route
+      SOURCE  : in a sentence of its own with no saving words. Its deeming -- that the subdivision applies "as though the determination had not been made" -- answers
+      DRAFTED : answered
+
+  [REPLACE] ...-- answers the bar's determination limb and
+      SOURCE  : says
+      DRAFTED : said
+
+  [REPLACE] ...says nothing about its release limb. The
+      SOURCE  : cure is one amendment to the bar itself and it is drafted: the release limb to read
+      DRAFTED : rule now reads
+
+  [REPLACE] ...that "has not been reinstated under this
+      SOURCE  : subdivision," and the
+      DRAFTED : subdivision", and on a
+
+  [REPLACE] ...reinstated under this subdivision," and the determination
+      SOURCE  : limb on a determination "not …
+      DRAFTED : that has taken effect "and has not been
+
+  [REPLACE] ...determination "not … rescinded, reversed, or modified."
+      SOURCE  : It is drafted and it is enacted nowhere; the question is open on the Policy Director's card as item 114. The
+      DRAFTED : So the bar does not apply to the member whose reservation was released in part and not in full, which is the modal case; and it does not apply where a rescission, reversal or modification has undone the determination, which is the laid-off member's case. A separate sentence requires the Board to reinstate a reservation released in accordance with the release provision where a determination is afte
+
+  [REPLACE] ...Director's card as item 114. The reviewer
+      SOURCE  : recommends it,
+      DRAFTED : proposed exactly this amendment,
+
+  [DELETE] ...on the ground that it cures both
+      SOURCE  : surviving
+
+  [REPLACE] ...that it cures both surviving routes at
+      SOURCE  : once and makes the technique of bolting a saving clause onto each new rescission route unnecessary -- the technique that produced this gap in the first place.
+      DRAFTED : once; it is enacted.
+
+====================================================================================================
+C14   source moo160.md   (source 355 words -> drafted 279 words)
+====================================================================================================
+  [REPLACE] ...
+      SOURCE  : A member who asks the Board to think again, and loses, can trigger
+      DRAFTED : An unconditioned reversal duty could once have commanded
+
+  [REPLACE] ...payment the bill is designed not to
+      SOURCE  : make.
+      DRAFTED : make, and one clause now conditions it.
+
+  [REPLACE] ...not to make. Where a reduction determination
+      SOURCE  : has
+      DRAFTED : had
+
+  [REPLACE] ...a reduction determination has taken effect and
+      SOURCE  : is later "reversed
+      DRAFTED : was afterwards reversed
+
+  [REPLACE] ...taken effect and is later "reversed or
+      SOURCE  : modified",
+      DRAFTED : modified,
+
+  [REPLACE] ...is later "reversed or modified", the bill
+      SOURCE  : requires
+      DRAFTED : required
+
+  [REPLACE] ...modified", the bill requires the Board to
+      SOURCE  : "restore or
+      DRAFTED : restore the
+
+  [REPLACE] ...requires the Board to "restore or credit
+      SOURCE  : service credit as this subdivision provides, and shall
+      DRAFTED : and to
+
+  [REPLACE] ...provides, and shall recertify and settle the
+      SOURCE  : certified subsidy as this subdivision requires,
+      DRAFTED : subsidy within 60 days. The duty asked
+
+  [REPLACE] ...certified subsidy as this subdivision requires, no
+      SOURCE  : later than 60 days after the reversal or modification." The duty is unconditioned: it does not ask
+      DRAFTED : question about
+
+  [REPLACE] ...is unconditioned: it does not ask whether
+      SOURCE  : any of the three events that justify a payment has happened. So take
+      DRAFTED : anything fell to be settled. On the Lab's worked case
+
+  [DELETE] ...payment has happened. So take a member
+      SOURCE  : who does not retire on time. The Board reduces her credit from 24 months to 15. She
+
+  [REPLACE] ...24 months to 15. She asks for
+      SOURCE  : reconsideration arguing for 20, and the Board modifies the determination to 11 -- she
+      DRAFTED : reconsideration,
+
+  [INSERT] ...determination to 11 -- she loses, and
+      DRAFTED : has
+
+  [REPLACE] ...11 -- she loses, and her reduction
+      SOURCE  : gets bigger. On
+      DRAFTED : made larger -- and on
+
+  [INSERT] ...gets bigger. On the face of the
+      DRAFTED : old
+
+  [REPLACE] ...sentence a determination that had taken effect
+      SOURCE  : has
+      DRAFTED : had
+
+  [REPLACE] ...taken effect has been modified, so the
+      SOURCE  : Board must recertify and settle within 60 days, and the Commonwealth must then pay the amount settled to the retirement system. She
+      DRAFTED : settlement machinery ran for a member who
+
+  [DELETE] ...defeated by an error of the Board.
+      SOURCE  : Reduction is the outcome the bill treats as the non-settlement outcome, and it releases the set-aside. This sentence pays the subsidy anyway.
+
+  [REPLACE] ...This sentence pays the subsidy anyway. There
+      SOURCE  : is
+      DRAFTED : was
+
+  [REPLACE] ...is a reading on which the duty
+      SOURCE  : is empty -- that "as this subdivision requires" means the Board settles only where something falls to be settled. But
+      DRAFTED : was empty, and
+
+  [REPLACE] ...falls to be settled. But that reading
+      SOURCE  : leaves
+      DRAFTED : left
+
+  [REPLACE] ...same revision added with nothing to operate
+      SOURCE  : on, and the stated reason for adding them collapses.
+      DRAFTED : on.
+
+  [REPLACE] ...reason for adding them collapses. Either it
+      SOURCE  : is
+      DRAFTED : was
+
+  [DELETE] ...collapses. Either it is a null duty
+      SOURCE  : and the repair was unnecessary,
+
+  [REPLACE] ...and the repair was unnecessary, or it
+      SOURCE  : is
+      DRAFTED : was
+
+  [REPLACE] ...it is an unpriced instruction to pay
+      SOURCE  : money. Both are defects, and one clause cures both: condition the settlement limb on
+      DRAFTED : money, and both were defects. The sentence now settles the subsidy where
+
+  [REPLACE] ...settlement limb on the determination as reversed
+      SOURCE  : being
+      DRAFTED : or modified is
+
+  [INSERT] ...the subsidy "falls to be settled", and
+      DRAFTED : it names the two provisions it can be settled under. So the settlement limb does not apply to the member whose reduction was merely made larger, and the referent is
+
+  [DELETE] ...subsidy "falls to be settled", and correct
+      SOURCE  : the reference, because
+
+  [REPLACE] ...settled", and correct the reference, because where
+      SOURCE  : the reversal is
+      DRAFTED : she is reversed
+
+  [REPLACE] ...the reversal is because she did retire
+      SOURCE  : properly the settlement happens under a different subdivision.
+      DRAFTED : properly. The fork is closed on both sides: the duty is not null, and it reaches no case the bill did not mean it to reach.
+
+  [REPLACE] ...happens under a different subdivision. The clause
+      SOURCE  : is drafted and enacted nowhere; item 115 on the Director's card, recommended for enactment.
+      DRAFTED : the Lab's reviewer proposed is the clause enacted.
+
+====================================================================================================
+C15   source moo160.md   (source 331 words -> drafted 230 words)
+====================================================================================================
+  [REPLACE] ...
+      SOURCE  : When a member wins on review, the
+      DRAFTED : The
+
+  [REPLACE] ...a member wins on review, the bill
+      SOURCE  : tells
+      DRAFTED : once told
+
+  [REPLACE] ...the bill tells the Board to pay
+      SOURCE  : her
+      DRAFTED : a member who wins on review
+
+  [REPLACE] ...whole allowance again for every month she
+      SOURCE  : has
+      DRAFTED : had
+
+  [REPLACE] ...for every month she has already been
+      SOURCE  : paid. The sentence requires that "the next payment of the member's retirement allowance shall include every amount that would have been payable to the member had the determination, as reversed or modified, taken effect on the date on which the determination took effect." Those
+      DRAFTED : paid, and the formula is now net. The
+
+  [REPLACE] ...the determination took effect." Those words were
+      SOURCE  : taken
+      DRAFTED : borrowed
+
+  [REPLACE] ...so gross equals net. The reversal provision
+      SOURCE  : puts
+      DRAFTED : put
+
+  [REPLACE] ...puts them in a setting where payments
+      SOURCE  : have
+      DRAFTED : had
+
+  [REPLACE] ...the whole time. On the reviewer's worked
+      SOURCE  : facts: a determination takes effect in March 2032 and she
+      DRAFTED : facts a member
+
+  [REPLACE] ...paid a reduced allowance of $3,100 a
+      SOURCE  : month; she loses on reconsideration, appeals, and wins in circuit court
+      DRAFTED : month for
+
+  [REPLACE] ...appeals, and wins in circuit court 18
+      SOURCE  : months later;
+      DRAFTED : months, wins, and
+
+  [REPLACE] ...later; her unreduced allowance would have been
+      SOURCE  : $3,560. She
+      DRAFTED : $3,560: she
+
+  [REPLACE] ...would have been $3,560. She is owed
+      SOURCE  : $8,280. The
+      DRAFTED : $8,280 and the old
+
+  [REPLACE] ...$3,560. She is owed $8,280. The sentence
+      SOURCE  : commands $64,080. The difference, $55,800, is money
+      DRAFTED : commanded $64,080, a difference of $55,800
+
+  [REPLACE] ...$64,080. The difference, $55,800, is money she
+      SOURCE  : has
+      DRAFTED : had
+
+  [REPLACE] ...$55,800, is money she has already received.
+      SOURCE  : And the
+      DRAFTED : The
+
+  [INSERT] ...she has already received. And the bill
+      DRAFTED : also
+
+  [REPLACE] ...has already received. And the bill forbids
+      SOURCE  : getting it back. Subdivision G 4 provides that "no amount shall be collected, offset, or withheld from any member, retiree, survivor, beneficiary, or estate of a member on account of an involuntary separation, of a rescission or restoration under this subdivision, or of any other event to which this subdivision applies." A reversal is such an event. The same revision authorises exactly one offset,
+      DRAFTED : recovering it, so the overpayment would have stayed with her. The sentence now pays her
+
+  [REPLACE] ...amounts paid to the member fall short
+      SOURCE  : of
+      DRAFTED : of"
+
+  [REPLACE] ...the member fall short of the amounts
+      SOURCE  : that"
+      DRAFTED : that
+
+  [REPLACE] ...of the amounts that" would have been
+      SOURCE  : payable -- with
+      DRAFTED : payable, and it carries
+
+  [DELETE] ...determination is reversed in its entirety, so
+      SOURCE  : that
+
+  [INSERT] ...its entirety, so that nobody can argue
+      DRAFTED : that
+
+  [REPLACE] ...effect and the arrears are therefore zero.
+      SOURCE  : Enacted nowhere; item 116, recommended.
+      DRAFTED : Both limbs the Lab's reviewer drafted are enacted, and the formula no longer overpays in either direction -- pass 17 had already confirmed the earlier repair does not underpay her.
+
+====================================================================================================
+C16   source moo160.md   (source 483 words -> drafted 361 words)
+====================================================================================================
+  [REPLACE] ...The bill
+      SOURCE  : rescues
+      DRAFTED : once rescued
+
+  [REPLACE] ...The bill rescues a member who
+      SOURCE  : files
+      DRAFTED : filed
+
+  [REPLACE] ...her disability notice eight months late and
+      SOURCE  : refuses
+      DRAFTED : refused
+
+  [INSERT] ...refuses the member who filed on time.
+      DRAFTED : The inversion is closed.
+
+  [REPLACE] ...filed on time. Where a reduction determination
+      SOURCE  : has
+      DRAFTED : had
+
+  [REPLACE] ...reduction determination has taken effect, the bill
+      SOURCE  : rescinds
+      DRAFTED : rescinded
+
+  [REPLACE] ...the bill rescinds it if the member
+      SOURCE  : is
+      DRAFTED : was
+
+  [REPLACE] ...afterwards approved for disability on an application
+      SOURCE  : "filed no later than
+      DRAFTED : filed by
+
+  [DELETE] ...application "filed no later than the date
+      SOURCE  : on which
+
+  [REPLACE] ...the date on which the determination took
+      SOURCE  : effect"
+      DRAFTED : effect,
+
+  [DELETE] ...the determination took effect" or on one
+      SOURCE  : "as to which
+
+  [DELETE] ...to which the Board was required by
+      SOURCE  : subsection H of
+
+  [DELETE] ...required by subsection H of § 51.1-156
+      SOURCE  : to waive the ninety-day notification period." Section 51.1-156
+
+  [REPLACE] ...the ninety-day notification period." Section 51.1-156 H
+      SOURCE  : requires that waiver where the Medical Board certifies that the member could not have known of her disability.
+      DRAFTED : to accept out of time.
+
+  [REPLACE] ...deadline through no fault of her own
+      SOURCE  : is rescued.
+      DRAFTED : was rescued, and the member who needed no waiver at all was not: she filed inside her own ninety days, was approved, and the rescission provision did not reach her because the Board was never required to waive anything.
+
+  [REPLACE] ...fault of her own is rescued. The
+      SOURCE  : bill then says
+      DRAFTED : trigger now reaches her
+
+  [REPLACE] ...is rescued. The bill then says in
+      SOURCE  : terms that a determination "is not affected by an approval … upon
+      DRAFTED : terms. It runs on
+
+  [REPLACE] ...by an approval … upon an application
+      SOURCE  : filed after the date on
+      DRAFTED : "the filing of
+
+  [REPLACE] ...application filed after the date on which
+      SOURCE  : the determination took effect." That leaves out the member who needed no
+      DRAFTED : did not require a
+
+  [REPLACE] ...out the member who needed no waiver
+      SOURCE  : at all. Her employment ends on 31 May; she retires on 1 June in a retirement that is not a qualifying retirement; the Board's determination takes effect on 15 July; her own ninety days under § 51.1-156 run to 29 August; she files on 1 August -- inside the Code's deadline, so no waiver is required -- and is approved in November. The rescission provision does not reach her, because the Board was nev
+      DRAFTED : of a ninety-day notification
+
+  [REPLACE] ...in subsection A or B of §
+      SOURCE  : 51.1-156," and anchor
+      DRAFTED : 51.1-156" -- the timely filer, named -- and on an application "as to which the Medical Board has made a certification described in clause (ii) of subsection H of § 51.1-156." That second change cures a separate defect in the same words: the trigger used to turn on a counterfactual -- what the Board was required to do -- which the bill assigned to nobody, gave no period and required no notice of. I
+
+  [REPLACE] ...B of § 51.1-156," and anchor it
+      SOURCE  : to the Medical Board's certification
+      DRAFTED : is the one the Lab flagged and the Director decided the other way. A member whose waiver the Board granted as a matter of discretion for good cause shown,
+
+  [REPLACE] ...to the Medical Board's certification rather than
+      SOURCE  : to a legal conclusion about the Board's duty. Item 117, both recommended. Whether to close the discretionary-waiver class as well
+      DRAFTED : on a Medical Board certification under clause (ii), is reached by neither limb. That
+
+  [REPLACE] ...discretionary-waiver class as well is a policy
+      SOURCE  : choice the Director has already made the other way,
+      DRAFTED : choice, not a drafting defect,
+
+  [REPLACE] ...made the other way, and the reviewer
+      SOURCE  : asks
+      DRAFTED : asked
+
+  [REPLACE] ...reviewer asks for it to be re-made
+      SOURCE  : now that
+      DRAFTED : once
+
+  [REPLACE] ...be re-made now that the timely-filer class
+      SOURCE  : is
+      DRAFTED : was
+
+  [INSERT] ...now that the timely-filer class is known.
+      DRAFTED : It is now known, and it is cured.
+
+====================================================================================================
+C17   source moo160.md   (source 405 words -> drafted 298 words)
+====================================================================================================
+  [REPLACE] ...for a member who is laid off
+      SOURCE  : may require
+      DRAFTED : could once have required
+
+  [REPLACE] ...to take a retirement the same bill
+      SOURCE  : has
+      DRAFTED : had
+
+  [REPLACE] ...same bill has just told her she
+      SOURCE  : may
+      DRAFTED : might
+
+  [INSERT] ...just told her she may not take.
+      DRAFTED : A second limb fixes the date and releases her.
+
+  [REPLACE] ...of the involuntary separation." For a member
+      SOURCE  : of 50
+      DRAFTED : in her early fifties
+
+  [REPLACE] ...separation." For a member of 50 with
+      SOURCE  : 22
+      DRAFTED : twenty-odd
+
+  [DELETE] ...50 with 22 years of service, the
+      SOURCE  : only
+
+  [REPLACE] ...is not actuarially reduced is the one
+      SOURCE  : § 51.1-155.1
+      DRAFTED : the Code
+
+  [DELETE] ...reduced is the one § 51.1-155.1 gives
+      SOURCE  : to
+
+  [REPLACE] ...state employee who is involuntarily separated with
+      SOURCE  : 20
+      DRAFTED : twenty
+
+  [REPLACE] ...involuntarily separated with 20 or more years.
+      SOURCE  : Store revision 52 narrowed
+      DRAFTED : The section confines
+
+  [REPLACE] ...years. Store revision 52 narrowed that route
+      SOURCE  : across the whole section. It now provides that "for the purposes of this section the member may retire under subsection A or C of § 51.1-155.1 only where the member
+      DRAFTED : to a member who
+
+  [INSERT] ...§ 51.1-155.1 only where the member has
+      DRAFTED : already
+
+  [REPLACE] ...51.1-155.1 only where the member has incurred
+      SOURCE  : an involuntary
+      DRAFTED : the
+
+  [REPLACE] ...the member has incurred an involuntary separation
+      SOURCE  : …
+      DRAFTED : -- and the date as of which that was tested was,
+
+  [REPLACE] ...has incurred an involuntary separation … on
+      SOURCE  : or
+      DRAFTED : one reading, the certification years earlier,
+
+  [DELETE] ...an involuntary separation … on or before
+      SOURCE  : the date as of which the member's unreduced retirement eligibility date is determined." A residual sentence fixes that date, where the section does not state one, as the date of "the certification, recertification, determination, statement, or other decision in which that date is applied." So take the member the branch exists for. Her election is certified in 2030, when
+
+  [REPLACE] ...election is certified in 2030, when she
+      SOURCE  : is 48 and has not
+      DRAFTED : had
+
+  [REPLACE] ...and has not been separated from anything.
+      SOURCE  : She is
+      DRAFTED : On that reading the protection could defeat the member it was written for. The confinement now carries a second limb: where the sentence is applied otherwise than in determining her unreduced retirement eligibility date, the condition is tested on or before her effective date of retirement. The qualifying-retirement test is such an application, so the relevant date is her retirement and not her ce
+
+  [REPLACE] ...separated from anything. She is laid off
+      SOURCE  : in 2031. The last decision in which her unreduced retirement eligibility date was applied is the 2030 certification. On that reading her § 51.1-155.1 retirement is not one
+      DRAFTED : before
+
+  [REPLACE] ...§ 51.1-155.1 retirement is not one she
+      SOURCE  : "may" take for the purposes of the section, so
+      DRAFTED : retires satisfies it. The bar does not apply to her. The cure the Lab's reviewer drafted is the cure enacted, and
+
+  [REPLACE] ...purposes of the section, so it is
+      SOURCE  : not a "qualifying retirement", so she fails the retirement condition, her credit is reduced, and nothing is settled. The provision written to protect the laid-off member can defeat her. Before this change it could not: the restriction then applied only inside one definition, and the qualifying retirement test reached § 51.1-155.1 unconfined. The change
+      DRAFTED : also the general answer to the same sentence's failure to yield a date in its other uses. The confinement
+
+  [REPLACE] ...unconfined. The change itself admits nobody and
+      SOURCE  : was not meant to narrow anything
+      DRAFTED : narrows nothing
+
+  [REPLACE] ...anything -- the conditions it recites are
+      SOURCE  : § 51.1-155.1's
+      DRAFTED : the Code's
+
+  [REPLACE] ...conditions it recites are § 51.1-155.1's own,
+      SOURCE  : verified against the Code.
+      DRAFTED : verified.
+
+  [REPLACE] ...own, verified against the Code. The defect
+      SOURCE  : is
+      DRAFTED : was
+
+  [REPLACE] ...Code. The defect is the timing condition
+      SOURCE  : it carries, which § 51.1-155.1 does not contain. The cure is drafted -- a second limb fixing the date, where the sentence is applied otherwise than in determining her eligibility date, at her effective date of retirement -- and it is enacted nowhere. Item 119. It is also the general cure for the same sentence's failure to yield any date in three other uses.
+      DRAFTED : the section added, and the timing condition now has its own rule.
+
+====================================================================================================
+C18   source moo160.md   (source 358 words -> drafted 426 words)
+====================================================================================================
+  [REPLACE] ...current engine cannot value. Nothing in the
+      SOURCE  : latest revision
+      DRAFTED : bill as it stands
+
+  [INSERT] ...and that half is independently verified. The
+      DRAFTED : Lab's
+
+  [DELETE] ...and the definition of an eligible member
+      SOURCE  : against the thirteen edits
+
+  [REPLACE] ...and found that none of them is
+      SOURCE  : touched;
+      DRAFTED : touched, and
+
+  [REPLACE] ...model's cost estimate rests on an assumption
+      SOURCE  : these edits
+      DRAFTED : the settlement provisions
+
+  [REPLACE] ..."the cost per event is NOT priced."
+      SOURCE  : The new provisions open settlement
+      DRAFTED : Settlement
+
+  [DELETE] ...priced." The new provisions open settlement routes
+      SOURCE  : that
+
+  [REPLACE] ...open settlement routes that run past required
+      SOURCE  : retirement with
+      DRAFTED : retirement, and two of the three carry
+
+  [REPLACE] ...run past required retirement with no outer
+      SOURCE  : limit in the statute: a disability approval the Code can compel the Board to accept years later, a
+      DRAFTED : date. A
+
+  [REPLACE] ...a determination of the Board's own error
+      SOURCE  : that is under
+      DRAFTED : is one: the bill lets the member file written evidence after the determination has taken effect and states
+
+  [REPLACE] ...Board's own error that is under no
+      SOURCE  : deadline at all, and a reversal
+      DRAFTED : period for her to do it in. Reversal
+
+  [REPLACE] ...all, and a reversal on judicial review
+      SOURCE  : that
+      DRAFTED : is another, and
+
+  [INSERT] ...that ordinarily takes two to four years.
+      DRAFTED : The third -- approval for disability -- is now bounded for the ordinary filer and for the timely one, and remains open on the limb that runs on a Medical Board certification that the disability was unknown at termination, which the Code puts no outer date on.
+
+  [REPLACE] ...one-sided costs and omits two more that
+      SOURCE  : this revision creates
+      DRAFTED : these provisions create
+
+  [INSERT] ...payment, both paid out of the trust.
+      DRAFTED : The section provides for refunds in twenty-seven places and provides for no interest on any of them.
+
