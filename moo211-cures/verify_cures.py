@@ -170,7 +170,7 @@ def main():
     if len(M2_STRING) == 150:
         fail.append("m2: the string measures 150, so check 9 was right and m1/m2 need re-reading")
 
-    print("\n=== S4's measurement, re-taken at store revision 71 "
+    print(f"\n=== S4's measurement, re-taken at store revision {s0} "
           "==========================================")
     a = s1.index("The Board's certification shall also state that,")
     z = s1.index(". A failure to state in the Board's certification") + 1
