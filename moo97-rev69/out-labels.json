@@ -1,0 +1,40 @@
+{
+ "rev": 69,
+ "s5": 46,
+ "s6": 69,
+ "baseRevisionId": "db67d2bb-9cb2-4476-99e1-8281e689d066",
+ "baseLen": 449196,
+ "baseS1Len": 131066,
+ "billRevisionId": "3b9ac270-3056-4665-87d0-3219b26dd31f",
+ "billLen": 482941,
+ "s1Len": 131923,
+ "s1Delta": 857,
+ "perEdit": {
+  "69-A": 354,
+  "69-B": 211,
+  "69-C": 292,
+  "69-D": -345,
+  "69-E": 345
+ },
+ "headroom": 41347,
+ "u_s1": [
+  62,
+  62
+ ],
+ "itemsRevisionId": "9b289184-7184-46ee-9405-cfbb03895b59",
+ "itemsLen": 372207,
+ "terms": {
+  "qualifying retirement": [
+   73,
+   74
+  ],
+  "before the date of death": [
+   2,
+   4
+  ],
+  "preceding sentence": [
+   19,
+   22
+  ]
+ }
+}
