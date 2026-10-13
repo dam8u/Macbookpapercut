@@ -1,0 +1,120 @@
+== live base, store revision 70: whole document 515219; enacted §1 132557; enacted § 51.1-142.4 101189
+
+     C4  142.4             0  may be settled  [asserted 0]
+                             - the drafted defect MOO-99 S1 found; must be absent
+     C4  142.4             1  the certified subsidy for the election is settled under this subdivision  [asserted 1]
+                             - the enacted automatic operator, death/disability/error rescission limb
+     C4  142.4             4  the certified subsidy is settled  [asserted 4]
+                             - the operator family, all automatic
+     C5  142.4             1  "Unreduced retirement eligibility date" means the earliest date on which ...  [asserted 1]
+     C5  142.4             1  "Qualifying retirement" means a service retirement under § 51.1-153, or u...  [asserted 1]
+     C5  142.4             1  For the purposes of this section the member may retire under subsection A...  [asserted 1]
+                             - MOO-99 S4's alternative fix, enacted; this is what closes the projection reading
+     C5  code:51.1-155.1   1  who is involuntarily separated from state service  [asserted 1]
+                             - § 51.1-155.1 A, the condition the confinement restates
+     C5  142.4             0  For the purposes of this definition, the member may retire under subsecti...  [asserted 0]
+                             - S4's fix in its definition-only form — NOT the form enacted; must not be quoted as enacted
+     C6  142.4             2  notwithstanding that the amount available to be reserved is thereby exceeded  [asserted 2]
+                             - the over-cap command, live and unchanged
+     C6  142.4             1  and the certified subsidy for the election is settled under this subdivis...  [asserted 1]
+     C6  142.4             1  upon an application filed no later than the date on which the determinati...  [asserted 1]
+                             - fix 1 enacted: the trigger is bounded for the ordinary filer
+     C6  142.4             1  upon an application the filing of which did not require a waiver of a nin...  [asserted 1]
+                             - second limb, enacted — this is also C16 cure 1
+     C6  142.4             1  upon an application as to which the Medical Board has made a certificatio...  [asserted 1]
+                             - third limb, enacted — C16 cure 2, AND the limb that carries no outer date: see C6 §residual
+     C6  142.4             1  the number of determinations rescinded and the service credit restored un...  [asserted 1]
+                             - fix 2 enacted
+     C6  142.4             1  every amount by which a reservation reinstated under subdivision G 4 caus...  [asserted 1]
+                             - fix 2 enacted, second item
+     C6  142.4             1  and (b) the date of the last rescission under subdivision G 4 that has oc...  [asserted 1]
+                             - fix 3 enacted, in the drafter's own words
+     C6  142.4             0  until the first December 1 following the later of that date and the date ...  [asserted 0]
+                             - fix 3 in its MOO-99 S5 form — NOT the form enacted; must not be quoted as enacted
+     C6  s1                1  and to make every refund, payment, notice, determination, rescission, res...  [asserted 1]
+                             - fix 4 enacted, third enactment clause (i)
+     C6  s1                1  the reporting and evaluation duties in subsection J of § 51.1-142.4 shall...  [asserted 1]
+                             - fix 4 enacted, third enactment clause (iii)
+     C6  142.4             1  to the Chairmen of the House Committee on Appropriations and the Senate C...  [asserted 1]
+                             - the disclosure duty, live
+     C6  142.4             1  shall state every reinstatement and every such excess in the report requi...  [asserted 1]
+                             - the two further controls, live
+     C6  142.4             1  an excess is eliminated when the aggregate of the amounts charged against...  [asserted 1]
+     C6  code:51.1-156     1  certifies that: (a) the disability and its cause existed on the date the ...  [asserted 1]
+                             - § 51.1-156 H clause (ii) — carries no outer date, which is C6’s surviving limb
+     C6  code:51.1-156     1  good cause shall exist and the Board shall waive such ninety-day notifica...  [asserted 1]
+                             - H is mandatory once the Medical Board certifies — the pass-12 ban
+     C12 142.4             1  $3,000,000  [asserted 1]
+     C12 142.4             1  a contingency amount equal to `[20]` percent of that certified subsidy  [asserted 1]
+                             - the contingency is a BRACKETED figure at revision 70, not a settled 20 percent
+     C12 142.4             0  non-completion  [asserted 0]
+                             - the bill carries no non-completion concept at all
+     C12 142.4             2  shall recertify the certified subsidy to reflect the service credit so cr...  [asserted 2]
+                             - the enacted C11 repair, which reaches C12’s per-member arithmetic
+     C12 142.4             2  to complete payment by the completion date  [asserted 2]
+                             - D 7’s no-release carve-out for the non-completer
+     C13 142.4             1  No certified subsidy is settled under this subdivision after the reservat...  [asserted 1]
+                             - the bar AS CURED — pass 17’s one-amendment cure, enacted, both limbs
+     C13 142.4             0  no certified subsidy is settled under this subdivision after the reservat...  [asserted 0]
+                             - the bar as pass 17 quoted it — SUPERSEDED. Not quotable at revision 70
+     C13 142.4             1  the service credit to be purchased is reduced to the amount the member ma...  [asserted 1]
+     C13 142.4             1  if a recertification under subdivision 6 reduces the certified subsidy  [asserted 1]
+     C13 142.4             1  as though the determination had not been made  [asserted 1]
+     C13 142.4             1  Where a reservation has been released otherwise than in accordance with s...  [asserted 1]
+                             - the reinstatement route the cure needs
+     C13 142.4             2  to retire as required by subsection F  [asserted 2]
+                             - D 7 carve-out, as pass 17 verified
+     C14 142.4             1  the Board shall restore or credit service credit as this subdivision prov...  [asserted 1]
+                             - the duty AS CURED — the conditioning clause AND the referent correction, both enacted
+     C14 142.4             0  restore or credit service credit as this subdivision provides, and shall ...  [asserted 0]
+                             - the duty as pass 17 quoted it — SUPERSEDED. Not quotable at revision 70
+     C15 142.4             1  the next payment of the member's retirement allowance shall include every...  [asserted 1]
+                             - the formula AS CURED — net, plus the entirety limb. Both of pass 17’s limbs enacted
+     C15 142.4             0  the next payment of the member's retirement allowance shall include every...  [asserted 0]
+                             - the gross formula as pass 17 quoted it — SUPERSEDED. Not quotable at revision 70
+     C15 142.4             0  no amount shall be collected, offset, or withheld from any member, retire...  [asserted 0]
+                             - G 4’s no-collection sentence as pass 17 quoted it — not quotable in these words
+     C15 142.4             1  no amount payable to the member or to any survivor, beneficiary, or estat...  [asserted 1]
+                             - the live no-reduction limb, verified by the Director at revision 70 (MOO-206 §1.3)
+     C16 142.4             1  A determination under subdivision 2 or 3 that has taken effect is not aff...  [asserted 1]
+                             - the saving sentence, live — and it now carries an express exception for the rescission, which pass 17’s quotation did not have
+     C16 142.4             0  approval of the member for a disability retirement allowance under this c...  [asserted 0]
+                             - the saving sentence as pass 17 quoted it — SUPERSEDED. Not quotable at revision 70
+     C16 142.4             0  as to which the Board was required by subsection H of § 51.1-156 to waive...  [asserted 0]
+                             - the counterfactual trigger pass 17 found — GONE. Replaced by the Medical Board anchor
+     C16 code:51.1-156     2  ninety-day notification period  [asserted 2]
+     C17 142.4             1  if the member retires in a qualifying retirement no later than 90 days af...  [asserted 1]
+     C17 142.4             1  or, where this sentence is applied otherwise than in the determination of...  [asserted 1]
+                             - pass 17’s drafted cure for item 119, ENACTED. This is what releases the laid-off member
+     C17 142.4             1  Where this section does not state a date as of which the member’s unreduc...  [asserted 1]
+                             - the residual sentence, live and unchanged
+     C18 142.4             1  Where a determination under subdivision 2 or 3 has taken effect, a member...  [asserted 1]
+                             - the error route — NO period is stated for the member’s filing. C18’s open limb
+     C18 142.4             2  is reversed or modified on reconsideration under subsection M or on judic...  [asserted 2]
+                             - the judicial-review route — two sites: the reinstatement sentence and the reversal duty
+     C18 142.4             0  interest  [asserted 0]
+                             - zero at 69 and 70; re-counted here rather than taken from MOO-206
+     C18 142.4            27  refund  [asserted 27]
+                             - the refund vehicle the money statement omits
+     C19 142.4             1  except that the aggregate of all such non-running by reason of such reque...  [asserted 1]
+                             - the FIRST application’s pendency is still uncapped — C19 holds at revision 70
+     C19 142.4             1  The Board shall not make a determination under subdivision 2, and shall n...  [asserted 1]
+     C20 142.4             2  no later than 15 days after it acts upon the request  [asserted 2]
+                             - Edit 2's FIND. TWO sites: the definition's backstop notice (Edit 2's target) and M 2's application duty (Edit 2 does not reach it). A bare count of 2 is not a defect
+     C20 142.4             0  no later than 15 days after it gives its decision upon the request  [asserted 0]
+                             - Edit 2's READ — applied nowhere
+     C21 142.4             1  The Board shall act upon a request for reconsideration within 90 days  [asserted 1]
+                             - the duty to ACT; there is still no duty to give a decision
+     C22 142.4             1  retains its filing date for the purposes of subdivisions D 4 and D 5 unti...  [asserted 1]
+                             - Edit 3's FIND, unmoved — the patch is applied nowhere
+     C22 142.4             0  until 120 days after the Board acts upon the request  [asserted 0]
+                             - Edit 3's READ — applied nowhere
+     C22 142.4             0  the Board is deemed to act upon that request, and to last act upon it, on...  [asserted 0]
+                             - Edit 1's operative clause — applied nowhere
+     C23 142.4             1  the aggregate of all tolling under this subsection shall not exceed 120 d...  [asserted 1]
+                             - clause (ii), live — and the 90-day post-tolling window of C23 precision 8 is IN the text
+     C3  142.4             0  exception path  [asserted 0]
+     C3  142.4             0  backstop  [asserted 0]
+     C3  142.4             0  rare  [asserted 0]
+
+== every asserted count holds on the live text at store revision 70
