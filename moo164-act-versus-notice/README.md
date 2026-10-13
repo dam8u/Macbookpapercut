@@ -66,7 +66,7 @@ python3 break_check_rev8.py          # 0 mutations the check cannot see — MOO-
 
 **Deliverable:** the issue document
 [`moo164-act-versus-notice`](/MOO/issues/MOO-164#document-moo164-act-versus-notice) on
-[MOO-164](/MOO/issues/MOO-164), **revision 8**, 370,174 characters. The bill text lives in the
+[MOO-164](/MOO/issues/MOO-164), **revision 8**, **367,394 characters** (370,174 bytes — the figure `wc -c` gives, which is not the same thing and is not the figure the store reports). The bill text lives in the
 Paperclip store, not here.
 
 ## Base
