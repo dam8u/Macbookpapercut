@@ -1,0 +1,86 @@
+== base §1 131066 chars; applied §1 133617 chars; delta 2551
+
+== N1 — F20's verbatim claim, compared character by character
+   [ok] 164-7 saving tail length: 256 (expected 256)
+   [ok] identical to MOO-141 Edit 1 saving but for the sentence-initial capital: 'nothing in the preceding sentence determines the date by which the Board is required to act upon a request, to make a determination, or to give a notice or a decision, or whether the Board has performed such a duty within a period required by this section.' (expected 'nothing in the preceding sentence determines the date by which the Board is required to act upon a request, to make a determination, or to give a notice or a decision, or whether the Board has performed such a duty within a period required by this section.')
+   [ok] the only difference is that capital: True (expected True)
+
+== N2 — every "preceding sentence" reference re-resolved against its actual predecessor
+   [ok] references in base §1: 19 (expected 19)
+   [ok] references in applied §1: 22 (expected 22)
+   [ok] references whose predecessor changed or is new: 3 (expected 3)
+   [ok] all three new ones are 164-7's two and 164-8's one: ['Except for the purposes of the dut', 'Where a request is denied by opera', 'Where the Board gives any notice d'] (expected ['Except for the purposes of the dut', 'Where a request is denied by opera', 'Where the Board gives any notice d'])
+       new reference in: Where the Board gives any notice described in the preceding sentence a
+       new reference in: Where a request is denied by operation of the preceding sentence, or w
+       new reference in: Except for the purposes of the duty of the Board under this subsection
+
+== N3 — the exception's descriptor has exactly one referent
+   [ok] the exception's descriptor, once, in the exception: 1 (expected 1)
+   [ok] the duty it describes says "the application", not "an application" — immaterial but noted: 1 (expected 1)
+   [ok] D 3's similar 15-day application duty is keyed to the confirmation, not the request: 1 (expected 1)
+   [ok] the M 2 duty the exception names: 1 (expected 1)
+
+== N4 — the deeming does not deem away the breach
+   [ok] G 4's anti-delay sentence survives, keyed to a failure and not to a period: 1 (expected 1)
+   [ok] M 2's review right for a failure to make a determination survives: 1 (expected 1)
+   [ok] the saving expressly preserves the performance question: 1 (expected 1)
+
+== N6 — all five "shall act upon" duties state a commencement after 164-10
+   [ok] "shall act upon" in base §1: 5 (expected 5)
+   [ok] "shall act upon" in applied §1 — 164-10 adds no duty: 5 (expected 5)
+   [ok] each of the five states a commencement: [True, True, True, True, True] (expected [True, True, True, True, True])
+   [ok] M 2's 90-day duty stated none in the base: 1 (expected 1)
+
+== N8 — F10's collision: "grants or denies" against G 2's overloaded verb
+   [ok] "determination"/"determined" in G 2: 26 (expected 26)
+   [ok] "grants" in G 2: 1 (expected 1)
+   [ok] "denies" in G 2: 1 (expected 1)
+   [ok] "grants" anywhere in base §1 — a verb new to the section: 0 (expected 0)
+   [ok] "denies" anywhere in base §1 — a verb new to the section: 0 (expected 0)
+
+== N9 — the no-recovery limb §4.2 relies on exists and says so
+   [ok] no liability by reason of a failure to retire in a qualifying retirement: 1 (expected 1)
+
+== F6 — G 4's definition is already expressly confined, so there is nothing to notwithstand
+   [ok] G 4's definition opens with its own confinement clause: 1 (expected 1)
+   [ok] "Notwithstanding the definition in subdivision 4" in the base: 0 (expected 0)
+   [ok] confinement clauses of that family in base §1 whose force the negative implication reaches: 7 (expected 7)
+
+== F7 — "the identical date R-5's floor keys to"
+   [ok] R-5's floor, as amended by 164-4, keys to the month in which the period expired: 1 (expected 1)
+   [ok] 164-7's trigger two deems the act on the day after the expiration: 1 (expected 1)
+   [ok] the two dates are different instruments — "first day of the second month" vs "the day after": True (expected True)
+   [ok] R-5's class is requests that tolled under subsection M (reconsideration included): 1 (expected 1)
+   [ok] trigger two's class is definition requests only: 1 (expected 1)
+   [ok] R-3, which the deeming also reaches, keys to the MONTH of the last act: 1 (expected 1)
+   [ok] divergence case — period expires 31 July: R-5 floor 1 Sept, R-3 via deemed act 1 Oct: ('1 September', '1 October') (expected ('1 September', '1 October'))
+
+== F8 — J 1 and subsection C, as those provisions are actually worded
+   [ok] the string §7.3 attributes to BOTH provisions occurs once in §1, and it is M 2's own: 1 (expected 1)
+   [ok] J 1's report line omits "to make a payment": 1 (expected 1)
+   [ok] subsection C's report line is confined to duties and periods of subsection C: 1 (expected 1)
+
+== F2 — § 51.1-153 is not silent: D 1 itself twice qualifies by subsection E
+   [ok] D 1's retroactivity sentence carries the subsection E qualification: 1 (expected 1)
+   [ok] clause (ii) of the statement-contents sentence carries it too: 1 (expected 1)
+   [ok] 164-8 states satisfaction of § 51.1-153 unqualified: 1 (expected 1)
+   [ok] D 1 already supplies satisfaction for any notice filed within the period, so 164-8's words are surplus: 1 (expected 1)
+
+== F5 — the new right has no disclosure duty, against D 1's own practice
+   [ok] D 1 requires the Board to state three lateness consequences, (i) to (iii): 1 (expected 1)
+   [ok] that sentence stops at clause (iii): 0 (expected 0)
+   [ok] and it names only the three pre-existing consequences: ['(i)', '(ii)', '(iii)'] (expected ['(i)', '(ii)', '(iii)'])
+
+== F11 and F13 — two counted claims in the document, re-counted
+   [ok] §3.8 says "amend" is 0 in D 1; it is: 1 (expected 1)
+   [ok] and the occurrence is the Internal Revenue Code formula, not a power over a notice: True (expected True)
+   [ok] "withdraw" in base D 1: 0 (expected 0)
+   [ok] "replacing" in base D 1: 0 (expected 0)
+   [ok] "substitut" in base D 1: 0 (expected 0)
+   [ok] act-upon family anywhere in § 51.1-142.2, which the deeming extends to: 0 (expected 0)
+
+== F14 — trigger two's "it"
+   [ok] trigger two as applied: 1 (expected 1)
+   [ok] singular nouns between "a request" and "it": ['the definition', 'subsection A', 'the period', 'this section'] (expected ['the definition', 'subsection A', 'the period', 'this section'])
+
+ALL CHECKS PASS
